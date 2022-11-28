@@ -12,7 +12,7 @@ El desarrollo de este sitio sera llevado adelante por los desarrolladores
 3.Elias Miguel Batica
 4.Agustin Vazquez
 5.Matia Trombetta
-6.Sebastian Freiberger
+6.Sebastian Freiberger: Soy estudiante, en proceso de convertirme en desarrollador, actualmente trabajando del lado de sistemas para una empresa dedicada a la venta de equipos fitness. Interesado en el curos para poder ampliar mis conocimientos y poder trabajar en un ambito mejor para mi crecimiento tanto en experiencia como en profesionalidad.
 
 Tablero en Trello para seguimiento de tareas: https://trello.com/invite/dhtrabajointegrador3/ATTI672ffdeb3a61e2366d86f9e8e6b7a49d9B8FA74D
 
