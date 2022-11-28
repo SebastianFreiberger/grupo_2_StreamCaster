@@ -22,11 +22,17 @@ Tablero en Trello para seguimiento de tareas: https://trello.com/invite/dhtrabaj
 Webs de inspiración<br>
 
 https://www.own3d.tv/es/
+<br>
 https://www.destreaming.es/
+<br>
 https://www.bhphotovideo.com/
+<br>
 https://www.logitechstore.com.ar/
+<br>
 https://store.focusrite.com/en-gb/
+<br>
 https://www.borrowlenses.com/
+<br>
 https://www.bestbuy.com/
 
 
