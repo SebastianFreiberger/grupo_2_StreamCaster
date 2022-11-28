@@ -17,6 +17,7 @@ Webs de inspiración
 https://www.own3d.tv/es/
 https://www.destreaming.es/
 https://www.bhphotovideo.com/
+https://www.logitechstore.com.ar/
 
 
 
