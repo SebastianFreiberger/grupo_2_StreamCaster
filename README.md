@@ -4,13 +4,13 @@ Sitio web orientado a la venta de productos para stream y creacion de podcast.<b
 
 Productos: todo lo necesario para transmitir y grabar audio y video. Camaras, microfonos, consolas, auriculares, elementos de iluminación y accesorios como cables, pies de microfono, soportes de cámaras.<br><br>
 
-Público target: gamers que hacen streaming de sus "partidas", generadores de contendio para TikTok y Twitch así como quienes estén empezando un podcast y necesiten equiparse desde cero.<br>
+Público target: gamers que hacen streaming de sus "partidas", generadores de contendio para TikTok, Twitch o YouTube, así como quienes estén empezando un podcast y necesiten equiparse desde cero.<br>
 
 El desarrollo de este sitio sera llevado adelante por los desarrolladores<br><br>
 
 1. Elias Miguel Batica:
    <br>
-   En Julio cumplo 70. Estudie ingenieria alla en el 70 y sistemas en los 80. intente con fisica en el 2015. soy propietario de 1 negocio de orquideas que funciona bien. tengo 4 hijos de distintos matrimonios. Somos una bella familia con 5 nietos. Cuando ya estaba para recoorer el mundo con mi amada compañera fallecio hace 3 meses de cancer. No hay palabras hasta que no se vive. Bueno a empezar de nuevo todo roto . Casi estoy dejando que mi negocio funcione solo con mis gente y yo a cumplir un sueño y sacarme algunos años de encima. Gracias por aceptarme. Dare todo lo que tengo. Vivo en Caballito
+   En Julio cumplo 70. Estudie ingenieria alla en el 70 y sistemas en los 80. intente con fisica en el 2015. soy propietario de 1 negocio de orquideas que funciona bien. tengo 4 hijos de distintos matrimonios. Somos una bella familia con 5 nietos. Cuando ya estaba para recorrer el mundo con mi amada compañera fallecio hace 3 meses de cancer. No hay palabras hasta que no se vive. Bueno a empezar de nuevo todo roto . Casi estoy dejando que mi negocio funcione solo con mis gente y yo a cumplir un sueño y sacarme algunos años de encima. Gracias por aceptarme. Dare todo lo que tengo. Vivo en Caballito
    <br>
 2. Sebastian Freiberger:
    <br>
@@ -30,7 +30,7 @@ El desarrollo de este sitio sera llevado adelante por los desarrolladores<br><br
    <br>
 6. Matias Trombetta:
    <br>
-   ...............................
+   Tengo 42 años y vivo con Romi, compeñera desde hace 18 años, y de mi mas lindo orgullo, nuestro hijo Nico de 12 años. Estudié diversas carreras relacionadas con la electrónica, la automatización y los negocios. Me desempeñó en el área comercial desde hace muchos años. Si bien gran parte de mi vida trabajé en relación de dependencia, tuve proyectos personales y me inscribí a este curso para intentar desarrollar mi faceta emprendedora con estas herramientas.
    <br>
 
 Tablero en Trello para seguimiento de tareas: https://trello.com/invite/dhtrabajointegrador3/ATTI672ffdeb3a61e2366d86f9e8e6b7a49d9B8FA74D
