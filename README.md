@@ -53,5 +53,4 @@ https://www.bestbuy.com/
 
 Agrego link a wireframe del home(provisorio) en marvelapp
 <br>
-
-https://marvelapp.com/project/6535973
+https://marvelapp.com/prototype/j363f44
