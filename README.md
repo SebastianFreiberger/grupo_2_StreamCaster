@@ -10,7 +10,7 @@ El desarrollo de este sitio sera llevado adelante por los desarrolladores<br><br
 
 1. Elias Miguel Batica:
    <br>
-   En Julio cumplo 70. Estudie ingenieria alla en el 70 y sistemas en los 80. intente con fisica en el 2015. soy propietario de 1 negocio de orquideas que funciona bien. tengo 4 hijos de distintos matrimonios. Somos una bella familia con 5 nietos. Cuando ya estaba para recorrer el mundo con mi amada compañera fallecio hace 3 meses de cancer. No hay palabras hasta que no se vive. Bueno a empezar de nuevo todo roto . Casi estoy dejando que mi negocio funcione solo con mis gente y yo a cumplir un sueño y sacarme algunos años de encima. Gracias por aceptarme. Dare todo lo que tengo. Vivo en Caballito
+   En Julio cumplo 70. Estudie ingenieria alla en el 70 y sistemas en los 80. intente con fisica en el 2015. soy propietario de 1 negocio de orquideas que funciona bien. Tengo 4 hijos de distintos matrimonios. Somos una bella familia con 5 nietos. Cuando ya estaba para recorrer el mundo con mi amada compañera fallecio hace 3 meses de cancer. No hay palabras hasta que no se vive. Bueno a empezar de nuevo todo roto . Casi estoy dejando que mi negocio funcione solo con mis gente y yo a cumplir un sueño y sacarme algunos años de encima. Gracias por aceptarme. Dare todo lo que tengo. Vivo en Caballito.
    <br>
 2. Sebastian Freiberger:
    <br>
@@ -51,6 +51,10 @@ https://www.borrowlenses.com/
 <br>
 https://www.bestbuy.com/
 
-Agrego link a wireframe del home(provisorio) en marvelapp
+Agrego link a wireframe del home(provisorio) en Marvelapp
 <br>
 https://marvelapp.com/prototype/j363f44
+<br>
+Agrego link a tablero TRELLO
+<br>
+https://trello.com/b/84f7nJe5/sprint-1
