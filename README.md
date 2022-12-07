@@ -14,7 +14,7 @@ El desarrollo de este sitio sera llevado adelante por los desarrolladores<br><br
    <br>
 2. Sebastian Freiberger:
    <br>
-   Soy estudiante, en proceso de convertirme en desarrollador, actualmente trabajando del lado de sistemas para una empresa dedicada a la venta de equipos fitness. Interesado en el curos para poder ampliar mis conocimientos y poder trabajar en un ambito mejor para mi crecimiento tanto en experiencia como en profesionalidad.
+   Soy estudiante, en proceso de convertirme en desarrollador, actualmente trabajando del lado de sistemas para una empresa dedicada a la venta de equipos fitness. Interesado en el curso para poder ampliar mis conocimientos y poder trabajar en un ambito mejor para mi crecimiento tanto en experiencia como en profesionalidad.
    <br>
 3. Hernan Ingrassia:
    <br>
