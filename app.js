@@ -9,22 +9,22 @@ app.get('/', (req, res) => {
     res.sendFile(__dirname + '/views/home.html')
 });
 
-app.get('/registro.html', (req, res) => {
+app.get('/registro', (req, res) => {
     res.sendFile(__dirname + '/views/registro.html')
 });
 
-app.get('/loggin.html', (req, res) => {
+app.get('/loggin', (req, res) => {
     res.sendFile(__dirname + '/views/loggin.html')
 });
 
-app.get('/detalleProducto.html', (req, res) => {
+app.get('/detalleProducto', (req, res) => {
     res.sendFile(__dirname + '/views/detalleProducto.html')
 });
 
-app.get('/listadorProductos.html', (req, res) => {
+app.get('/listadorProductos', (req, res) => {
     res.sendFile(__dirname + '/views/listadorProductos.html')
 });
 
-app.get('/carrito.html', (req, res) => {
+app.get('/carrito', (req, res) => {
     res.sendFile(__dirname + '/views/carrito.html')
 });
