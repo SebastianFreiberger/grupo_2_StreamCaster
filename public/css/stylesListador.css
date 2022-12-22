@@ -6,7 +6,7 @@
 
 body{
     margin: 0;
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Oswald', sans-serif;
     background-image: url("../images/v1016-b-08.jpg");
 }
 
@@ -23,6 +23,7 @@ div.titulo-seccion{
     color: #ced4da;
     padding: 10px;
     border-radius: 30px;
+    font-weight: 300;
 }
 
 main section {
@@ -32,6 +33,16 @@ main section {
 
 main section.section-producto article:hover {
     box-shadow: rgb(227, 200, 255) 0px 0px 10px 2px;
+    transition: 0.3s;
+}
+
+main section.section-producto article:hover img{
+    opacity: 100%;
+    transition: 0.3s;
+}
+
+main section.section-producto article img {
+    opacity: 90%;
 }
 
 main section article.filtroListador {
@@ -75,8 +86,14 @@ main section article div img {
     object-fit: contain;
 }
 
+.main-content section.section-producto article div.titulo-producto {
+    font-weight: 300;
+    font-size: 20px;
+}
+
 main section article div.descripcion-article{
-    background-color: #ffffff;
+    background: rgb(255,255,255);
+    background: linear-gradient(90deg, rgb(244 237 255) 0%, rgb(222 209 255) 23%, rgb(174 138 255) 45%, rgb(133 75 255) 76%, rgb(120 43 255) 100%);
     color: #343a40;
     padding: 8px 15px;
     position: relative;
@@ -87,10 +104,16 @@ main section article div.descripcion-article{
 }
 
 main section article div.descripcion-article div.valores-producto{
+    color: #fff;
     text-align: right;
+    font-size: 18px;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
+}
+
+.separador {
+    display: none;
 }
 
 /* Fin main */
@@ -131,6 +154,37 @@ main section article div.descripcion-article div.valores-producto{
     }
     main section article div.descripcion-article{        
         width: 40vw;        
+    }
+
+    .separador {
+        display: none;
+    }
+}
+
+
+/*/////////////////// DESKTOP //////////////////////*/
+
+@media (min-width: 1200px){
+    main section article.producto {        
+        width: 20vw;
+    }
+
+    main section article div img {
+        max-width: 20vw;
+        height: 10vw;
+    }
+    main section article div.descripcion-article{        
+        width: 20vw;
+        height: 5vw;
+    }
+
+    .separador {
+        background-color: rgb(69 57 90);
+        padding: 2px;
+        height: 2px;
+        width: 100%;
+        margin-bottom: 20px;
+        border-radius: 10px;
     }
 
 }
