@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"/>
-    <link rel="stylesheet" href="css/stylesListador.css">
+    <link rel="stylesheet" href="css/stylesDetalle.css">
     <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Maven+Pro&family=Oswald&family=PT+Serif&family=Quicksand:wght@300&family=Roboto&display=swap" rel="stylesheet">
     <title>Detalle producto</title>
 </head>
@@ -15,10 +15,12 @@
 
     </header>
     <main>
-        <h3 class="nombreProducto">Micrófono Blue</h3>
-        <p>Categoria</p>
-        <div>Calificación</div>
-        <picture><img src="/images/mic-blue.jpg"></picture>
+        <section class="headerProd">
+            <div class="nombreProducto">Micrófono Blue</div>
+            <div class="calificacion">Calificación <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-regular fa-star"></i></div>
+            <p>Categoria:Micrófonos para podcast</p>
+         </section>
+        <picture><img src="/images/mic-blue.jpg" class="imgProd"></picture>
         <p class="precio"></p>
         <p class="descuento"></p>
         <p class="cuotas"></p>

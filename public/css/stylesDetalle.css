@@ -9,3 +9,31 @@ body{
     font-family: 'Oswald', sans-serif;
     background-image: url("../images/v1016-b-08.jpg");
 }
+
+main{
+    margin-top: 200px;
+    color:aliceblue;
+    width: 95vw;
+}
+.headerProd{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: flex-end;
+    margin: 15px;
+}
+main picture{
+    width: 90vw;
+}
+.imgProd{
+    width: 100%;
+
+}
+
+.calificacion{
+    font-size: 12px;
+    padding: 5px;
+}
+.nombreProd{
+    padding: 5px;
+}
