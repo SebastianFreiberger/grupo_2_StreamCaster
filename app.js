@@ -21,8 +21,8 @@ app.get('/detalleProducto.html', (req, res) => {
     res.sendFile(__dirname + '/views/detalleProducto.html')
 });
 
-app.get('/listadorProducto.html', (req, res) => {
-    res.sendFile(__dirname + '/views/listadorProducto.html')
+app.get('/listadorProductos.html', (req, res) => {
+    res.sendFile(__dirname + '/views/listadorProductos.html')
 });
 
 app.get('/carrito.html', (req, res) => {

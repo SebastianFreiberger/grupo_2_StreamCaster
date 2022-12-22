@@ -1,0 +1,136 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+    background-image: url("../images/v1016-b-08.jpg");
+}
+
+/* Comienzo main */
+
+.main-content{
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+}
+
+div.titulo-seccion{
+    margin: auto;
+    color: #ced4da;
+    padding: 10px;
+    border-radius: 30px;
+}
+
+main section {
+    width: 90vw;
+    margin: 15px auto;
+}
+
+main section.section-producto article:hover {
+    box-shadow: rgb(227, 200, 255) 0px 0px 10px 2px;
+}
+
+main section article.filtroListador {
+    max-width: 40vw;
+    margin: 20px 0;
+    padding: 20px 0;
+    background-color: #ffffff;
+    border-radius: 10px;
+    position: relative;
+}
+
+main section article.filtroListador div h3 {
+    color: #343a40;
+    position: absolute;
+    left: 15px;
+    bottom: 7px;
+}
+
+main section article.filtroListador div h3 i{
+    margin-left: 10px;
+}
+
+main section article.producto {
+    display: flex;
+    flex-direction: column;
+    max-width: 90vw;
+    margin-bottom: 20px;
+    background-color: #ffffff;
+    border-radius: 10px;
+}
+
+main section article div.img-producto {
+    display: flex;
+    justify-content: center;
+    padding: 10px 0
+}
+
+main section article div img {
+    max-width: 80vw;
+    height: 60vw;
+    object-fit: contain;
+}
+
+main section article div.descripcion-article{
+    background-color: #ffffff;
+    color: #343a40;
+    padding: 8px 15px;
+    position: relative;
+    border-top: 2px solid #343a40;
+    border-radius: 0 0 10px 10px;
+    display: flex;
+    justify-content: space-between;
+}
+
+main section article div.descripcion-article div.valores-producto{
+    text-align: right;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+/* Fin main */
+
+/*/////////////////// Tablets //////////////////////*/
+
+
+@media (min-width: 768px){
+
+    .main-content {
+        display: flex;
+    }
+
+    .main-content section.section-producto {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+
+    main section article.filtroListador {        
+        width: 40vw;
+        margin-left: 20px;
+    }
+
+    div.titulo-seccion {
+        margin: auto;
+    }
+    
+    main section article.producto {
+        display: flex;
+        flex-wrap: wrap;
+        width: 40vw;
+    }
+
+    main section article div img {
+        max-width: 40vw;
+        height: 25vw;
+    }
+    main section article div.descripcion-article{        
+        width: 40vw;        
+    }
+
+}
