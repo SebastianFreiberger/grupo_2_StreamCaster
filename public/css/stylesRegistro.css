@@ -2,10 +2,10 @@
     margin: 0px;
     padding: 0px;
     box-sizing: border-box;
-}
+    }
 
 body{
     margin: 0;
     font-family: 'Roboto', sans-serif;
-    background-image: url("../images/v1016-b-08.jpg");
+        background-color: white;
 }
