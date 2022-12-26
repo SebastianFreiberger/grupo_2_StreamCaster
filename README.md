@@ -58,3 +58,9 @@ https://marvelapp.com/prototype/j363f44
 Agrego link a tablero TRELLO
 <br>
 https://trello.com/b/84f7nJe5/sprint-1
+
+
+PALETA DE COLORES
+color textos con fondo blanco: #343a40
+color textos: #ffffff
+color de fondo background: #343a40
