@@ -5,13 +5,54 @@
     
 }
 
-
 body{
     margin: 0;
     font-family: 'Roboto', sans-serif;
-    /* color: #fff;
-    background-image: url("../images/v1016-b-08.jpg"); */
+    color: #fff;
+    background-image: url("../images/v1016-b-08.jpg");
 }
+
+/*HEADER PROVISORIO INICIO*/
+
+header{
+    display: flex;
+    background-color: rgb(39, 39, 39);
+    padding: 20px;
+
+}
+
+.header-banner{
+    display: flex;
+    height: 150px;
+    flex-grow: 1;
+}
+
+.logo{
+    width: 100px;
+    height: 100px;
+    align-self: center; 
+}
+
+.nombre-sitio{
+    text-align: center;
+    margin-left: 50%;
+    font-size: 150%;
+}
+
+.header-usuario{
+    margin-left: 20%;
+}
+
+.header-registrate{
+    margin-left: 5%;
+}
+
+.nav-bar{
+    display: flex;
+    align-self: flex-end;  
+}
+
+/*HEADER PROVISORIO FIN*/
 
 
 /*CARRITO COMPRAS: SECCION PRODUCTOS*/
@@ -23,7 +64,7 @@ body{
 
 .carrito-principal{
     margin: 0px 50px 0px 50px;
-    border: 1px solid #000;
+    border: 1px solid #fff;
 }
 
 .carrito-articulo{
