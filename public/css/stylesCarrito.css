@@ -134,13 +134,13 @@ header{
     color: #fff;
     margin-top: 10px;
     padding: 10px 20px 10px 20px;
+    transition: all .5s;
     
 }
 
 .boton-comprar:hover{
     background: linear-gradient(90deg, rgb(244 237 255) 0%, rgb(222 209 255) 23%, rgb(174 138 255) 45%, rgb(133 75 255) 76%, rgb(120 43 255) 100%);
-    transition: .5s; 
-
+    color: black;
 }
 
 #subtotal{
