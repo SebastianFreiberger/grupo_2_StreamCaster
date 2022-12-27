@@ -12,20 +12,38 @@
 <body>
     
     <header>
-        <div class="header-banner">
-            <img src="/images/logo.svg" alt="imagen-producto" class="logo">
-            <h2 class="nombre-sitio">StreamCaster</h2>
+        <img src="/images/logo.png" alt="SClogo" class="imagen-logo">
+        
+        <section class="header-banner">
+            
+            <li><a href="/listadorProductos" class="navbar-item">StreamCaster</a></li>
+            <li><a href="/listadorProductos" class="navbar-item">Soy Usuario</a></li>
+            <li><a href="/listadorProductos" class="navbar-item">Registrate</a></li> 
+            
+            <!-- <h2 class="nombre-sitio">StreamCaster</h2> 
             <p class="header-usuario">Soy Usuario</p> 
-            <p class="header-registrate">Registrate</p>
-        </div>
-        <div class="nav-bar">
-            <h3>Monitores</h3> 
-            <h3>Camaras</h3> 
-            <h3>Micrófonos</h3>
-            <h3>Botoneras</h3>
-            <h3>Auriculares</h3>   
-            <p>Carrito</p>
-        </div>
+            <p class="header-registrate">Registrate</p> -->
+        </section>
+        
+        <form class="nav-search">
+            <input class= "input-search" type= "text" placeholder="Busca tu producto aqui...">
+            <i class="fa-solid fa-magnifying-glass icon-search"></i>
+        </form>
+
+        
+        <nav class="main-navbar">
+            <ul class="left-navbar">
+                <li><a href="/listadorProductos" class="navbar-item">Monitores</a></li>
+                <li><a href="/listadorProductos" class="navbar-item">Cámaras</a></li>
+                <li><a href="/listadorProductos" class="navbar-item">Micrófonos</a></li>
+                <li><a href="/listadorProductos" class="navbar-item">Botoneras</a></li>
+                <li><a href="/listadorProductos" class="navbar-item">Auriculares</a></li>
+            </ul>
+            <ul class="right-navbar">
+                <li><a href="/carrito">Carrito<i class="fa-solid fa-cart-shopping"></i></i></a></li>
+                
+            </ul>
+        </nav> 
 
     </header>
     

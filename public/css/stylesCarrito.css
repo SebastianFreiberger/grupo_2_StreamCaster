@@ -18,19 +18,17 @@ header{
     display: flex;
     background-color: rgb(39, 39, 39);
     padding: 20px;
+}
 
+.imagen-logo{
+    width: 20%;
+    align-self: center; 
 }
 
 .header-banner{
     display: flex;
     height: 150px;
     flex-grow: 1;
-}
-
-.logo{
-    width: 100px;
-    height: 100px;
-    align-self: center; 
 }
 
 .nombre-sitio{
@@ -47,9 +45,21 @@ header{
     margin-left: 5%;
 }
 
+.nav-search{
+    align-self: center;
+}
+
 .nav-bar{
     display: flex;
     align-self: flex-end;  
+}
+
+header ul li a {
+    text-decoration: none;
+    color: rgb(39, 39, 39); 
+    display: inline-block;
+    padding: 5px 0;
+    
 }
 
 /*HEADER PROVISORIO FIN*/
