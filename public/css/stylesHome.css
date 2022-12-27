@@ -17,4 +17,13 @@ footer article{
 .fa-whatsapp{
     color: greenyellow
 }
-/* Fin Footer */
+
+
+@media (min-width: 768px) {
+
+    footer{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+}
