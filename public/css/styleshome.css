@@ -43,8 +43,10 @@ div.titulo-seccion{
 }
 
 main section.section-producto {
-    width: 70vw;
-    margin: 15px auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
 }
 
 main section.section-producto article:hover {
@@ -84,7 +86,7 @@ main section article.filtroListador div h3 i{
 main section article.producto {
     display: flex;
     flex-direction: column;
-    max-width: 90vw;
+    width: 70%;
     margin-bottom: 20px;
     background-color: #ffffff;
     border-radius: 10px;
@@ -131,6 +133,11 @@ main section article div.descripcion-article div.valores-producto{
     justify-content: space-around;
 }
 
+main section article.section-producto i {
+    display: none;
+    color: #ced4da;
+}
+
 .separador {
     display: none;
 }
@@ -144,6 +151,7 @@ section.section-coment article.article-coment{
     border: #ced4da solid 1px;
     padding: 15px;
     margin-bottom: 10px;
+    box-shadow: #a920ff 0 0 11px;
 }
 
 section.section-coment article.article-coment h3{
@@ -170,8 +178,17 @@ section.section-coment article.article-coment h3{
         margin-left: 20px;
     }
 
+    main section.section-producto i {
+        color: #ced4da;
+    }
+
     div.titulo-seccion {
         margin: auto;
+    }
+
+    main section.section-producto {
+        display: flex;
+        flex-direction: row;
     }
     
     main section article.producto {
@@ -215,7 +232,7 @@ section.section-coment article.article-coment h3{
     }
 
     main section.section-producto {
-        width: 65vw;
+        /* width: 65vw; */
     }
 
     main section article.producto {        
@@ -245,7 +262,6 @@ section.section-coment article.article-coment h3{
 
 /* Inicio Footer */
 footer{
-    /* margin:10px; */
     text-align: center;
     color:#ced4da;
     background-color: #2e2e2e;
@@ -273,3 +289,5 @@ footer article{
         align-items: center;
     }
 }
+
+/* Fin Footer */
