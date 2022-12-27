@@ -9,27 +9,62 @@ body{
     font-family: 'Oswald', sans-serif;
     background-image: url("../images/v1016-b-08.jpg");
 }
-
-main{
-    margin-top: 200px;
+/* SOLO PARA OCUPAR EL ESPACIO */
+header{
+    top: 2px;
+    position: fixed;
+    font-size: 20px;
     color:aliceblue;
-    width: 95vw;
+    z-index: -1;
 }
-.headerProd{
+
+/* Inicio Footer */
+footer{
+    margin:10px;
+    text-align: center;
+    color:#ced4da
+}
+picture.logochico img{
+    max-width: 100px;
+}
+footer div a, footer h3 a{
+    text-decoration: none;
+    color:#ced4da 
+}
+footer article{
+    margin: 10px;
+}
+.fa-whatsapp{
+    color: greenyellow
+}
+/* Fin Footer */
+
+
+/* Comienza main */
+main{
+    color:aliceblue;
+    width: 90vw;
+    margin: 100px auto 5px;
+    
+}
+.encabezadoProd{
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
     align-items: flex-end;
     margin: 15px;
 }
-main picture{
-    width: 90vw;
-}
+
 .imgProd{
-    width: 100%;
-
+    width: 90vw;
+    border-radius: 7px;
 }
-
+ul{
+    margin-left: 5%;
+}
+.pagos{
+    list-style: none;
+}
 .calificacion{
     font-size: 12px;
     padding: 5px;
@@ -37,3 +72,72 @@ main picture{
 .nombreProd{
     padding: 5px;
 }
+i {
+    margin: 2px;
+}
+.parrafos{
+    text-align: justify;
+    padding: 2%;
+}
+form.compra button a{
+    text-decoration:none;
+    color: #fff;
+    transition: all .5s;  
+    }
+
+form.compra button{
+    border-radius:7%;
+    background-color: rgb(133 75 255);
+    margin-top: 10px;
+    padding: 10px 10px 10px 10px;
+    transition: all .5s;
+}
+/* Fin Main */
+
+
+/* Tablet */
+
+@media (min-width: 768px) {
+.fotoybasic{
+    display: flex;
+    justify-content: space-around;
+}
+.imgProd{
+    margin-left: 5%;
+    width: 45vw;
+}
+div.basic{
+    margin:1% 7% 4%;
+    position:relative;
+}
+form.compra{
+    position:relative;
+    top: 450px;
+    text-align: center;
+    display: flex;
+    justify-content: space-around;
+}
+button{
+    font-size: 22px;
+    padding: 3px;
+    border-radius: 3px;
+}
+footer{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+article.logo{
+    order:-1;
+}
+form.compra button:hover{
+    background: linear-gradient(90deg, rgb(244 237 255) 0%, rgb(222 209 255) 23%, rgb(174 138 255) 45%, rgb(133 75 255) 76%, rgb(120 43 255) 100%);
+    text-decoration: none;
+}
+form.compra button:hover a{
+    color: black;
+}
+
+}
+
+/* Desktop */
