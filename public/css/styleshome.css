@@ -18,6 +18,22 @@ body{
     padding: 10px;
 }
 
+.main-content section div.carrousel-home div.img-carrousel {
+    display: flex;
+    justify-content: center;
+}
+
+.main-content section div.carrousel-home div.img-carrousel img {
+    width: 85%;
+}
+
+.main-content section div.carrousel-home i{
+    color: #fff;
+    display: flex;
+    align-items: center;
+    margin: 0 15px;
+}
+
 div.titulo-seccion{
     margin: auto;
     color: #ced4da;
@@ -26,7 +42,7 @@ div.titulo-seccion{
     font-weight: 300;
 }
 
-main section {
+main section.section-producto {
     width: 70vw;
     margin: 15px auto;
 }
@@ -91,6 +107,10 @@ main section article div img {
 .main-content section.section-producto article div.titulo-producto {
     font-weight: 300;
     font-size: 17px;
+}
+
+.main-content section.section-producto article div.titulo-producto div.valoracion-star i {
+    color: rgb(226, 147, 0);
 }
 
 main section article div.descripcion-article{
@@ -168,7 +188,14 @@ main section article div.descripcion-article div.valores-producto{
 
 @media (min-width: 1200px){
 
-    main section {
+    .main-content section div.carrousel-home i {
+        font-size: 35px;
+    }
+    div.titulo-seccion{
+        font-size: 30px;
+    }
+
+    main section.section-producto {
         width: 65vw;
     }
 
