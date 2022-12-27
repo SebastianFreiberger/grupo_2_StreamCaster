@@ -11,44 +11,83 @@
 </head>
 <!-- este html lo edita Hernán Ingrassia -->
 <body>
-    <header>
-
+    <header class="encabezado">
+        <h1>Detalle producto</h1>
     </header>
     <main>
-        <section class="headerProd">
+        <section class="encabezadoProd">
             <div class="nombreProducto">Micrófono Blue</div>
-            <div class="calificacion">Calificación <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-regular fa-star"></i></div>
-            <p>Categoria:Micrófonos para podcast</p>
-         </section>
-        <picture><img src="/images/mic-blue.jpg" class="imgProd"></picture>
-        <p class="precio"></p>
-        <p class="descuento"></p>
-        <p class="cuotas"></p>
-        <p class="envio"></p>
-        <p>Disponible</p>
-        <form class="compra">
-            <button class="comprar"></button>
-            <button class="agregarCarrito"></button>
-        </form>
-        <article class="disclaimers">
-            <p>Devolución Gratis</p>
-            <p>Compra Protegida</p>
-        </article>
-        <article class="descripcion">
-            <h3>Detalle de tu producto</h3>    
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Et quod velit quia harum ut voluptatum consequatur asperiores, nisi quam saepe maxime hic quis dicta perferendis, reiciendis fugit, ipsam voluptas veritatis.</p>
-            <h3>Caracteristicas técnicas</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi placeat consequatur, eveniet a tempora distinctio magni quibusdam nesciunt officiis nulla vel iure ipsum, illum blanditiis dolore veniam cum obcaecati repellendus?</p>
-        </article>
-        <article>
-            <h4>Formas de pago</h4>
-                <p>Tarjeta</p>
-                <p>Transferencia</p>
-        </article>
+            <div class="calificacion">Calificación <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star-half-stroke"></i><i class="fa-regular fa-star"></i></div>
+            <p>Categoria: Micrófonos para podcast</p>
+        </section>
+        <section class="fotoybasic">
+            <picture><img src="/images/mic-blue.jpg" class="imgProd"></picture>
+            <div class="basic">
+                <p class="precio"></p>
+                <p class="descuento"></p>
+                <p class="cuotas"></p>
+                <p class="envio"></p>
+                <p>Disponible</p>
+                <form class="compra">
+                    <button class="comprar"><a href="/carrito">Comprar</a></button>
+                    <button class="agregarCarrito"><a href="/carrito">Agregar al carrito</a></button>
+                </form>
+            <article class="disclaimers">
+                <p>Devolución Gratis</p>
+                <p>Compra Protegida</p>
+            </article>
+            <article class="descripcion">
+                <h3>Caracteristicas técnicas</h3>
+                    <ul>    
+                        <li>Recomendado para podcast, grabaciones, voces, instrumentos, computadoras, entrevistas, juegos, locuciones, conferencias.</li>
+                        <li>Formato: estudio y de mesa.</li>
+                        <li>Dispositivos compatibles: pc.</li>
+                        <li>Conector/es de salida: jack 3.5 mm y usb.</li>
+                        <li>Frecuencia máxima: 20kHz.</li>
+                        <li>Frecuencia mínima: 20Hz.</li>
+                        <li>La mejor calidad para tus transmisiones.</li>
+                    <li>Alta resolución.</li>
+                    </ul>    
+            </article>
+            </div>
+        </section>
+            <article class="parrafos">
+                <h3>Descripción</h3>
+                <p>La comunicación clara y poderosa es importante para todas las organizaciones. Los micrófonos de Blue te permiten capturar y transmitir con una calidad de sonido sorprendente. Blue combina audio de calidad profesional con la simplicidad plug-and-play para ofrecer un rendimiento que está a años luz de los micrófonos integrados para portátiles y cámaras.</p>
+                <h5>Un formato a tu medida</h5>
+                <p>Al ser condensador, posibilitará un resultado claro y fino. Es ideal para percusiones, guitarras, pianos, entre otros. Por su respuesta tan definida ante la voz, es el más elegido por los profesionales.</p>
+                <h5>Diseño eficaz</h5>
+                <p>Dejá de dar tantas vueltas e invertí en la versatilidad de este producto, ya que de acuerdo a tu necesidad, podrás intercambiar los patrones polares las veces que quieras. ¡Animate y empezá a disfrutar de la herramientas estándar del mercado!</p>
+            </article>
+            <article class="parrafos">
+                <h4>Formas de pago</h4>
+                    <ul class="pagos">
+                        <li><i class="fa-solid fa-credit-card"></i>Tarjeta</li>
+                        <li><i class="fa-regular fa-money-bill-transfer"></i>Transferencia</li>
+                    </ul>    
+            </article>
     </main>
     <footer>
+        <h3><a href="/">Conocenos</a></h3>
+        <article>
+            <h3>Nuestras redes</h3>
+                <div class="logos">
+                    <a href="/"><i class="fa-brands fa-facebook-f"></i></a>
+                    <a href="/"><i class="fa-brands fa-twitter"></i></a>
+                    <a href="/"><i class="fa-brands fa-twitch"></i></a>
+                    <a href="/"><i class="fa-brands fa-youtube"></i></a>
+                    <a href="/"><i class="fa-brands fa-instagram"></i></a>        
+                </div>
+        </article>
+        <article>
+            <h3>Contactenos</h3>
+            <div><a href="/"><i class="fa-brands fa-whatsapp"></i>+54 9 11 5555-4329</a></div>
+        </article>
+        <article class="logo">
+            <picture class="logochico"><img src="/images/logo.jpg" class="logo"></picture>
+        </article>
 
     </footer>
 </body>
-
 </html>
+
