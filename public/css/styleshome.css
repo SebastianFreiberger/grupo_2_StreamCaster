@@ -231,10 +231,6 @@ section.section-coment article.article-coment h3{
         font-size: 30px;
     }
 
-    main section.section-producto {
-        /* width: 65vw; */
-    }
-
     main section article.producto {        
         width: 20vw;
     }
