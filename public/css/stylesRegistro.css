@@ -1,11 +1,35 @@
-*{
-    margin: 0px;
-    padding: 0px;
-    box-sizing: border-box;
-    }
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
 
-body{
-    margin: 0;
-    font-family: 'Roboto', sans-serif;
-        background-color: white;
+main p.tituloFormulario {
+  color: #ffffff;
+  margin: 0 auto;
+  font-size: 2em;
+  display: flex;
+  justify-content: center;
+}
+
+body {
+  margin: 0;
+  font-family: "Oswald", sans-serif;
+  color: #343a40;
+  background-image: url("../images/v1016-b-08.jpg");
+}
+
+section {
+  background-color: #ffffff;
+
+  flex-direction: column;
+  position: relative;
+  margin: 0 auto;
+  padding: 1vw;
+  width: 30vw;
+  border-radius: 1em;
+}
+
+section div.campo {
+  margin-top: 2vh;
 }
