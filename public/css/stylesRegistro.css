@@ -8,8 +8,7 @@ main p.tituloFormulario {
   color: #ffffff;
   margin: 0 auto;
   font-size: 2em;
-  display: flex;
-  justify-content: center;
+  text-align: center;
 }
 
 body {
@@ -25,11 +24,33 @@ section {
   flex-direction: column;
   position: relative;
   margin: 0 auto;
-  padding: 1vw;
+  padding: 1em;
   width: 30vw;
   border-radius: 1em;
 }
 
-section div.campo {
+main section input {
+  width: 80%;
+}
+
+button {
+  font-family: "Oswald", sans-serif;
+  font-size: 1em;
+  background-color: #343a40; /* white */
+  border: 1px solid black;
+  border-radius: 0.5em;
+  color: #ffffff;
+
+  padding: 7px 14px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+}
+
+#checkbox {
+  width: fit-content;
+}
+
+main section div.campo {
   margin-top: 2vh;
 }
