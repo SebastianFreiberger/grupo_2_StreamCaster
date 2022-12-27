@@ -221,3 +221,69 @@ section.section-coment article.article-coment h3{
 
 
 /*/////////////////// DESKTOP //////////////////////*/
+
+@media (min-width: 1200px){
+
+    .main-content section div.carrousel-home i {
+        font-size: 35px;
+    }
+    div.titulo-seccion{
+        font-size: 30px;
+    }
+    
+    main section article.producto {        
+        width: 20vw;
+    }
+
+    main section article div img {
+        max-width: 25vw;
+        height: 10vw;
+    }
+    main section article div.descripcion-article{        
+        width: 20vw;
+        height: 5vw;
+    }
+
+    .separador {
+        background-color: rgb(69 57 90);
+        padding: 2px;
+        height: 2px;
+        width: 100%;
+        margin-bottom: 20px;
+        border-radius: 10px;
+    }
+
+}
+/* fin main */
+
+/* Inicio Footer */
+footer{
+    text-align: center;
+    color:#ced4da;
+    background-color: #2e2e2e;
+}
+picture.logochico img{
+    max-width: 100px;
+}
+footer div a, footer h3 a{
+    text-decoration: none;
+    color:#ced4da 
+}
+footer article{
+    margin: 10px;
+}
+.fa-whatsapp{
+    color: greenyellow
+}
+
+
+@media (min-width: 768px) {
+
+    footer{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+}
+
+/* Fin Footer */
