@@ -1,29 +1,223 @@
-/* Inicio Footer */
-footer{
-    margin:10px;
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0;
+    font-family: 'Oswald', sans-serif;
+    background-image: url("../images/v1016-b-08.jpg");
+}
+
+/* Comienzo main */
+
+.main-content{
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+}
+
+.main-content section div.carrousel-home div.img-carrousel {
+    display: flex;
+    justify-content: center;
+}
+
+.main-content section div.carrousel-home div.img-carrousel img {
+    width: 85%;
+}
+
+.main-content section div.carrousel-home i{
+    color: #fff;
+    display: flex;
+    align-items: center;
+    margin: 0 15px;
+}
+
+div.titulo-seccion{
+    margin: auto;
+    color: #ced4da;
+    padding: 10px;
+    border-radius: 30px;
+    font-weight: 300;
+}
+
+main section.section-producto {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+
+main section.section-producto article:hover {
+    box-shadow: rgb(227, 200, 255) 0px 0px 10px 2px;
+    transition: 0.3s;
+}
+
+main section.section-producto article:hover img{
+    opacity: 100%;
+    transition: 0.3s;
+}
+
+main section.section-producto article img {
+    opacity: 90%;
+}
+
+main section article.filtroListador {
+    max-width: 40vw;
+    margin: 20px 0;
+    padding: 20px 0;
+    background-color: #ffffff;
+    border-radius: 10px;
+    position: relative;
+}
+
+main section article.filtroListador div h3 {
+    color: #343a40;
+    position: absolute;
+    left: 15px;
+    bottom: 7px;
+}
+
+main section article.filtroListador div h3 i{
+    margin-left: 10px;
+}
+
+main section article.producto {
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+    margin-bottom: 20px;
+    background-color: #ffffff;
+    border-radius: 10px;
+}
+
+main section article div.img-producto {    
     text-align: center;
-    color:#ced4da
-}
-picture.logochico img{
-    max-width: 100px;
-}
-footer div a, footer h3 a{
-    text-decoration: none;
-    color:#ced4da 
-}
-footer article{
-    margin: 10px;
-}
-.fa-whatsapp{
-    color: greenyellow
+    padding: 10px 0;
 }
 
+main section article div img {
+    width: 100%;
+    height: 60vw;
+    object-fit: contain;
+}
 
-@media (min-width: 768px) {
+.main-content section.section-producto article div.titulo-producto {
+    font-weight: 300;
+    font-size: 17px;
+}
 
-    footer{
+.main-content section.section-producto article div.titulo-producto div.valoracion-star i {
+    color: rgb(226, 147, 0);
+}
+
+main section article div.descripcion-article{
+    background: rgb(255,255,255);
+    background: linear-gradient(90deg, rgb(244 237 255) 0%, rgb(222 209 255) 23%, rgb(174 138 255) 45%, rgb(133 75 255) 76%, rgb(120 43 255) 100%);
+    color: #343a40;
+    padding: 8px 15px;
+    position: relative;
+    border-top: 2px solid #343a40;
+    border-radius: 0 0 10px 10px;
+    display: flex;
+    justify-content: space-between;
+}
+
+main section article div.descripcion-article div.valores-producto{
+    color: #fff;
+    text-align: right;
+    font-size: 16px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+main section article.section-producto i {
+    display: none;
+    color: #ced4da;
+}
+
+.separador {
+    display: none;
+}
+
+section.section-coment{
+    color: #ced4da;
+    line-height: 35px;
+}
+
+section.section-coment article.article-coment{
+    border: #ced4da solid 1px;
+    padding: 15px;
+    margin-bottom: 10px;
+    box-shadow: #a920ff 0 0 11px;
+}
+
+section.section-coment article.article-coment h3{
+    margin-left: 25px;
+}
+
+/*/////////////////// Tablets //////////////////////*/
+
+
+@media (min-width: 768px){
+
+    .main-content {
+        display: flex;
+    }
+
+    .main-content section.section-producto {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+
+    main section article.filtroListador {        
+        width: 40vw;
+        margin-left: 20px;
+    }
+
+    main section.section-producto i {
+        color: #ced4da;
+    }
+
+    div.titulo-seccion {
+        margin: auto;
+    }
+
+    main section.section-producto {
+        display: flex;
+        flex-direction: row;
+    }
+    
+    main section article.producto {
+        display: flex;
+        flex-wrap: wrap;
+        width: 30vw;
+    }
+
+    main section article div img {
+        max-width: 30vw;
+        height: 25vw;
+    }
+    main section article div.descripcion-article{        
+        width: 30vw;        
+    }
+
+    .separador {
+        display: none;
+    }
+
+    section.section-coment{
         display: flex;
         justify-content: space-around;
-        align-items: center;
+    }
+
+    section.section-coment article.article-coment{
+        width: 30%;
     }
 }
+
+
+/*/////////////////// DESKTOP //////////////////////*/
