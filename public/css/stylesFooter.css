@@ -1,0 +1,30 @@
+/* Inicio Footer */
+footer{
+    text-align: center;
+    color:#ced4da;
+    background-color: #2e2e2e;
+}
+picture.logochico img{
+    max-width: 100px;
+}
+footer div a, footer h3 a{
+    text-decoration: none;
+    color:#ced4da 
+}
+footer article{
+    margin: 10px;
+}
+.fa-whatsapp{
+    color: greenyellow
+}
+
+
+@media (min-width: 768px) {
+
+    footer{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+}
+/* Fin Footer */

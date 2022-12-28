@@ -4,6 +4,13 @@
   box-sizing: border-box;
 }
 
+body {
+  margin: 0;
+  font-family: "Oswald", sans-serif;
+  color: #343a40;
+  background-image: url("../images/v1016-b-08.jpg");
+}
+
 main p.tituloFormulario {
   color: #ffffff;
   margin: 0 auto;
@@ -11,12 +18,6 @@ main p.tituloFormulario {
   text-align: center;
 }
 
-body {
-  margin: 0;
-  font-family: "Oswald", sans-serif;
-  color: #343a40;
-  background-image: url("../images/v1016-b-08.jpg");
-}
 
 section {
   background-color: #ffffff;

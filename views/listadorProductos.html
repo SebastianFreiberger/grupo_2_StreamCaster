@@ -5,13 +5,56 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"/>
-    <link rel="stylesheet" href="css/stylesListador.css">
+    <link rel="stylesheet" href="css/styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Maven+Pro&family=Oswald&family=PT+Serif&family=Quicksand:wght@300&family=Roboto&display=swap" rel="stylesheet">
     <title>Listado de productos</title>
 </head>
 <body>
     <header>
+        <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="stylesheet">
+        <picture class="header-logo"><img src="/images/logo.png" alt="SClogo" class="imagen-logo"></picture>
+        
+        <div class="burger-menu">
+            <i class="fas fa-bars burger"></i>
+        </div>
+        
+        <section class="header-principal">
 
+            <div class="header-superior">  
+                <h1 class="header-titulo">StreamCaster</h1>   
+                <nav class="navbar-usuario-registro">
+                    <ul>
+                        <li><a href="/loggin" class="navbar-item"><i class="fa-solid fa-arrow-right-to-bracket"></i>Soy Usuario</a></li>
+                        <li><a href="/registro" class="navbar-item"><i class="fa-regular fa-user"></i>Registrate</a></li> 
+                    </ul>
+                </nav>
+            </div>
+        
+        
+            <div class="header-medio">
+                <form class="header-navbar-search">
+                    <input class= "header-input-search" size="25" type= "text" placeholder="Buscar en StreamCaster">
+                    <i class="fa-solid fa-magnifying-glass icon-search"></i>
+                    <picture class="header-buscador-cart-shopping"><i class="fa-solid fa-cart-shopping"></i></picture>
+                </form>
+            </div>
+        
+            <div class="header-inferior">
+                <nav class="header-navbar">
+                    <ul class="header-navbar-izquierda">
+                        <li><a href="/listadorProductos" class="navbar-item">Monitores</a></li>
+                        <li><a href="/listadorProductos" class="navbar-item">Cámaras</a></li>
+                        <li><a href="/listadorProductos" class="navbar-item">Micrófonos</a></li>
+                        <li><a href="/listadorProductos" class="navbar-item">Botoneras</a></li>
+                        <li><a href="/listadorProductos" class="navbar-item">Auriculares</a></li>
+                    </ul>
+                    <ul class="header-navbar-derecha">
+                        <li><a href="/carrito"><i class="fa-solid fa-cart-shopping"></i>Carrito</a></li>    
+                    </ul>
+                </nav>
+            </div>
+            
+        </section>
     </header>
     <main class="main-content">
         <section>
@@ -19,19 +62,6 @@
                 <div>
                     <h3>Filtrar por<i class="fa-sharp fa-solid fa-caret-down"></i></h3>
                     <ul>                        
-                        <!-- <li>
-                            <p>Filtro 1</p>
-                        </li>
-                        <li>
-                            <p>Filtro 1</p>
-                        </li>
-                        <li>
-                            <p>Filtro 1</p>
-                        </li>
-                        <li>
-                            <p>Filtro 1</p>
-                        </li>
-                    </ul> -->
                 </div>
             </article>
         </section>

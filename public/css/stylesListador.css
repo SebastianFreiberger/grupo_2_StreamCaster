@@ -173,7 +173,7 @@ main section article div.descripcion-article div.valores-producto{
     }
 
     main section article.producto {        
-        width: 20vw;
+        width: 15vw;
     }
 
     main section article div img {
@@ -181,11 +181,12 @@ main section article div.descripcion-article div.valores-producto{
         height: 10vw;
     }
     main section article div.descripcion-article{        
-        width: 20vw;
+        width: 15vw;
         height: 5vw;
     }
 
     .separador {
+        display: block;
         background-color: rgb(69 57 90);
         padding: 2px;
         height: 2px;

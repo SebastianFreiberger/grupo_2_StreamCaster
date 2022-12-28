@@ -12,29 +12,29 @@ body{
 
 /* Comienzo main */
 
-.main-content{
+.main-content-home{
     display: flex;
     flex-direction: column;
     padding: 10px;
 }
 
-.main-content section div.carrousel-home div.img-carrousel {
+.main-content-home section div.carrousel-home div.img-carrousel {
     display: flex;
     justify-content: center;
 }
 
-.main-content section div.carrousel-home div.img-carrousel img {
+.main-content-home section div.carrousel-home div.img-carrousel img {
     width: 85%;
 }
 
-.main-content section div.carrousel-home i{
+.main-content-home section div.carrousel-home i{
     color: #fff;
     display: flex;
     align-items: center;
     margin: 0 15px;
 }
 
-div.titulo-seccion{
+div.titulo-seccion-home{
     margin: auto;
     color: #ced4da;
     padding: 10px;
@@ -42,24 +42,23 @@ div.titulo-seccion{
     font-weight: 300;
 }
 
-main section.section-producto {
+main section.section-producto-home {
     display: flex;
     flex-direction: column;
-    align-items: center;
-    
+    align-items: center;    
 }
 
-main section.section-producto article:hover {
+main section.section-producto-home article:hover {
     box-shadow: rgb(227, 200, 255) 0px 0px 10px 2px;
     transition: 0.3s;
 }
 
-main section.section-producto article:hover img{
+main section.section-producto-home article:hover img{
     opacity: 100%;
     transition: 0.3s;
 }
 
-main section.section-producto article img {
+main section.section-producto-home article img {
     opacity: 90%;
 }
 
@@ -83,16 +82,16 @@ main section article.filtroListador div h3 i{
     margin-left: 10px;
 }
 
-main section article.producto {
+main section article.producto-destacado-home {
     display: flex;
     flex-direction: column;
-    width: 70%;
+    width: 100%;
     margin-bottom: 20px;
     background-color: #ffffff;
     border-radius: 10px;
 }
 
-main section article div.img-producto {    
+main section article div.img-producto-destacado {    
     text-align: center;
     padding: 10px 0;
 }
@@ -103,16 +102,16 @@ main section article div img {
     object-fit: contain;
 }
 
-.main-content section.section-producto article div.titulo-producto {
+.main-content section.section-producto-home article div.titulo-producto {
     font-weight: 300;
     font-size: 17px;
 }
 
-.main-content section.section-producto article div.titulo-producto div.valoracion-star i {
+.main-content section.section-producto-home article div.titulo-producto div.valoracion-star i {
     color: rgb(226, 147, 0);
 }
 
-main section article div.descripcion-article{
+main section article div.descripcion-article-home{
     background: rgb(255,255,255);
     background: linear-gradient(90deg, rgb(244 237 255) 0%, rgb(222 209 255) 23%, rgb(174 138 255) 45%, rgb(133 75 255) 76%, rgb(120 43 255) 100%);
     color: #343a40;
@@ -122,9 +121,10 @@ main section article div.descripcion-article{
     border-radius: 0 0 10px 10px;
     display: flex;
     justify-content: space-between;
+    height: 80px;
 }
 
-main section article div.descripcion-article div.valores-producto{
+main section article div.descripcion-article-home div.valores-producto{
     color: #fff;
     text-align: right;
     font-size: 16px;
@@ -133,7 +133,7 @@ main section article div.descripcion-article div.valores-producto{
     justify-content: space-around;
 }
 
-main section article.section-producto i {
+main section article.section-producto-home i {
     display: none;
     color: #ced4da;
 }
@@ -167,7 +167,7 @@ section.section-coment article.article-coment h3{
         display: flex;
     }
 
-    .main-content section.section-producto {
+    .main-content section.section-producto-home {
         display: flex;
         flex-wrap: wrap;
         justify-content: space-around;
@@ -178,31 +178,39 @@ section.section-coment article.article-coment h3{
         margin-left: 20px;
     }
 
-    main section.section-producto i {
+    main section.section-producto-home i {
+        color: #2e2e2e;
+    }
+    
+    main section.section-producto-home i.fa-angle-left {
+        color: #ced4da;
+    }
+    main section.section-producto-home i.fa-angle-right {
         color: #ced4da;
     }
 
-    div.titulo-seccion {
+    div.titulo-seccion-home {
         margin: auto;
     }
 
-    main section.section-producto {
+    main section.section-producto-home {
         display: flex;
         flex-direction: row;
+        justify-content: space-around;
     }
     
-    main section article.producto {
+    main section article.producto-destacado-home {
         display: flex;
         flex-wrap: wrap;
-        width: 30vw;
+        width: 20vw;
     }
 
     main section article div img {
-        max-width: 30vw;
         height: 25vw;
     }
-    main section article div.descripcion-article{        
-        width: 30vw;        
+    main.main-content-home section.section-producto-home article.producto-destacado-home div.descripcion-article-home{
+        width: 20vw;
+        
     }
 
     .separador {
@@ -227,11 +235,11 @@ section.section-coment article.article-coment h3{
     .main-content section div.carrousel-home i {
         font-size: 35px;
     }
-    div.titulo-seccion{
+    div.titulo-seccion-home{
         font-size: 30px;
     }
     
-    main section article.producto {        
+    main section article.producto-destacado-home {        
         width: 20vw;
     }
 
@@ -239,7 +247,7 @@ section.section-coment article.article-coment h3{
         max-width: 25vw;
         height: 10vw;
     }
-    main section article div.descripcion-article{        
+    main section article div.descripcion-article-home{        
         width: 20vw;
         height: 5vw;
     }
