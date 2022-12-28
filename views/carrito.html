@@ -6,45 +6,56 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"/>
     <link rel="stylesheet" href="css/stylesCarrito.css">
     <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Maven+Pro&family=Oswald&family=PT+Serif&family=Quicksand:wght@300&family=Roboto&display=swap" rel="stylesheet">
-    <title>Carrito de compras</title>
+    
 </head>
 
 <body>
     
     <header>
-        <img src="/images/logo.png" alt="SClogo" class="imagen-logo">
+        <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="stylesheet">
+        <picture class="header-logo"><img src="/images/logo.png" alt="SClogo" class="imagen-logo"></picture>
         
-        <section class="header-banner">
+        <div class="burger-menu">
+            <i class="fas fa-bars burger"></i>
+        </div>
+        
+        <section class="header-principal">
+
+            <div class="header-superior">  
+                <h1 class="header-titulo">StreamCaster</h1>   
+                <nav class="navbar-usuario-registro">
+                    <ul>
+                        <li><a href="/loggin" class="navbar-item"><i class="fa-solid fa-arrow-right-to-bracket"></i>Soy Usuario</a></li>
+                        <li><a href="/registro" class="navbar-item"><i class="fa-regular fa-user"></i>Registrate</a></li> 
+                    </ul>
+                </nav>
+            </div>
+        
+        
+            <div class="header-medio">
+                <form class="header-navbar-search">
+                    <input class= "header-input-search" size="25" type= "text" placeholder="Buscar en StreamCaster">
+                    <i class="fa-solid fa-magnifying-glass icon-search"></i>
+                    <picture class="header-buscador-cart-shopping"><i class="fa-solid fa-cart-shopping"></i></picture>
+                </form>
+            </div>
+        
+            <div class="header-inferior">
+                <nav class="header-navbar">
+                    <ul class="header-navbar-izquierda">
+                        <li><a href="/listadorProductos" class="navbar-item">Monitores</a></li>
+                        <li><a href="/listadorProductos" class="navbar-item">Cámaras</a></li>
+                        <li><a href="/listadorProductos" class="navbar-item">Micrófonos</a></li>
+                        <li><a href="/listadorProductos" class="navbar-item">Botoneras</a></li>
+                        <li><a href="/listadorProductos" class="navbar-item">Auriculares</a></li>
+                    </ul>
+                    <ul class="header-navbar-derecha">
+                        <li><a href="/carrito"><i class="fa-solid fa-cart-shopping"></i>Carrito</a></li>    
+                    </ul>
+                </nav>
+            </div>
             
-            <li><a href="/listadorProductos" class="navbar-item">StreamCaster</a></li>
-            <li><a href="/listadorProductos" class="navbar-item">Soy Usuario</a></li>
-            <li><a href="/listadorProductos" class="navbar-item">Registrate</a></li> 
-            
-            <!-- <h2 class="nombre-sitio">StreamCaster</h2> 
-            <p class="header-usuario">Soy Usuario</p> 
-            <p class="header-registrate">Registrate</p> -->
         </section>
-        
-        <form class="nav-search">
-            <input class= "input-search" type= "text" placeholder="Busca tu producto aqui...">
-            <i class="fa-solid fa-magnifying-glass icon-search"></i>
-        </form>
-
-        
-        <nav class="main-navbar">
-            <ul class="left-navbar">
-                <li><a href="/listadorProductos" class="navbar-item">Monitores</a></li>
-                <li><a href="/listadorProductos" class="navbar-item">Cámaras</a></li>
-                <li><a href="/listadorProductos" class="navbar-item">Micrófonos</a></li>
-                <li><a href="/listadorProductos" class="navbar-item">Botoneras</a></li>
-                <li><a href="/listadorProductos" class="navbar-item">Auriculares</a></li>
-            </ul>
-            <ul class="right-navbar">
-                <li><a href="/carrito">Carrito<i class="fa-solid fa-cart-shopping"></i></i></a></li>
-                
-            </ul>
-        </nav> 
-
     </header>
     
 

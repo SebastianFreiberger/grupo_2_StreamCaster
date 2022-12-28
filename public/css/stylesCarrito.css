@@ -1,8 +1,7 @@
 *{
     margin: 0px;
     padding: 0px;
-    box-sizing: border-box;
-    
+    box-sizing: border-box;   
 }
 
 body{
@@ -12,68 +11,188 @@ body{
     background-image: url("../images/v1016-b-08.jpg");
 }
 
-/*HEADER PROVISORIO INICIO*/
+/*HEADER INICIO*/
 
 header{
     display: flex;
+    width: 100%;
     background-color: rgb(39, 39, 39);
     padding: 20px;
 }
 
 .imagen-logo{
-    width: 20%;
+    display: none;
+    width: 15vw;
+    max-width: 120px;
     align-self: center; 
+    transition: 1s;
 }
 
-.header-banner{
+.imagen-logo:hover{
+    transform: rotate3d(0,1,0,360deg);
+}
+
+.header-titulo{
+    font-size: 100%;
+}
+
+.header-principal{
     display: flex;
-    height: 150px;
-    flex-grow: 1;
+    width: 100%;
+    flex-direction: column;
 }
 
-.nombre-sitio{
-    text-align: center;
-    margin-left: 50%;
-    font-size: 150%;
+.header-superior{
+    display: none;
+    width: 100%;
+    /* justify-content: space-around; */
 }
 
-.header-usuario{
-    margin-left: 20%;
+.navbar-usuario-registro{
+    margin-left: 10px;
+    align-self: center;
+
 }
 
-.header-registrate{
-    margin-left: 5%;
+.header-titulo{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 40px;
 }
 
-.nav-search{
+.header-medio{
     align-self: center;
 }
 
-.nav-bar{
+.header-navbar-search{
     display: flex;
-    align-self: flex-end;  
+    width: 100%;
+    margin-top: 10px;
+    justify-content: space-between;
+}
+
+.header-input-search{
+    font-size: 100%;
+    align-self: center;
+    border-radius: 15px;
+    padding-left: 10px;
+    margin-left: 10px;
+}
+
+.header-inferior{
+    display: none;
+}
+
+.header-navbar{
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+}
+
+
+header ul li {
+    list-style-type: none;
+    display: inline-block; 
 }
 
 header ul li a {
     text-decoration: none;
-    color: rgb(39, 39, 39); 
-    display: inline-block;
-    padding: 5px 0;
-    
+    color: #fff;
+    padding: 5px 0;  
+    margin-left: 3vw;
+    transition: .5s;
 }
 
-/*HEADER PROVISORIO FIN*/
+header ul li a:hover{
+    color: rgb(133 75 255);
+}   
+
+
+.burger-menu{
+    box-sizing: content-box;
+    background-color: rgb(133 75 255);
+    border-radius: 5px;
+    color: #fff;
+    font-size: 30px;
+    height: 30px;
+    width: 30px;
+    padding: 10px;
+    display: block;
+    text-align: center;
+    margin: auto;
+    transition: all .5s;
+}
+
+.burger-menu:hover{
+    background: linear-gradient(90deg, rgb(244 237 255) 0%, rgb(222 209 255) 23%, rgb(174 138 255) 45%, rgb(133 75 255) 76%, rgb(120 43 255) 100%);
+    color: black;
+}
+
+.fa-cart-shopping{
+    margin-left: 5vw;
+}
+
+.icon-search{
+    display: none;
+}
+
+@media (min-width:769px){
+    .burger-menu{
+        display: none;
+    }
+    .header-superior{
+        display: flex;
+        justify-content: right;    
+    }
+    .header-titulo{
+        text-align: center;
+    }
+    
+    .imagen-logo{
+        display: initial;
+    }
+    .header-inferior{
+        display: flex;          
+    }
+    .header-navbar{
+        margin-top: 20px;
+    }
+    .header-input-search{
+        font-size: 150%;
+        width: 60vw; 
+    }
+    .header-buscador-cart-shopping{
+        display: none;
+    }
+    .icon-search{
+        display: initial;
+        font-size: 150%;
+    }
+    .navbar-usuario-registro{
+        text-align: right; 
+    }
+}
+
+@media (min-width:1200px){
+    header ul li a {
+        font-size: 18px;
+    }
+    .header-titulo{
+        margin-right: 15vw;
+    }
+}
+
+/*HEADER FIN*/
 
 
 /*CARRITO COMPRAS: SECCION PRODUCTOS*/
 
 .carrito-titulo{
     margin-left: 50px;
-    margin-top: 100px;
+    margin-top: 30px;
 }
 
 .carrito-principal{
-    margin: 0px 50px 0px 50px;
+    margin: 0px 30px 0px 30px;
     border: 1px solid #fff;
 }
 
@@ -101,6 +220,7 @@ header ul li a {
 .imagen-producto{
     width: 100%;
     margin: 0px;
+    border-radius: 15px;
     transition: transform .2s; 
 }
 
@@ -134,12 +254,14 @@ header ul li a {
 
 .seccion-total{
     margin: 20px 50px 100px 100px;
-    padding-right: 10px;
+    padding-right: 30px;
     text-align: right;
+    width: auto;
 }
 
 .boton-comprar{
-    border-radius:  25%;
+    border-radius: 15px;
+    border: none;
     background: rgb(133 75 255);
     color: #fff;
     margin-top: 10px;
@@ -169,4 +291,3 @@ header ul li a {
     margin-top: 10px;
     font-weight: bold;
 }
-
