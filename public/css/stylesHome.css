@@ -292,6 +292,9 @@ footer article{
         justify-content: space-around;
         align-items: center;
     }
+    article.logo{
+        order:-1;
+    }
 }
 
 /* Fin Footer */
