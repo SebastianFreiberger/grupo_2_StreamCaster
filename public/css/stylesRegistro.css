@@ -29,6 +29,10 @@ section {
   border-radius: 1em;
 }
 
+main section div.campo {
+  margin-top: 2vh;
+}
+
 main section input {
   width: 80%;
 }
@@ -49,8 +53,4 @@ button {
 
 #checkbox {
   width: fit-content;
-}
-
-main section div.campo {
-  margin-top: 2vh;
 }
