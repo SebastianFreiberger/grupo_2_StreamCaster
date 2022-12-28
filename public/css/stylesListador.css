@@ -155,7 +155,8 @@ main section article div.descripcion-article div.valores-producto{
         height: 25vw;
     }
     main section article div.descripcion-article{        
-        width: 30vw;        
+        width: 30vw;
+        height: 80px;        
     }
 
     .separador {
