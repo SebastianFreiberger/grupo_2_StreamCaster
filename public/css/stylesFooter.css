@@ -18,7 +18,6 @@ footer article{
     color: greenyellow
 }
 
-
 @media (min-width: 768px) {
 
     footer{
@@ -26,5 +25,9 @@ footer article{
         justify-content: space-around;
         align-items: center;
     }
+    footer article.logo{
+        order: -1
+    }
 }
+
 /* Fin Footer */
