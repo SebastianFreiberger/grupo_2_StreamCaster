@@ -45,7 +45,6 @@ header{
 .header-superior{
     display: none;
     width: 100%;
-    /* justify-content: space-around; */
 }
 
 .navbar-usuario-registro{
@@ -88,7 +87,6 @@ header{
     width: 100%;
 }
 
-
 header ul li {
     list-style-type: none;
     display: inline-block; 
@@ -105,7 +103,6 @@ header ul li a {
 header ul li a:hover{
     color: rgb(133 75 255);
 }   
-
 
 .burger-menu{
     box-sizing: content-box;
@@ -217,7 +214,7 @@ header ul li a:hover{
     /* flex-grow: 0.1;     */
 }
 
-.imagen-producto{
+.imagen-carrito{
     width: 100%;
     margin: 0px;
     border-radius: 15px;
@@ -225,8 +222,7 @@ header ul li a:hover{
 }
 
 .imagen-producto:hover {
-    transform: scale(3);
-    
+    transform: scale(3); 
 }
 
 .carrito-articulo-nombre-descripcion{
@@ -259,6 +255,13 @@ header ul li a:hover{
     width: auto;
 }
 
+.carrito-input-envio{
+    background-color: #000;
+    color: #fff;
+    text-align: right;
+    max-width: 200px;
+}
+
 .boton-comprar{
     border-radius: 15px;
     border: none;
@@ -266,8 +269,7 @@ header ul li a:hover{
     color: #fff;
     margin-top: 10px;
     padding: 10px 20px 10px 20px;
-    transition: all .5s;
-    
+    transition: all .5s; 
 }
 
 .boton-comprar:hover{
