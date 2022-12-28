@@ -34,7 +34,6 @@ body{
     text-align: center;
     align-self: center;
     padding: 5px;
-    /* flex-grow: 0.05; */
 }
 
 .carrito-imagen-producto{
@@ -42,7 +41,6 @@ body{
     text-align: center;
     align-self: center;
     margin: 0px 10px 00px 10px;
-    /* flex-grow: 0.1;     */
 }
 
 .imagen-carrito{
@@ -52,7 +50,7 @@ body{
     transition: transform .2s; 
 }
 
-.imagen-producto:hover {
+.imagen-carrito:hover {
     transform: scale(3); 
 }
 
@@ -64,7 +62,6 @@ body{
 }
 
 .carrito-articulo-cantidad-precio{
-    /* flex-grow: 0.2; */
     align-self: center;
     text-align: right;
 }
