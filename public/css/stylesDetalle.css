@@ -178,6 +178,7 @@ header ul li a:hover{
 }
 
 /*HEADER FIN*/
+
 /* Inicio Footer */
 footer{
     text-align: center;
@@ -289,7 +290,7 @@ form.compra button{
 /* Tablet */
 
 @media (min-width: 768px) {
-main{
+main.detalle{
     width: 85vw;
     background-color:rgb(71, 67, 67);
 }
