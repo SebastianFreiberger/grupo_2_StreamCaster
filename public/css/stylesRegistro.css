@@ -4,13 +4,6 @@
   box-sizing: border-box;
 }
 
-.bodyRgt {
-  margin: 0;
-  font-family: "Oswald", sans-serif;
-  color: #343a40;
-  background-image: url("../images/v1016-b-08.jpg");
-}
-
 .mainRgt p.tituloFormulario {
   color: #ffffff;
   margin: 0 auto;
@@ -19,6 +12,8 @@
 }
 
 .sectionRgt {
+  font-family: "Oswald", sans-serif;
+  color: #343a40;
   background-color: #ffffff;
   flex-direction: column;
   position: relative;
@@ -51,8 +46,8 @@
   display: inline-block;
 }
 
-.buttonRgt a:visited{
-  color: #ffffff
+.buttonRgt a:visited {
+  color: #ffffff;
 }
 
 .mainRgt section input.checkboxRgt {
