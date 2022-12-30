@@ -13,8 +13,8 @@ app.get('/registro', (req, res) => {
     res.sendFile(__dirname + '/views/registro.html')
 });
 
-app.get('/loggin', (req, res) => {
-    res.sendFile(__dirname + '/views/loggin.html')
+app.get('/login', (req, res) => {
+    res.sendFile(__dirname + '/views/login.html')
 });
 
 app.get('/detalleProducto', (req, res) => {
