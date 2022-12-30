@@ -46,19 +46,16 @@ main section.section-producto article img {
 }
 
 main section article.filtroListador {
-    max-width: 40vw;
-    margin: 20px 0;
-    padding: 20px 0;
+    width: 60%;
+    padding: 16px 0;
     background-color: #ffffff;
     border-radius: 10px;
     position: relative;
+    text-align: center;
 }
 
 main section article.filtroListador div h3 {
     color: #343a40;
-    position: absolute;
-    left: 15px;
-    bottom: 7px;
 }
 
 main section article.filtroListador div h3 i{
@@ -136,7 +133,7 @@ main section article div.descripcion-article div.valores-producto{
     }
 
     main section article.filtroListador {        
-        width: 40vw;
+        width: 40%;
         margin-left: 20px;
     }
 
@@ -171,6 +168,15 @@ main section article div.descripcion-article div.valores-producto{
 
     main section {
         width: 65vw;
+    }
+
+    main section article.filtroListador {
+        width: 20%;
+    }
+
+    main section article.filtroListador:hover {
+        box-shadow: rgb(227, 200, 255) 0px 0px 10px 2px;
+        transition: 0.4s;
     }
 
     main section article.producto {        
