@@ -85,7 +85,7 @@ main section article.filtroListador div h3 i{
 main section article.producto-destacado-home {
     display: flex;
     flex-direction: column;
-    width: 100%;
+    width: 70%;
     margin-bottom: 20px;
     background-color: #ffffff;
     border-radius: 10px;
@@ -98,7 +98,7 @@ main section article div.img-producto-destacado {
 
 main section article div img {
     width: 100%;
-    height: 60vw;
+    height: 40vw;
     object-fit: contain;
 }
 
@@ -202,15 +202,16 @@ section.section-coment article.article-coment h3{
     main section article.producto-destacado-home {
         display: flex;
         flex-wrap: wrap;
-        width: 20vw;
+        width: 30%;
     }
 
     main section article div img {
-        height: 25vw;
+        width: 60%;
+        height: 20vw;
     }
-    main.main-content-home section.section-producto-home article.producto-destacado-home div.descripcion-article-home{
-        width: 20vw;
-        
+
+    .main-content-home section.section-producto-home article div.titulo-producto div.valoracion-star i {
+        font-size: 10px;
     }
 
     .separador {
@@ -224,6 +225,14 @@ section.section-coment article.article-coment h3{
 
     section.section-coment article.article-coment{
         width: 30%;
+    }
+
+    .titulo-seccion-comentarios {
+        padding: 20px;
+    }
+    section.section-coment article.article-coment:hover {
+        box-shadow: #d899ff 0 0 11px;
+        transition: 1s;
     }
 }
 

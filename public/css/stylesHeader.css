@@ -105,17 +105,17 @@ header ul li a:hover{
 }   
 
 .burger-menu{
-    box-sizing: content-box;
+    /* box-sizing: content-box; */
     background-color: rgb(133 75 255);
     border-radius: 5px;
     color: #fff;
-    font-size: 30px;
-    height: 30px;
-    width: 30px;
+    /* font-size: 30px; */
+    /* height: 30px; */
+    /* width: 100%; */
     padding: 10px;
-    display: block;
+    /* display: block; */
     text-align: center;
-    margin: auto;
+    /* margin: auto; */
     transition: all .5s;
 }
 
