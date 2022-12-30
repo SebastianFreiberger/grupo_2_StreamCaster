@@ -4,14 +4,14 @@
   box-sizing: border-box;
 }
 
-.mainRgt p.tituloFormulario {
+.main-rgt p.tituloFormulario {
   color: #ffffff;
   margin: 0 auto;
   font-size: 2em;
   text-align: center;
 }
 
-.sectionRgt {
+.section-rgt {
   font-family: "Oswald", sans-serif;
   color: #343a40;
   background-color: #ffffff;
@@ -25,15 +25,15 @@
   border-radius: 1em;
 }
 
-.mainRgt section div.campo {
+.main-rgt section div.campo {
   margin-top: 2vh;
 }
 
-.mainRgt section input {
+.main-rgt section input {
   width: 60%;
 }
 
-.buttonRgt {
+.button-rgt {
   font-family: "Oswald", sans-serif;
   font-size: 1em;
   background-color: #343a40; /* white */
@@ -46,10 +46,10 @@
   display: inline-block;
 }
 
-.buttonRgt a:visited {
+.button-rgt a:visited {
   color: #ffffff;
 }
 
-.mainRgt section input.checkboxRgt {
+.main-rgt section input.checkbox-rgt {
   width: fit-content;
 }
