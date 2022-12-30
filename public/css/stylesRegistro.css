@@ -4,54 +4,57 @@
   box-sizing: border-box;
 }
 
-.bodyRegistro {
+.bodyRgt {
   margin: 0;
   font-family: "Oswald", sans-serif;
   color: #343a40;
   background-image: url("../images/v1016-b-08.jpg");
 }
 
-main p.tituloFormulario {
+.mainRgt p.tituloFormulario {
   color: #ffffff;
   margin: 0 auto;
   font-size: 2em;
   text-align: center;
 }
 
-
-section {
+.sectionRgt {
   background-color: #ffffff;
-
   flex-direction: column;
   position: relative;
   margin: 0 auto;
+  margin-top: 2%;
+  margin-bottom: 2%;
   padding: 1em;
   width: 30vw;
   border-radius: 1em;
 }
 
-main section div.campo {
+.mainRgt section div.campo {
   margin-top: 2vh;
 }
 
-main section input {
-  width: 80%;
+.mainRgt section input {
+  width: 60%;
 }
 
-button {
+.buttonRgt {
   font-family: "Oswald", sans-serif;
   font-size: 1em;
   background-color: #343a40; /* white */
   border: 1px solid black;
   border-radius: 0.5em;
   color: #ffffff;
-
   padding: 7px 14px;
   text-align: center;
   text-decoration: none;
   display: inline-block;
 }
 
-#checkbox {
+.buttonRgt a:visited{
+  color: #ffffff
+}
+
+.mainRgt section input.checkboxRgt {
   width: fit-content;
 }
