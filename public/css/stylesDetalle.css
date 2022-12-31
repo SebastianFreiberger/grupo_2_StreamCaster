@@ -25,7 +25,6 @@ main.detalle{
     color:aliceblue;
     width: 85vw;
     margin: 0px auto 5px;
-    border: solid red 1px;
     }
 .encabezadoProd{
     display: flex;
@@ -43,7 +42,7 @@ main.detalle{
 .encabezadoProd div.nombreProducto{
     font-size: 20px;
 }
-.precio, .descuento, .cuotas, .envio, .disp{
+.precio, .descuento, .cuotas, .disp{
         color: #fff;
         text-align: left;
         font-size: 18px;
@@ -53,6 +52,14 @@ main.detalle{
 }
 .descuento{
     color:green
+}
+.envio{
+    font-size: 15px;
+    color: #fff;
+    text-align: left;
+    flex-direction: column;
+    justify-content: space-around;
+    margin: 5px;
 }
 
 .imgProd{
@@ -97,12 +104,12 @@ form.compra button{
 
 
 /* Tablet */
-
-@media (min-width: 770px) {
+@media (min-width: 480px){
+    
 main.detalle{
     width: 85vw;
     background-color:rgb(71, 67, 67);
-    max-width: 1100px;
+    max-width: 1200px;
 }
 .encabezadoProd div.nombreProducto{
     font-size: 30px;
@@ -113,7 +120,7 @@ main.detalle{
     width: 100%;
 }
 .imgProd{
-    margin-left: 5%;
+    margin-left: 15px ;
     width: 40vw;
     max-width: 550px;
 }
@@ -129,27 +136,36 @@ div.basic{
     max-width: 45vw;
     padding: 10px;
 }
+.descripcion{
+    order: 10;
+    width: 70vw;
+    text-align: justify;
+    position: relative;
+    margin-left: -45vw;
+    
+}
 
 form.compra{
     text-align: center;
     display: flex;
+    flex-direction: column;
     justify-content: space-around;
     order:5;
 }
+
 article.disclaimers{
     order: 10;
 }
 .compra button{
-    font-size: 22px;
-    padding: 3px;
+    font-size: 14px;
+    padding: 1px;
     border-radius: 3px;
-    margin: 10px;
-    width:150px;
+    margin: 2px;
+    width:85%;
+    height: 50px;
 }
 
-article.logo{
-    order:-1;
-}
+
 form.compra button:hover{
     background: linear-gradient(90deg, rgb(244 237 255) 0%, rgb(222 209 255) 23%, rgb(174 138 255) 45%, rgb(133 75 255) 76%, rgb(120 43 255) 100%);
     text-decoration: none;
@@ -158,6 +174,29 @@ form.compra button:hover a{
     color: black;
 }
 
+
 }
 
 /* Desktop */
+
+@media (min-width: 770px) {
+    .compra button{
+        font-size: 17px;
+        padding: 3px;
+        border-radius: 3px;
+        padding: 3px;
+        border-radius: 3px;
+        margin: 5px;
+        width: 45%;
+        height: 60px;
+    }
+    form.compra{
+        flex-direction: row;
+    }
+    .descripcion{
+        order: 0;
+        width: 100%;
+        position: relative;
+        margin-left: 0px;
+    }
+}
