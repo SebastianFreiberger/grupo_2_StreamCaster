@@ -10,29 +10,38 @@ body{
     background-image: url("../images/v1016-b-08.jpg");
 
 }
-/* Comienza main */
-main{
-    color:aliceblue;
-    width: 90vw;
-    margin: 0px auto 5px;
-    
+/* Codigo header agregado específicamente en detalle */
+
+/* Header */
+
+.navbar-usuario-registro-detalle ul{
+    width: 320px;
+
 }
+/* Footer */
+
+/* MAIN */
+main.detalle{
+    color:aliceblue;
+    width: 85vw;
+    margin: 0px auto 5px;
+    border: solid red 1px;
+    }
 .encabezadoProd{
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
-    margin: 15px;
+    margin: auto;
+
 }
-.encabezadoProd div{
-    font-size: 20px;
-}
+
 .condiciones{
     display: flex;
     justify-content: flex-start;
 }
 .encabezadoProd div.nombreProducto{
-    font-size: 30px;
+    font-size: 20px;
 }
 .precio, .descuento, .cuotas, .envio, .disp{
         color: #fff;
@@ -47,7 +56,7 @@ main{
 }
 
 .imgProd{
-    width: 90vw;
+    width: 100%;
     border-radius: 7px;
 }
 ul{
@@ -80,6 +89,7 @@ form.compra button{
     border-radius:7%;
     background-color: rgb(133 75 255);
     margin-top: 10px;
+    margin-bottom: 10px;
     padding: 10px 10px 10px 10px;
     transition: all .5s;
 }
@@ -88,18 +98,27 @@ form.compra button{
 
 /* Tablet */
 
-@media (min-width: 768px) {
+@media (min-width: 770px) {
 main.detalle{
     width: 85vw;
     background-color:rgb(71, 67, 67);
+    max-width: 1100px;
+}
+.encabezadoProd div.nombreProducto{
+    font-size: 30px;
 }
 .fotoybasic{
     display: flex;
     justify-content: space-around;
+    width: 100%;
 }
 .imgProd{
     margin-left: 5%;
     width: 40vw;
+    max-width: 550px;
+}
+.encabezadoProd{
+    width: 95%;
 }
 div.basic{
     margin:1% 7% 4%;
@@ -125,6 +144,7 @@ article.disclaimers{
     padding: 3px;
     border-radius: 3px;
     margin: 10px;
+    width:150px;
 }
 
 article.logo{
