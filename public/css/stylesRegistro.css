@@ -7,7 +7,7 @@
 .main-rgt p.tituloFormulario {
   color: #ffffff;
   margin: 0 auto;
-  font-size: 2em;
+  font-size: 2rem;
   text-align: center;
 }
 
@@ -15,14 +15,15 @@
   font-family: "Oswald", sans-serif;
   color: #343a40;
   background-color: #ffffff;
+  display: flex;
   flex-direction: column;
   position: relative;
   margin: 0 auto;
   margin-top: 2%;
   margin-bottom: 2%;
-  padding: 1em;
+  padding: 1vw;
   width: 30vw;
-  border-radius: 1em;
+  border-radius: 1vw;
 }
 
 .main-rgt section div.campo {
@@ -35,12 +36,12 @@
 
 .button-rgt {
   font-family: "Oswald", sans-serif;
-  font-size: 1em;
+  font-size: 1rem;
   background-color: #343a40; /* white */
-  border: 1px solid black;
-  border-radius: 0.5em;
+  border: 0.2vw solid black;
+  border-radius: 1vw;
   color: #ffffff;
-  padding: 7px 14px;
+  padding: 1vw 2vw;
   text-align: center;
   text-decoration: none;
   display: inline-block;
@@ -52,4 +53,10 @@
 
 .main-rgt section input.checkbox-rgt {
   width: fit-content;
+}
+
+.footer-rgt{
+  position: static;
+        bottom: 0%;
+        width: 100vw;
 }
