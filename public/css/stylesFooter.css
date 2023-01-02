@@ -29,7 +29,6 @@ footer article {
         display: flex;
         justify-content: space-around;
         align-items: center;
-        max-width: 1200px;
         margin: auto;
     }
 
