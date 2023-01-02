@@ -23,18 +23,20 @@ footer article {
     color: greenyellow
 }
 
-@media (min-width: 768px) {
+@media (min-width: 480px) {
 
     footer {
         display: flex;
         justify-content: space-around;
         align-items: center;
-        
+        max-width: 1200px;
+        margin: auto;
     }
 
     footer article.logo {
         order: -1
     }
+
 }
 
 /* Fin Footer */
