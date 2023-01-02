@@ -4,11 +4,16 @@
   box-sizing: border-box;
 }
 
-.main-rgt p.tituloFormulario {
+.tituloFormulario {
   color: #ffffff;
   margin: 0 auto;
+  padding: 0, 5%, 0, 5%;
   font-size: 2rem;
   text-align: center;
+}
+
+form {
+  padding: 2vw 6vw 4vw 2vw;
 }
 
 .section-rgt {
@@ -21,23 +26,23 @@
   margin: 0 auto;
   margin-top: 2%;
   margin-bottom: 2%;
-  padding: 1vw;
-  width: 30vw;
-  border-radius: 1vw;
+  width: 70vw;
+  border-radius: 2vw;
 }
 
 .main-rgt section div.campo {
   margin-top: 2vh;
 }
 
-.main-rgt section input {
+section input {
   width: 60%;
 }
 
 .button-rgt {
   font-family: "Oswald", sans-serif;
   font-size: 1rem;
-  background-color: #343a40; /* white */
+  background-color: #343a40;
+  /* white */
   border: 0.2vw solid black;
   border-radius: 1vw;
   color: #ffffff;
@@ -51,12 +56,12 @@
   color: #ffffff;
 }
 
-.main-rgt section input.checkbox-rgt {
+.checkbox-rgt {
   width: fit-content;
 }
 
-.footer-rgt{
-  position: static;
-        bottom: 0%;
-        width: 100vw;
+@media (min-width: 481) {
+  .section-rgt {
+    width: 30vw;
+  }
 }
