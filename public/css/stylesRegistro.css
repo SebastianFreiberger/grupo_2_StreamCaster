@@ -38,6 +38,7 @@ section.section-rgt form.form-rgt {
   border-radius: 15px;
   color: #fff;
   width: 200px;
+  box-shadow: #35007a 0 0 10px;
 }
 
 .section-rgt .form-rgt .boton {
