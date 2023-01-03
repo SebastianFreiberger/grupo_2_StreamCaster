@@ -18,14 +18,17 @@
 </head>
 
 <body>
+  
   <header>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="stylesheet">
     <picture class="header-logo"><a href="/"><img src="/images/logo.png" alt="SClogo" class="imagen-logo"></a></picture>
+    
     <div class="burger-menu">
       <i class="fas fa-bars burger"></i>
     </div>
+    
     <section class="header-principal">
       <div class="header-superior">
         <h1 class="header-titulo">StreamCaster</h1>
@@ -37,6 +40,7 @@
           </ul>
         </nav>
       </div>
+    
       <div class="header-medio">
         <form class="header-navbar-search">
           <input class="header-input-search" type="text" placeholder="Buscar en StreamCaster">
@@ -44,6 +48,7 @@
           <picture class="header-buscador-cart-shopping"><i class="fa-solid fa-cart-shopping"></i></picture>
         </form>
       </div>
+    
       <div class="header-inferior">
         <nav class="header-navbar">
           <ul class="header-navbar-izquierda">
@@ -58,64 +63,71 @@
           </ul>
         </nav>
       </div>
-    </section>
+      </section>
   </header>
+  
   <main class="main-rgt">
+  
     <!-- título del formulario "Creá tu cuenta de StreamCaster" -->
     <p class="tituloFormulario">
       Creá tu cuenta de StreamCaster
     </p>
+  
     <section class="section-rgt">
       <form action="/registro" method="POST" class="form-rgt">
 
         <!-- campo "Nombre" -->
         <div class="campo-rgt">
           <label for="nombre">Nombre</label>
-          <br />
-          <input type="text" name="nombre" id="nombre" required />
+                    <input type="text" name="nombre" id="nombre" required />
         </div>
 
         <!-- campo "Apellido" -->
         <div class="campo-rgt">
-          <label for="apellido">Apellido</label>
-          <br />
+          <label for="apellido">Apellido</label>       
           <input type="text" name="apellido" id="apellido" required />
         </div>
 
         <!-- campo "Email" -->
         <div class="campo-rgt">
-          <label for="email">Email</label>
-          <br />
+          <label for="email">Email</label>          
           <input type="email" name="email" id="email" required />
         </div>
+
         <!-- campo "Contraseña" -->
         <div class="campo-rgt">
-          <label for="contraseña">Contraseña</label>
-          <br />
+          <label for="contraseña">Contraseña</label>          
           <input type="password" name="contraseña" id="contraseña" required />
         </div>
+
         <!-- cuadrito de verificacion "Acepto términos y condiciones" -->
         <div class="campo-rgt">
           <label>
             <input type="checkbox" id="checkbox-rgt" class="checkbox-rgt" required />
             Acepto términos y condiciones</label>
         </div>
+        
         <!-- enlace "Ver términos y condiciones" -->
         <div class="campo-rgt"><a href="">Ver términos y condiciones</a></div>
+        
         <!-- botón "Crear una cuenta" -->
         <div class="boton">
           <button type="submit" class="button-rgt"><a href="/">Crear una cuenta</a></button>
         </div class="campo-rgt">
+        
         <!-- línea "¿Ya tenés una cuenta?" enlace "Ingresá" -->
         <div class="campo">
           <span>¿Ya tenés una cuenta?</span>
           <a href="">Ingresá</a>
         </div>
+
       </form>
     </section>
   </main>
+
   <footer class="footer-rgt">
     <h3><a href="/">Conocenos</a></h3>
+
     <article>
       <h3>Nuestras redes</h3>
       <div class="logos">
@@ -126,14 +138,18 @@
         <a href="/"><i class="fa-brands fa-instagram"></i></a>
       </div>
     </article>
+
     <article>
       <h3>Contactenos</h3>
       <div><a href="/"><i class="fa-brands fa-whatsapp"></i>+54 9 11 5555-4329</a></div>
     </article>
+
     <article class="logo">
       <picture class="logochico"><img src="/images/logo.png" class="logo"></picture>
     </article>
+
   </footer>
+  
 </body>
 
 </html>
