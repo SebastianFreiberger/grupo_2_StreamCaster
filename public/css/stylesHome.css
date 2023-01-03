@@ -16,6 +16,7 @@ body{
     display: flex;
     flex-direction: column;
     padding: 10px;
+    align-items: center;
 }
 
 .main-content-home section div.carrousel-home div.img-carrousel {

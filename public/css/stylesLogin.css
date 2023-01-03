@@ -66,7 +66,7 @@ body{
 @media (min-width: 768px){
     
     .main-loggin {
-        width: 50%;
+        width: 500px;
     }
 
     .main-loggin .section-loggin {
