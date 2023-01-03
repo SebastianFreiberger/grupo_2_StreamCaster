@@ -68,6 +68,11 @@ body {
   background-color: rgb(133 75 255);
 }
 
+.section-rgt .form-rgt .button-rgt:hover {
+    background-color: rgb(109, 41, 255);
+    transition: 0.3s;
+}
+
 .section-rgt .form-rgt .button-rgt a{
   text-decoration: none;
   color: #fff;

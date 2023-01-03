@@ -56,6 +56,12 @@ body{
     background-color: rgb(133 75 255);
 }
 
+.section-loggin .form-loggin .button-ingresar:hover {
+    background-color: rgb(192, 163, 255);
+    color: rgb(57, 1, 103);
+    transition: 0.3s;
+}
+
 
 @media (min-width: 768px){
     
