@@ -164,9 +164,6 @@ header ul li a:hover{
         display: initial;
         font-size: 150%;
     }
-    .navbar-usuario-registro{
-        text-align: right; 
-    }
 }
 
 @media (min-width:1200px){

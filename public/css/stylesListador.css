@@ -26,7 +26,7 @@ div.titulo-seccion{
     font-weight: 300;
 }
 
-main section {
+main.main-content section.section-producto {
     width: 70vw;
     margin: 15px auto;
 }
@@ -45,20 +45,20 @@ main section.section-producto article img {
     opacity: 90%;
 }
 
-main section article.filtroListador {
-    width: 60%;
-    padding: 16px 0;
-    background-color: #ffffff;
+main.main-content section.filter-section article.filtroListador {
+    width: 30%;
+    color: #ffffff;
     border-radius: 10px;
     position: relative;
     text-align: center;
 }
 
-main section article.filtroListador div h3 {
-    color: #343a40;
+main section article.filtroListador div p {
+    /* color: #343a40; */
+    font-size: 20px;
 }
 
-main section article.filtroListador div h3 i{
+main section article.filtroListador div i{
     margin-left: 10px;
 }
 
@@ -111,9 +111,7 @@ main section article div.descripcion-article div.valores-producto{
     justify-content: space-around;
 }
 
-.separador {
-    display: none;
-}
+
 
 /* Fin main */
 
@@ -132,8 +130,8 @@ main section article div.descripcion-article div.valores-producto{
         justify-content: space-around;
     }
 
-    main section article.filtroListador {        
-        width: 40%;
+    main.main-content section.filter-section article.filtroListador {        
+        width: 20%;
         margin-left: 20px;
     }
 
@@ -194,8 +192,8 @@ main section article div.descripcion-article div.valores-producto{
 
     .separador {
         display: block;
-        background-color: rgb(69 57 90);
-        padding: 2px;
+        background-color: transparent;
+        box-shadow: rgb(227, 200, 255) 0px 0px 10px 2px;
         height: 2px;
         width: 100%;
         margin-bottom: 20px;

@@ -50,30 +50,31 @@
           </section>  
       </header>
       <!-- MAIN LOGGIN -->
-      <main class="main-loggin">
-        <div class="title-loggin">
-            <h1>Iniciar sesion</h1>
-        </div>
-        <section class="section-loggin">
-            <form action="/loggin" method="POST" class="form-loggin">
-                <div class="campo-loggin">
-                    <label for="usuario">Usuario</label>
-                    <input type="text" name="usuario" id="usuario" required>
-                </div>
-                <div class="campo-loggin">
-                    <label for="contrasenia">Contraseña</label>
-                    <input type="password" name="password" id="contrasenia" required>
-                </div>
-                <div class="boton">
-                    <button type="submit" class="button-ingresar">
-                        Ingresar
-                    </button>
-                </div>
-                <div class="links-recuperacion">
-                    <a href="#">Olvidaste tu usuario?</a>
-                    <a href="#">Olvidaste tu clave?</a>
-                </div>
-            </form>
+        <main class="main-loggin">
+            <div class="title-loggin">
+                <h1>Iniciar sesion</h1>
+            </div>
+            <section class="section-loggin">
+                <form action="/loggin" method="POST" class="form-loggin">
+                    <div class="campo-loggin">
+                        <label for="usuario">Usuario</label>
+                        <input type="text" name="usuario" id="usuario" required>
+                    </div>
+                    <div class="campo-loggin">
+                        <label for="contrasenia">Contraseña</label>
+                        <input type="password" name="password" id="contrasenia" required>
+                    </div>
+                    <div class="boton">
+                        <button type="submit" class="button-ingresar">
+                            Ingresar
+                        </button>
+                    </div>
+                    <div class="links-recuperacion">
+                        <a href="#">Olvidaste tu usuario?</a>
+                        <a href="#">Olvidaste tu clave?</a>
+                    </div>
+                </form>
+            </section>
         </main>
         <!-- FIN MAIN LOGGIN -->
     <footer>
@@ -90,11 +91,13 @@
         </article>
         <article>
             <h3>Contactenos</h3>
-            <div><a href="/"><i class="fa-brands fa-whatsapp"></i>+54 9 11 5555-4329</a></div>
+            <div>
+                <a href="/"><i class="fa-brands fa-whatsapp"></i>+54 9 11 5555-4329</a>
+            </div>
         </article>
         <article class="logo">
             <picture class="logochico"><img src="/images/logo.png" class="logo"></picture>
         </article>
-  </footer>
+    </footer>
 </body>
 </html>
