@@ -35,6 +35,7 @@ body{
     border-radius: 15px;
     color: #fff;
     width: 80%;
+    box-shadow: #35007a 0 0 10px;
 }
 
 .section-loggin .form-loggin .links-recuperacion{
