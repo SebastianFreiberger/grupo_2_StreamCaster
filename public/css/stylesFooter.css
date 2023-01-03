@@ -1,5 +1,7 @@
 /* Inicio Footer */
 footer {
+    position: relative;
+    top: 35px;
     text-align: center;
     color: #ced4da;
     background-color: #2e2e2e;
