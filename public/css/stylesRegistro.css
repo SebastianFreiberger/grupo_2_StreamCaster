@@ -68,6 +68,10 @@ body {
   background-color: rgb(133 75 255);
 }
 
+#checkbox-rgt{
+  width: fit-content;
+}
+
 @media (min-width: 768px) {
   .main-rgt {
     width: 50%;
