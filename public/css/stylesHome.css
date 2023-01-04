@@ -43,6 +43,14 @@ div.titulo-seccion-home{
     font-weight: 300;
 }
 
+main.main-content-home i.arrow-carrusel{
+    display: none;
+}
+
+main.main-content-home section.section-producto-home a{
+    text-decoration: none;
+}
+
 main section.section-producto-home {
     display: flex;
     flex-direction: column;
@@ -59,14 +67,18 @@ main section.section-producto-home article:hover img{
     transition: 0.3s;
 }
 
-main section.section-producto-home article img {
-    opacity: 90%;
+main section.section-producto-home article img{
+    width: 70%;
+}
+
+main section.section-producto-home article.producto-destacado-home {
+    width: 70vw;
+    margin: 15px auto;
 }
 
 main section article.producto-destacado-home {
     display: flex;
     flex-direction: column;
-    width: 70%;
     margin-bottom: 20px;
     background-color: #ffffff;
     border-radius: 10px;
@@ -159,6 +171,13 @@ section.section-coment article.article-coment h3{
         margin: auto;
     }
 
+    main section.section-producto-home article.producto-destacado-home {
+        display: flex;
+        width: 90%;
+        margin: 15px;
+        flex-wrap: wrap;
+    }
+
     main section.section-producto-home {
         display: flex;
         flex-direction: row;
@@ -214,49 +233,8 @@ section.section-coment article.article-coment h3{
         width: 20vw;
     }
 
-    main section article div img {
-        max-width: 25vw;
-        height: 10vw;
+    main section.section-producto-home article.producto-destacado-home{
+        width: 25vw;
     }
-    main section article div.descripcion-article-home{        
-        width: 20vw;
-        height: 5vw;
-    }
-
 }
 /* fin main */
-
-/* Inicio Footer */
-footer{
-    text-align: center;
-    color:#ced4da;
-    background-color: #2e2e2e;
-}
-picture.logochico img{
-    max-width: 100px;
-}
-footer div a, footer h3 a{
-    text-decoration: none;
-    color:#ced4da 
-}
-footer article{
-    margin: 10px;
-}
-.fa-whatsapp{
-    color: greenyellow
-}
-
-
-@media (min-width: 768px) {
-
-    footer{
-        display: flex;
-        justify-content: space-around;
-        align-items: center;
-    }
-    article.logo{
-        order:-1;
-    }
-}
-
-/* Fin Footer */
