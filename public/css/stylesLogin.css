@@ -41,7 +41,7 @@ main.main-loggin section.section-loggin form.form-loggin label.checkbox-recordar
     margin: 15px 0;
 }
 
-.section-loggin .form-loggin .button-ingresar {
+/* .section-loggin .form-loggin .button-ingresar {
     padding: 8px;
     margin: auto;
     border-radius: 15px;
@@ -54,8 +54,22 @@ main.main-loggin section.section-loggin form.form-loggin label.checkbox-recordar
     background-color: rgb(192, 163, 255);
     color: rgb(57, 1, 103);
     transition: 0.3s;
+} */
+
+.button-ingresar{
+    border-radius: 15px;
+    border: none;
+    background: rgb(133 75 255);
+    color: #fff;
+    margin-top: 10px;
+    padding: 10px 20px 10px 20px;
+    transition: all .5s; 
 }
 
+.button-ingresar:hover{
+    background: linear-gradient(90deg, rgb(244 237 255) 0%, rgb(222 209 255) 23%, rgb(174 138 255) 45%, rgb(133 75 255) 76%, rgb(120 43 255) 100%);
+    color: black;
+}
 
 @media (min-width: 768px){
     

@@ -80,16 +80,31 @@ form.compra button a{
     transition: all .5s;  
     }
 
-form.compra button{
+/* form.compra button{
     border-radius:7%;
     background-color: rgb(133 75 255);
     margin-top: 10px;
     margin-bottom: 10px;
     padding: 10px 10px 10px 10px;
     transition: all .5s;
-}
-/* Fin Main */
+} */
 
+button{
+    border-radius: 15px;
+    border: none;
+    background: rgb(133 75 255);
+    color: #fff;
+    margin-top: 10px;
+    padding: 10px 20px 10px 20px;
+    transition: all .5s; 
+}
+
+button:hover{
+    background: linear-gradient(90deg, rgb(244 237 255) 0%, rgb(222 209 255) 23%, rgb(174 138 255) 45%, rgb(133 75 255) 76%, rgb(120 43 255) 100%);
+    color: black;
+}
+
+/* Fin Main */
 
 /* Tablet */
 @media (min-width: 480px){
@@ -144,24 +159,26 @@ form.compra{
 article.disclaimers{
     order: 10;
 }
+
 .compra button{
     font-size: 14px;
-    padding: 1px;
-    border-radius: 3px;
+    padding: 10px;
+    border-radius: 15px;
     margin: 2px;
     width:85%;
-    height: 50px;
+    /*height: 30px;*/
 }
 
-
+/*
 form.compra button:hover{
     background: linear-gradient(90deg, rgb(244 237 255) 0%, rgb(222 209 255) 23%, rgb(174 138 255) 45%, rgb(133 75 255) 76%, rgb(120 43 255) 100%);
     text-decoration: none;
-}
-form.compra button:hover a{
-    color: black;
-}
+} 
 
+ form.compra button a{
+    text-decoration: none;
+    color: #fff;
+}  */
 
 }
 
@@ -169,14 +186,12 @@ form.compra button:hover a{
 
 @media (min-width: 770px) {
     .compra button{
-        font-size: 17px;
-        padding: 3px;
-        border-radius: 3px;
-        padding: 3px;
-        border-radius: 3px;
+        font-size: 14px;
+        padding: 10px;
+        border-radius: 15px;
         margin: 5px;
         width: 45%;
-        height: 60px;
+        /* height: 60px; */
     }
     form.compra{
         flex-direction: row;

@@ -201,6 +201,14 @@ picture.logochico img {
     max-width: 100px;
 }
 
+.logo{
+    transition: 1s;
+}
+
+.logo:hover{
+    transform: rotate3d(0,1,0,360deg);
+}
+
 footer div a,
 footer h3 a {
     text-decoration: none;
