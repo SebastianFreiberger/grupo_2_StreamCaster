@@ -1,15 +1,3 @@
-*{
-    margin: 0px;
-    padding: 0px;
-    box-sizing: border-box;
-}
-
-body{
-    margin: 0;
-    font-family: 'Oswald', sans-serif;
-    background-image: url("../images/v1016-b-08.jpg");
-}
-
 /* Comienzo main */
 
 .main-content-home{
@@ -122,6 +110,10 @@ main section article div.descripcion-article-home div.valores-producto{
 
 main section article.section-producto-home i {
     display: none;
+    color: #ced4da;
+}
+
+.titulo-seccion-comentarios {
     color: #ced4da;
 }
 

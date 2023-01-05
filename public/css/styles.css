@@ -1,5 +1,3 @@
-/* @import url("stylesHeader.css"); */
-/* @import url("stylesFooter.css"); */
 @import url("stylesHome.css");
 @import url("stylesDetalle.css");
 @import url("stylesListador.css");
@@ -40,6 +38,7 @@ header{
 .header-superior{
     display: none;
     width: 100%;
+    color: #ebebeb;
 }
 
 .navbar-usuario-registro{
@@ -89,7 +88,7 @@ header ul li {
 
 header ul li a {
     text-decoration: none;
-    color: #fff;
+    color: #ebebeb;
     padding: 5px 0;  
     margin-left: 3vw;
     transition: .5s;

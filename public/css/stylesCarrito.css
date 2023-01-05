@@ -1,18 +1,8 @@
-*{
-    margin: 0px;
-    padding: 0px;
-    box-sizing: border-box;   
-}
-
-body{
-    margin: 0;
-    font-family: 'Roboto', sans-serif;
-    color: #fff;
-    background-image: url("../images/v1016-b-08.jpg");
-}
-
-
 /*CARRITO COMPRAS: SECCION PRODUCTOS*/
+
+.main-carrito {
+    color: #ebebeb;
+}
 
 .carrito-titulo{
     margin-left: 50px;
