@@ -11,6 +11,7 @@ header{
     width: 100%;
     background-color: rgb(39, 39, 39);
     padding: 20px;
+    color: #ebebeb;
 }
 
 .imagen-logo{
@@ -58,6 +59,7 @@ header{
 
 .header-navbar-search{
     display: flex;
+    position: relative;
     width: 100%;
     margin-top: 10px;
     justify-content: space-between;
@@ -143,14 +145,20 @@ header ul li a:hover{
     }
     .header-input-search{
         font-size: 24px;
-        width: 60vw; 
+        width: 40vw;
+        padding: 10px;
+        border: none; 
     }
     .header-buscador-cart-shopping{
         display: none;
     }
     .icon-search{
         display: initial;
+        position: absolute;
+        top: 12px;
+        right: 12px;
         font-size: 24px;
+        color: #2e2e2e;
     }
 }
 
