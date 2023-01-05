@@ -120,7 +120,7 @@ header ul li a:hover{
     display: none;
 }
 
-@media (min-width:769px){
+@media (min-width:768px){
     .burger-menu{
         display: none;
     }
@@ -142,7 +142,7 @@ header ul li a:hover{
         margin-top: 20px;
     }
     .header-input-search{
-        font-size: 150%;
+        font-size: 24px;
         width: 60vw; 
     }
     .header-buscador-cart-shopping{
@@ -150,7 +150,7 @@ header ul li a:hover{
     }
     .icon-search{
         display: initial;
-        font-size: 150%;
+        font-size: 24px;
     }
 }
 
