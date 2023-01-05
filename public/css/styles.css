@@ -61,8 +61,8 @@ header{
     display: flex;
     position: relative;
     width: 100%;
-    margin-top: 10px;
     justify-content: space-between;
+    align-items: center;
 }
 
 .header-input-search{
@@ -71,6 +71,7 @@ header{
     border-radius: 15px;
     padding-left: 10px;
     margin-left: 10px;
+    padding: 10px;
 }
 
 .header-inferior{
