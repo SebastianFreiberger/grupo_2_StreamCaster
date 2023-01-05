@@ -64,11 +64,6 @@ section.section-rgt form.form-rgt {
   color: #fff;
 }
 
-#checkbox-rgt{
-  width: fit-content;
-}
-
-
 @media (min-width: 768px){
 
   main.main-rgt {

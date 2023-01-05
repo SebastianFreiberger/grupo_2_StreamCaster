@@ -26,6 +26,7 @@ body{
     display: flex;
     flex-direction: column;
     line-height: 35px;
+    margin-bottom: 15px;
 }
 
 .section-loggin .form-loggin .campo-loggin input{
@@ -36,6 +37,10 @@ body{
     color: #fff;
     width: 80%;
     box-shadow: #35007a 0 0 10px;
+}
+
+main.main-loggin section.section-loggin form.form-loggin label.checkbox-recordar input{
+    margin-right: 5px;
 }
 
 .section-loggin .form-loggin .links-recuperacion{
