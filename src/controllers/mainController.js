@@ -22,10 +22,10 @@ const controller = {
     registro: (req, res) => {
         res.render('registro')
     },
-/* 
+
     creacionProducto: (req, res) => {
         res.render('creacion-de-producto')
-    }, */
+    },
 }
 
 module.exports = controller;

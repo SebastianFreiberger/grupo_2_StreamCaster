@@ -1,0 +1,47 @@
+<html lang="en">
+<!-- Head -->
+<%- include('partials/head') %> 
+<body>
+    <!-- Header -->
+    <%- include('partials/header') %> 
+    <form action="/" method="POST">
+        <div>
+            <label for="nombre">Nombre del producto</label>
+            <input type="text" id="nombre" name="nombre" placeholder="Coloque aquí el nombre del producto">
+        </div>
+        <div>
+            <label for="marca">Coloque la marca</label>
+            <select>
+                <option value="" selected>Seleccione una marca</option>
+                <option value="a">A</option>
+                <option value="b">B</option>
+                <option value="c">C</option>
+                <option value="d">D</option>
+            </select>
+        </div>  
+        <div>
+            <label for="precio">Precio del producto</label>
+            <input type="number" id="precio" name="precio">
+        </div>
+        <div>
+            <label for="condiciones">Condiciones</label>
+            <input type="text" id="condiciones" name="condiciones" placeholder="3 cuotas sin interés">
+        </div>
+        <div>
+            <label for="img">Subir imágenes del producto:</label>
+            <input type="file" id="img" name="img" placeholder="Seleccionar imágenes">
+        </div>
+        <div>
+            <label for="caract">Características principales</label>
+            <textarea id="caract" placeholder="caract" name="caract"></textarea>
+        </div>
+        <!-- Características principales es lo que va al costado de la imagen en la versión de escritorio y descripción detallada es lo que va abajo -->
+        <div>
+            <label for="descripcion">Descripción detallada</label>
+            <textarea id="descripcion" placeholder="descripcion del usuario" name="descripcion"></textarea>
+        </div>
+    </form>
+    <!-- Footer -->
+    <%- include('partials/footer') %>
+</body>
+</html>

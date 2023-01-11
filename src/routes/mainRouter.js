@@ -9,7 +9,7 @@ router.get('/detalle', mainController.detalle);
 router.get('/listador', mainController.listador);
 router.get('/login', mainController.login);
 router.get('/registro', mainController.registro);
-/* router.get('/', mainController.creacionProducto); */
+router.get('/creacion', mainController.creacionProducto);
 
 module.exports = router;
 
