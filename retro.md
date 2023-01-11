@@ -69,7 +69,7 @@ Tambien continuaria con el mismo nivel de intensidad a la hora de realizar el sp
 
 2. More of:
 <!-- Este paso personalmente considero que será alimentado por el anterior en las siguiente retrospectiva (espero). Es decir que los [Start Doing] se convertirán en [More of]. Esto significa aquellas cosas que estamos usando o haciendo y que queremos que mejoren. Son practicas que creemos que requiere mas refinamiento y que nos gustan mucho por ello hay que darles mas. -->
-Seba: Insisto como en el sprint anterior a hacer mas uso del discord y las herramientas q nos han ido presentando a lo largo del curso.
+Seba: Insisto como en el sprint anterior a hacer mas uso del discord y las herramientas q nos han ido presentando a lo largo del curso. Tambien darle mas importancia al trello y las tareas que se asignaron correrlas hacia realizadas una vez verificadas y checkeadas por el grupo.
  
 3. Keep Doing : 
 <!-- Como secuencia lógica aquello que fue un [More of] llegaría a un nivel de maduración y se convertirá en [Keep Doing]. Es aquello que venimos haciendo y que nos brinda valor. Debemos seguir haciéndolo pero no será preocupación mejorarlo. Está bien como esta. -->
