@@ -28,3 +28,6 @@ app.get('/listadorProductos', (req, res) => {
 app.get('/carrito', (req, res) => {
     res.sendFile(__dirname + '/views/carrito.html')
 });
+
+
+console.log("soy frannnnnn");
