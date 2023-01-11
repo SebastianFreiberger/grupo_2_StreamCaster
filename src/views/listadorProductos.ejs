@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"/>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Maven+Pro&family=Oswald&family=PT+Serif&family=Quicksand:wght@300&family=Roboto&display=swap" rel="stylesheet">
+    <title>Listado de productos</title>
+</head>
+<body>
+    <header class="detalle">
+        <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="stylesheet">
+        <a href="/">
+            <picture class="header-logo">
+                <img src="/images/logo.png" alt="SClogo" class="imagen-logo">
+            </picture>
+        </a>
+        
+        <div class="burger-menu">
+            <i class="fas fa-bars burger"></i>
+        </div>
+        
+        <section class="header-principal">
+
+            <div class="header-superior">  
+                <!-- <h1 class="header-titulo">StreamCaster</h1>    -->
+                <nav class="navbar-usuario-registro-detalle">
+                    <ul>
+                        <li><a href="/login" class="navbar-item"><i class="fa-solid fa-arrow-right-to-bracket"></i>Soy Usuario</a></li>
+                        <li><a href="/registro" class="navbar-item"><i class="fa-regular fa-user"></i>Registrate</a></li> 
+                    </ul>
+                </nav>
+            </div>
+        
+        
+            <div class="header-medio">
+                <form class="header-navbar-search">
+                    <input class= "header-input-search" type= "text" placeholder="Buscar en StreamCaster">
+                    <i class="fa-solid fa-magnifying-glass icon-search"></i>
+                    <picture class="header-buscador-cart-shopping"><i class="fa-solid fa-cart-shopping"></i></picture>
+                </form>
+            </div>
+        
+            <div class="header-inferior">
+                <nav class="header-navbar">
+                    <ul class="header-navbar-izquierda">
+                        <li><a href="/listador" class="navbar-item">Monitores</a></li>
+                        <li><a href="/listador" class="navbar-item">Cámaras</a></li>
+                        <li><a href="/listador" class="navbar-item">Micrófonos</a></li>
+                        <li><a href="/listador" class="navbar-item">Botoneras</a></li>
+                        <li><a href="/listador" class="navbar-item">Auriculares</a></li>
+                    </ul>
+                    <ul class="header-navbar-derecha">
+                        <li><a href="/carrito"><i class="fa-solid fa-cart-shopping"></i>Carrito</a></li>    
+                    </ul>
+                </nav>
+            </div>
+            
+        </section>
+    </header>
+    <main class="main-content">
+        <section class="filter-section">
+            <article class="filtroListador">
+                <div>
+                    <p>Filtrar por<i class="fa-sharp fa-solid fa-caret-down"></i></p>
+                    <ul>                        
+                </div>
+            </article>
+        </section>
+        
+        <div class="titulo-seccion">
+            <h2>Categoria elegida</h2>
+        </div>
+
+        <section class="section-producto">
+            <a href="detalleProducto">
+                <article class="producto">
+                    <div class="img-producto">
+                        <img src="images/cam-logi-small.jpg" alt="">
+                    </div>
+                    <div class="descripcion-article">
+                        <div class="titulo-producto">
+                            <p>WebCam Logi</p>
+                        </div>
+                        <div class="valores-producto">
+                            <p>$12340</p>
+                            <p>3 cuotas sin interes</p>
+                        </div>
+                    </div>
+                </article>
+            </a>
+            <a href="detalleProducto">
+                <article class="producto">
+                    <div class="img-producto">
+                        <img src="images/cam-logi.jpg" alt="">
+                    </div>
+                    <div class="descripcion-article">
+                        <div class="titulo-producto">
+                            <p>WebCam Logi Pro</p>
+                        </div>
+                        <div class="valores-producto">
+                            <p>$1234</p>
+                            <p>12 cuotas</p>
+                        </div>
+                    </div>
+                </article>
+            </a>
+            <a href="detalleProducto">
+                <article class="producto">
+                    <div class="img-producto">
+                        <img src="images/hp-yellow.jpg" alt="">
+                    </div>
+                    <div class="descripcion-article">
+                        <div class="titulo-producto">
+                            <p>Auriculares estudio</p>
+                        </div>
+                        <div class="valores-producto">
+                            <p>$21234</p>
+                            <p>12 cuotas</p>
+                        </div>
+                    </div>
+                </article>
+            </a>
+            <a href="detalleProducto">
+                <article class="producto">
+                    <div class="img-producto">
+                        <img src="images/ring-hero-frame-2.jpg" alt="">
+                    </div>
+                    <div class="descripcion-article">
+                        <div class="titulo-producto">
+                            <p>Halo Led</p>
+                        </div>
+                        <div class="valores-producto">
+                            <p>$2334</p>
+                            <p>6 cuotas sin interes</p>
+                        </div>
+                    </div>
+                </article>
+            </a>
+            <div class="separador">
+            </div>
+            <article class="producto">
+                <div class="img-producto">
+                    <img src="images/cam-logi-small.jpg" alt="">
+                </div>
+                <div class="descripcion-article">
+                    <div class="titulo-producto">
+                        <p>WebCam Logi</p>
+                    </div>
+                    <div class="valores-producto">
+                        <p>$12340</p>
+                        <p>3 cuotas sin interes</p>
+                    </div>
+                </div>
+            </article>
+            <article class="producto">
+                <div class="img-producto">
+                    <img src="images/cam-logi.jpg" alt="">
+                </div>
+                <div class="descripcion-article">
+                    <div class="titulo-producto">
+                        <p>WebCam Logi Pro</p>
+                    </div>
+                    <div class="valores-producto">
+                        <p>$1234</p>
+                        <p>12 cuotas</p>
+                    </div>
+                </div>
+            </article>
+            <article class="producto">
+                <div class="img-producto">
+                    <img src="images/hp-yellow.jpg" alt="">
+                </div>
+                <div class="descripcion-article">
+                    <div class="titulo-producto">
+                        <p>Auriculares estudio</p>
+                    </div>
+                    <div class="valores-producto">
+                        <p>$21234</p>
+                        <p>12 cuotas</p>
+                    </div>
+                </div>
+            </article>
+            <article class="producto">
+                <div class="img-producto">
+                    <img src="images/ring-hero-frame-2.jpg" alt="">
+                </div>
+                <div class="descripcion-article">
+                    <div class="titulo-producto">
+                        <p>Halo Led</p>
+                    </div>
+                    <div class="valores-producto">
+                        <p>$2334</p>
+                        <p>6 cuotas sin interes</p>
+                    </div>
+                </div>
+            </article>
+            <div class="separador">
+            </div>
+            <article class="producto">
+                <div class="img-producto">
+                    <img src="images/cam-logi-small.jpg" alt="">
+                </div>
+                <div class="descripcion-article">
+                    <div class="titulo-producto">
+                        <p>WebCam Logi</p>
+                    </div>
+                    <div class="valores-producto">
+                        <p>$12340</p>
+                        <p>3 cuotas sin interes</p>
+                    </div>
+                </div>
+            </article>
+            <article class="producto">
+                <div class="img-producto">
+                    <img src="images/cam-logi.jpg" alt="">
+                </div>
+                <div class="descripcion-article">
+                    <div class="titulo-producto">
+                        <p>WebCam Logi Pro</p>
+                    </div>
+                    <div class="valores-producto">
+                        <p>$1234</p>
+                        <p>12 cuotas</p>
+                    </div>
+                </div>
+            </article>
+            <article class="producto">
+                <div class="img-producto">
+                    <img src="images/hp-yellow.jpg" alt="">
+                </div>
+                <div class="descripcion-article">
+                    <div class="titulo-producto">
+                        <p>Auriculares estudio</p>
+                    </div>
+                    <div class="valores-producto">
+                        <p>$21234</p>
+                        <p>12 cuotas</p>
+                    </div>
+                </div>
+            </article>
+            <article class="producto">
+                <div class="img-producto">
+                    <img src="images/ring-hero-frame-2.jpg" alt="">
+                </div>
+                <div class="descripcion-article">
+                    <div class="titulo-producto">
+                        <p>Halo Led</p>
+                    </div>
+                    <div class="valores-producto">
+                        <p>$2334</p>
+                        <p>6 cuotas sin interes</p>
+                    </div>
+                </div>
+            </article>
+        </section>
+    </main>
+    <footer>
+        <h3><a href="/">Conocenos</a></h3>
+        <article>
+            <h3>Nuestras redes</h3>
+                <div class="logos">
+                    <a href="/"><i class="fa-brands fa-facebook-f"></i></a>
+                    <a href="/"><i class="fa-brands fa-twitter"></i></a>
+                    <a href="/"><i class="fa-brands fa-twitch"></i></a>
+                    <a href="/"><i class="fa-brands fa-youtube"></i></a>
+                    <a href="/"><i class="fa-brands fa-instagram"></i></a>        
+                </div>
+        </article>
+        <article>
+            <h3>Contactenos</h3>
+            <div><a href="/"><i class="fa-brands fa-whatsapp"></i>+54 9 11 5555-4329</a></div>
+        </article>
+        <article class="logo">
+            <picture class="logochico"><img src="/images/logo.png" class="logo"></picture>
+        </article>
+
+    </footer>
+</body>
+</html>
