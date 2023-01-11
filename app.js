@@ -31,5 +31,6 @@ app.get('/carrito', (req, res) => {
 
 
 
-
 console.log("1234 que vivan los conflictos!!!");
+console.log("soy frannnnnn");
+
