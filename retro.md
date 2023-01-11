@@ -47,3 +47,42 @@ Mati: terminar las reuniones con objetivos y fechas claras y cumplibles, que pue
  Seba: Al haber sido el primer sprint, creo q nos manejamos bastante bien entre todos.
  Her: idem, por ahora no.
  Mati: respetar los compromisos pautados (me incluyo en ello). Cuando se coordina con un trabajo para una fecha, cumplir con lo acordado.
+
+
+<!-- --------------------------------------------------------------------------------------------------------//------------------------------------------------------------------------------------------------------------ -->
+
+ <!-- RETROSPECTIVA DE SPRINT 2 -->
+ <!--
+    1. Comenzar a hacer.
+    2. Hacer más.
+    3. Continuar haciendo.
+    4. Hacer menos.
+    5. Dejar de hacer.
+-->
+
+
+1. Start Doing: 
+<!-- Aquí van todas aquellas cosas innovadoras o que por cierta curiosidad queremos probar. O tal vez son soluciones comprobadas que notamos que deberíamos usar. Por ejemplo usar una wiki para la comunicación o repositorio interno. -->
+Seba: Podriamos comenzar a implementar branches y merge, para una mejor organizacion y practica dentro del equipo. Si bien es algo que estamos aprendiendo, es una herramienta que facilitaria un poco mas el trabajo a la hora de realizar diferentes cambios en el proyecto.
+Tambien continuaria con el mismo nivel de intensidad a la hora de realizar el sprint y cada una de las actividades, para lograr llegar con un poco de mas olgadez al proximo sprint.
+
+
+2. More of:
+<!-- Este paso personalmente considero que será alimentado por el anterior en las siguiente retrospectiva (espero). Es decir que los [Start Doing] se convertirán en [More of]. Esto significa aquellas cosas que estamos usando o haciendo y que queremos que mejoren. Son practicas que creemos que requiere mas refinamiento y que nos gustan mucho por ello hay que darles mas. -->
+Seba: Insisto como en el sprint anterior a hacer mas uso del discord y las herramientas q nos han ido presentando a lo largo del curso.
+ 
+3. Keep Doing : 
+<!-- Como secuencia lógica aquello que fue un [More of] llegaría a un nivel de maduración y se convertirá en [Keep Doing]. Es aquello que venimos haciendo y que nos brinda valor. Debemos seguir haciéndolo pero no será preocupación mejorarlo. Está bien como esta. -->
+Reunirnos y derivar las tareas para hacer. Utilizar el tablero de trello para una mayor organizacion y presentacion de tareas individuales.
+
+
+4. Less of: 
+<!-- En este punto ponemos aquello que tal vez en una retrospectiva fue [Start Doing] pero no nos genero el valor que queriamos. Aquello que intentamos pero no nos dan tanto beneficio como se esperaba. Está bien, démosle como una segunda oportunidad, pero no esta en nuestras prioridades. Tal vez no nos funcione. También puede ser el quitar una parte de una práctica como el reporte de horas mensual o cosas por el estilo, es decir, obligatorias de cumplir pero no nos aportan valor. Y es ahí donde seguimos con el -->
+Utilizar un poco menos wp y usar discord para lograr un mayor seguimiento por parte de los profes.
+
+
+5. Stop Doing:
+ <!-- En este punto exponemos aquellas practicas que a pesar de ser [Less of] pues podemos eliminarlas. Cuando el equipo ve que no le da valor o simplemente no le gusta una practica puede optar por eliminarla. -->
+ En cuanto a lo que dejaria de hacer, es el hecho de dejar tareas quizas pendientes para ultimo momento. En este sprint que paso (sprint 2) hubo un caso puntual, si bien no volvio a pasar, si tomamos un compromiso para realizar una tarea tratar de hacerla o comunicar al respecto en caso de enfrentar alguna dificultad a la hora de hacerla, para no estar sobre la hora, al momento de entrega.
+
+ 
