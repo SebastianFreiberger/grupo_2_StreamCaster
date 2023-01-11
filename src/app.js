@@ -15,6 +15,6 @@ app.use('./login', mainRouter);
 app.use('./detalleProducto', mainRouter);
 app.use('./listadorProductos', mainRouter);
 app.use('./carrito', mainRouter);
-
+app.use('./creacion', mainRouter);
 
 app.listen(3000, ()=>console.log("Servidor en puerto 3000 corriendo"));
