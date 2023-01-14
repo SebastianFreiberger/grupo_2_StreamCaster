@@ -184,14 +184,16 @@ body{
     margin: 0;
     font-family: 'Oswald', sans-serif;
     background-image: url("../images/v1016-b-08.jpg");
-
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
 }
 /* fin body */
 
 /* footer */
 footer {
-    position: relative;
-    top: 35px;
+    /* position: relative;
+    top: 35px; */
     text-align: center;
     color: #ced4da;
     background-color: #2e2e2e;
@@ -229,7 +231,7 @@ footer article {
         display: flex;
         justify-content: space-around;
         align-items: center;
-        margin: auto;
+        /* margin: auto; */
     }
 
     footer article.logo {

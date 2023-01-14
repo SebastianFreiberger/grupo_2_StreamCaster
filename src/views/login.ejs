@@ -10,32 +10,34 @@
 
       <!-- MAIN LOGGIN -->
         <main class="main-loggin">
-            <div class="title-loggin">
-                <h1>Iniciar sesion</h1>
-            </div>
-            <section class="section-loggin">
-                <form action="/loggin" method="POST" class="form-loggin">
-                    <div class="campo-loggin">
-                        <label for="usuario">Usuario</label>
-                        <input type="text" name="usuario" id="usuario" required>
-                    </div>
-                    <div class="campo-loggin">
-                        <label for="contrasenia">Contraseña</label>
-                        <input type="password" name="password" id="contrasenia" required>
-                    </div>
-                    <label class="checkbox-recordar">
-                        <input type="checkbox" id="checkbox-loggin" class="checkbox-loggin" required>Recordar contraseña
-                    </label>          
-                    <div class="boton">
-                        <button type="submit" class="button-ingresar">
-                            Ingresar
-                        </button>
-                    </div>
-                    <div class="links-recuperacion">
-                        <a href="#">Olvidaste tu usuario?</a>
-                        <a href="#">Olvidaste tu clave?</a>
-                    </div>
-                </form>
+            <section class="section-main-loggin">
+                <div class="title-loggin">
+                    <h1>Iniciar sesion</h1>
+                </div>
+                <section class="section-loggin">
+                    <form action="/loggin" method="POST" class="form-loggin">
+                        <div class="campo-loggin">
+                            <label for="usuario">Usuario</label>
+                            <input type="text" name="usuario" id="usuario" required>
+                        </div>
+                        <div class="campo-loggin">
+                            <label for="contrasenia">Contraseña</label>
+                            <input type="password" name="password" id="contrasenia" required>
+                        </div>
+                        <label class="checkbox-recordar">
+                            <input type="checkbox" id="checkbox-loggin" class="checkbox-loggin" required>Recordar contraseña
+                        </label>          
+                        <div class="boton">
+                            <button type="submit" class="button-ingresar">
+                                Ingresar
+                            </button>
+                        </div>
+                        <div class="links-recuperacion">
+                            <a href="#">Olvidaste tu usuario?</a>
+                            <a href="#">Olvidaste tu clave?</a>
+                        </div>
+                    </form>
+                </section>
             </section>
         </main>
         <!-- FIN MAIN LOGGIN -->
