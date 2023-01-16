@@ -7,6 +7,10 @@ const userController = {
     creacionProducto: (req, res) => {
         res.render('creacion-de-producto')
     },
+
+    edicionProducto: (req, res) => {
+        res.render('edicion-de-producto')
+    },
 }
 
 module.exports = userController;
