@@ -5,9 +5,12 @@
     <!-- Header -->
     <%- include('partials/header') %> 
     <main class="main-crear">
+        <!-- título del formulario "Crear producto-->
+    <p class="titulo-form-crear">
+        Crear producto
+      </p>
         <section class="section-crear">
             <form action="/" method="POST" class="form-crear">
-                <!-- CREAR UN TITULO -->
                 <div class="campo-crear">
                     <label for="nombre">Nombre del producto</label>
                     <input type="text" id="nombre" name="nombre" placeholder="Coloque aquí el nombre del producto">
@@ -43,6 +46,12 @@
                     <label for="descripcion">Descripción detallada</label>
                     <textarea id="descripcion" placeholder="descripcion del usuario" name="descripcion"></textarea>
                 </div>
+                <!-- botón "Crear producto" -->
+          <div class="boton">
+            <button type="submit" class="button-crear">
+              <a href="/">Crear producto</a>
+            </button>
+          </div>
             </form>
         </section>
     </main>

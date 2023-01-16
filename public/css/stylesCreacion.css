@@ -13,31 +13,28 @@ main.main-crear {
     border-radius: 15px;
 }
 
-form.form-crear {
+section.section-crear form.form-crear {
     padding: 2vw 6vw 4vw 2vw;
-  }
-  
-/*  main.main-crear .titulo-form-rgt {
-    color: #2e2e2e;
-    margin: 0 auto;
-    font-size: 2rem;
-    text-align: center;
-  }
-  
-  section.section-rgt form.form-rgt {
     margin: 20px 0;
     display: flex;
     flex-direction: column;
     align-items: center;
   }
   
-  .section-rgt .form-rgt .campo-rgt {
+main.main-crear .titulo-form-crear {
+    color: #2e2e2e;
+    margin: 0 auto;
+    font-size: 2rem;
+    text-align: center;
+  }
+  
+  section.section-crear form.form-crear div.campo-crear {
     display: flex;
     flex-direction: column;
     line-height: 35px;
   }
   
-  .section-rgt .form-rgt .campo-rgt input {
+  .section-crear .form-crear .campo-crear input {
     padding: 10px;
     border: none;
     background-color: #2e2e2e;
@@ -47,16 +44,17 @@ form.form-crear {
     box-shadow: #35007a 0 0 10px;
   }
   
-  .section-rgt .form-rgt .boton {
+     
+  section.section-crear form.form-crear div.boton {
     margin: 15px 0;
   }
 
-  .section-rgt .form-rgt .button-rgt a{
+  section.section-crear form.form-crear button.button-crear a{
     text-decoration: none;
     color: #fff;
   } 
   
-  .button-rgt{
+  button.button-crear{
     border-radius: 15px;
     border: none;
     background: rgb(133 75 255);
@@ -65,10 +63,10 @@ form.form-crear {
     transition: all .5s; 
   }
   
-  .button-rgt:hover{
+  button.button-crear:hover{
     background: linear-gradient(90deg, rgb(244 237 255) 0%, rgb(222 209 255) 23%, rgb(174 138 255) 45%, rgb(133 75 255) 76%, rgb(120 43 255) 100%);
     color: black;
-  } */
+  }
   
 
 @media (min-width: 768px){
