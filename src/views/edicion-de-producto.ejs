@@ -13,7 +13,7 @@
             <form action="/" method="POST" class="form-crear">
                 <div class="campo-crear">
                     <label for="nombre">Nombre del producto</label>
-                    <input type="text" id="nombre" name="nombre" placeholder="Coloque aquí el nombre del producto">
+                    <input type="text" id="nombre" name="nombre" placeholder="Micrófono Blue">
                 </div>
                 <div class="campo-crear">
                     <label for="marca">Coloque la marca</label>
@@ -26,22 +26,26 @@
                     </select>
                 </div>
                 <div class="campo-crear">
+                    <label for="precio">Precio del producto</label>
+                    <input type="number" id="precio" name="precio" placeholder="30000">
+                </div>
+                <div class="campo-crear">
                     <label for="img">Subir imágenes del producto:</label>
                     <input type="file" id="img" name="img" placeholder="Seleccionar imágenes">
                 </div>
                 <div class="campo-crear">
                     <label for="caract">Características principales</label>
-                    <textarea id="caract" placeholder="Escribí las características" name="caract"></textarea>
+                    <textarea id="caract" placeholder="Recomendado para podcast, grabaciones, voces, instrumentos, computadoras, entrevistas, juegos, locuciones, conferencias." name="caract" ></textarea>
                 </div>
                 <!-- Características principales es lo que va al costado de la imagen en la versión de escritorio y descripción detallada es lo que va abajo -->
                 <div class="campo-crear">
                     <label for="descripcion">Descripción detallada</label>
-                    <textarea id="descripcion" placeholder="descripcion del usuario" name="descripcion"></textarea>
+                    <textarea id="descripcion" placeholder="La comunicación clara y poderosa es importante para todas las organizaciones. Los micrófonos de Blue te permiten capturar y transmitir con una calidad de sonido sorprendente. Blue combina audio de calidad profesional con la simplicidad plug-and-play para ofrecer un rendimiento que está a años luz de los micrófonos integrados para portátiles y cámaras." name="descripcion"></textarea>
                 </div>
                 <!-- botón "Crear producto" -->
           <div class="boton">
             <button type="submit" class="button-crear">
-              <a href="/">Crear producto</a>
+              <a href="/">Guardar edición</a>
             </button>
           </div>
             </form>
