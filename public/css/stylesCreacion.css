@@ -34,6 +34,8 @@ section.section-crear form.form-crear div.campo-crear {
   line-height: 35px;
 }
 
+.section-crear .campo-crear input.subir-imagenes,
+.section-crear .campo-crear select,
 .section-crear .form-crear .campo-crear input.nombre-producto {
   padding: 10px;
   border: none;
@@ -49,16 +51,11 @@ section.section-crear form.form-crear div.boton {
   margin: 15px 0;
 }
 
-.section-crear .campo-crear select,
 .section-crear .campo-crear input.subir-imagenes {
   text-decoration: none;
-  color: #fff;
-  border-radius: 15px;
-  border: none;
-  background: rgb(133 75 255);
   margin-top: 10px;
   padding: 10px 20px 10px 20px;
-  transition: all .5s;
+  width: fit-content;
 }
 
 section.section-crear form.form-crear button.button-crear a {
@@ -83,38 +80,40 @@ button.button-crear:hover {
 
 @media (min-width: 768px) {
 
-  body.body-crear {
+  main.main-crear {
+    margin: 20 0 20 0 auto;
     max-width: 1200px;
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: flex-start;
   }
 
-  main.main-crear label, main.main-crear input, main.main-crear select {
-    display: inline;
-  }
-
-  
-  main.main-crear {
-    margin: 0 auto;
-  }
-
-  /* main.main-crear section.section-crear form.form-crear {
+  main.main-crear section.section-crear form.form-crear {
+    /* border: red dashed 2px; */
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-  } */
+    margin-bottom: 0;
+
+  }
 
   .section-crear .form-crear .campo-crear {
-    /* display: flex;
-    flex-direction: column; */
+    display: flex;
+    align-items: flex-start;
     line-height: 35px;
   }
 
-  div.campo-crear textarea  {
-    width: 500px;
-    height: 100px;
+  .section-crear .form-crear .campo-crear input, .campo-crear select {
+    margin: 0 0 10;
   }
 
+  div.campo-crear textarea {
+    width: 500px;
+    height: 100px;
+    padding: 10px;
+  }
+  section.section-crear form.form-crear div.boton {
+    margin: 15px 0 0;
+  }
 
 }
