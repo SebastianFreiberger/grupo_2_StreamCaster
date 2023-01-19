@@ -64,10 +64,7 @@ main section article.producto {
 }
 
 main section article div.img-producto {
-        /* display: flex; */
-    /* width: 15vw; */
     text-align: center;
-    /* justify-content: center; */
     padding: 10px 0;
 }
 
@@ -77,9 +74,18 @@ main.main-content section article div img {
 }
 
 .main-content section.section-producto article div.titulo-producto {
+    display: flex;
     font-weight: 300;
     font-size: 17px;
+    flex-direction: column;
+    justify-content: space-between;
 }
+
+.main-content section.section-producto article a.icon-edicion {
+    position: absolute;
+    top: 40px;
+}
+
 
 main section article div.descripcion-article{
     background: rgb(255,255,255);

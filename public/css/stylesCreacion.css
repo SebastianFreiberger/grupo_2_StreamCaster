@@ -5,8 +5,10 @@ body.body-crear {
 }
 
 main.main-crear {
+  display: flex;
+  flex-direction: column;
   width: 90vw;
-  margin: 20px auto;
+  margin: 0 auto 20px;
   background-color: #fff;
   color: #2e2e2e;
   padding: 20px;
@@ -21,11 +23,9 @@ section.section-crear form.form-crear {
   align-items: center;
 }
 
-main.main-crear .titulo-form-crear {
-  color: #2e2e2e;
-  margin: 0 auto;
-  font-size: 2rem;
-  text-align: center;
+.titulo-form-crear {
+  color: #ebebeb;
+  margin: 10px auto;
 }
 
 section.section-crear form.form-crear div.campo-crear {
@@ -77,6 +77,10 @@ button.button-crear:hover {
   color: black;
 }
 
+section.img-editar-producto img{
+  max-width: 80vw;
+}
+
 
 @media (min-width: 768px) {
 
@@ -84,7 +88,7 @@ button.button-crear:hover {
     margin: 20 0 20 0 auto;
     max-width: 1200px;
     display: flex;
-    flex-direction: column;
+    /* flex-direction: column; */
     align-items: flex-start;
   }
 
@@ -116,4 +120,16 @@ button.button-crear:hover {
     margin: 15px 0 0;
   }
 
+}
+
+@media (min-width: 1100px) {
+
+  main.main-crear {
+    display: flex;
+    flex-direction: row;
+  }
+
+  section.img-editar-producto img{
+    max-width: 30vw;
+  }
 }
