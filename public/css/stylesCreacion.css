@@ -14,8 +14,8 @@ main.main-crear {
 }
 
 section.section-crear form.form-crear {
-  padding: 2vw 6vw 4vw 2vw;
-  margin: 20px 0;
+  /* padding: 2vw 6vw 4vw 2vw;
+  margin: 20px 0; */
   display: flex;
   flex-direction: column;
   align-items: center;
