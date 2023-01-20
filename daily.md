@@ -13,7 +13,7 @@ Tareas completadas:
 
 Impedimentos:
 
-- Uno de los impedimentos mayores, es la modalidad en la que el usuario que pueda modificar un producto o editar un producto, acceda a esa funcionalidad.
+- Uno de los impedimentos mayores, es la modalidad en la que el usuario que pueda modificar un producto, o editar un producto, acceda a esa funcionalidad.
 
 Soluciones: 
 
