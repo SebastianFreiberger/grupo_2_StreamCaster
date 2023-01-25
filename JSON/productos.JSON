@@ -1,0 +1,71 @@
+[{
+    "id": "0001",
+    "Categoria": "Micrófonos",
+    "Marca": "Sony",
+    "Producto": "Micrófono Sony F32",
+    "Precio": "$10000.00",
+    "Disponible": true
+  }, {
+    "id": "0002",
+    "Categoria": "Auriculares",
+    "Marca": "Bose",
+    "Producto": "Auriculares Bose M65",
+    "Precio": "$12000.00",
+    "Disponible": false
+  }, {
+    "id": "0003",
+    "Categoria": "Luces de Streaming",
+    "Marca": "LG",
+    "Producto": "Luces LG X34",
+    "Precio": "$14000.00",
+    "Disponible": false
+  }, {
+    "id": "0004",
+    "Categoria": "Auriculares",
+    "Marca": "Samson",
+    "Producto": "Auriculares Samson IT82",
+    "Precio": "$18000.00",
+    "Disponible": false
+  }, {
+    "id": "0005",
+    "Categoria": "Teclados",
+    "Marca": "LG",
+    "Producto": "Teclado LG MT13",
+    "Precio": "$16000.00",
+    "Disponible": true
+  }, {
+    "id": "0006",
+    "Categoria": "Auriculares",
+    "Marca": "Sennheiser",
+    "Producto": "Auriculares Sennheiser LU11",
+    "Precio": "$20000.00",
+    "Disponible": true
+  }, {
+    "id": "0007",
+    "Categoria": "Teclados",
+    "Marca": "Sony",
+    "Producto": "Teclados Sony MK05",
+    "Precio": "$22000.00",
+    "Disponible": false
+  }, {
+    "id": "0008",
+    "Categoria": "Pantallas",
+    "Marca": "LG",
+    "Producto": "Pantalla LG GE27",
+    "Precio": "$24000.00",
+    "Disponible": true
+  }, {
+    "id": "0009",
+    "Categoria": "Consolas",
+    "Marca": "Bose",
+    "Producto": "Consola Bose EE66",
+    "Precio": "$26000.00",
+    "Disponible": false
+  }, {
+    "id": "00010",
+    "Categoria": "Micrófonos",
+    "Marca": "Sony",
+    "Producto": "Micrófoco Sony DO11",
+    "Precio": "$28000.00",
+    "Disponible": true
+  }]
