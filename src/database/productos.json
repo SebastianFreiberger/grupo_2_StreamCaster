@@ -85,5 +85,13 @@
     "precio": "1500000",
     "caract": "Microfono buenaso",
     "descripcion": "Microfono buenaso re contra buenaso!!!"
+  },
+  {
+    "id": 12,
+    "nombre": "Auriculares",
+    "precio": "15000",
+    "caract": "Auris Pro se rompe todo",
+    "descripcion": "Auris Pro se rompe todo",
+    "imagen": "1674691942177.webp"
   }
 ]
