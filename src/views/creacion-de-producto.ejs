@@ -12,7 +12,7 @@
     <main class="main-crear">
         <!-- título del formulario "Crear producto-->
         <section class="section-crear">
-            <form action="/" method="POST" class="form-crear">
+            <form action="/products/creacion" method="POST" class="form-crear" enctype="multipart/form-data">
                 <div class="campo-crear">
                     <label for="nombre">Nombre del producto</label>
                     <input class="nombre-producto" type="text" id="nombre" name="nombre" placeholder="Coloque aquí el nombre del producto">
@@ -21,10 +21,10 @@
                     <label for="marca">Marca del producto</label>
                     <select>
                         <option value="" selected>Seleccione una marca</option>
-                        <option value="LG">LG</option>
-                        <option value="Sony">Sony</option>
-                        <option value="Sennheiser">Sennheiser</option>
-                        <option value="Bosse">Bosse</option>
+                        <option value="LG" name ="marca">LG</option>
+                        <option value="Sony" name ="marca">Sony</option>
+                        <option value="Sennheiser" name ="marca">Sennheiser</option>
+                        <option value="Bosse" name ="marca">Bosse</option>
                     </select>
                 </div>
                 <div class="campo-crear">
@@ -45,11 +45,11 @@
                     <textarea id="descripcion" placeholder="Describí el producto" name="descripcion"></textarea>
                 </div>
                 <!-- botón "Crear producto" -->
-          <div class="boton">
-            <button type="submit" class="button-crear">
-              <a href="/">Crear producto</a>
-            </button>
-          </div>
+                <div class="boton">
+                    <button type="submit" class="button-crear">
+                        Crear producto
+                    </button>
+                </div>
             </form>
         </section>
     </main>

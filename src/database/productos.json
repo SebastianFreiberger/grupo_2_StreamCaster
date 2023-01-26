@@ -1,0 +1,89 @@
+[
+  {
+    "id": 1,
+    "caract": "Micrófonos",
+    "marca": "Sony",
+    "nombre": "Micrófono Sony F32",
+    "precio": 10000,
+    "descripcion": "xxx"
+  },
+  {
+    "id": 2,
+    "caract": "Auriculares",
+    "marca": "Bose",
+    "nombre": "Auriculares Bose M65",
+    "precio": 12000,
+    "descripcion": "xxx"
+  },
+  {
+    "id": 3,
+    "caract": "Luces de Streaming",
+    "marca": "LG",
+    "nombre": "Luces LG X34",
+    "precio": 14000,
+    "descripcion": "xxx"
+  },
+  {
+    "id": 4,
+    "caract": "Auriculares",
+    "marca": "Samson",
+    "nombre": "Auriculares Samson IT82",
+    "precio": 18000,
+    "descripcion": "xxx"
+  },
+  {
+    "id": 5,
+    "caract": "Teclados",
+    "marca": "LG",
+    "nombre": "Teclado LG MT13",
+    "precio": 16000,
+    "descripcion": "xxx"
+  },
+  {
+    "id": 6,
+    "caract": "Auriculares",
+    "marca": "Sennheiser",
+    "nombre": "Auriculares Sennheiser LU11",
+    "precio": 20000,
+    "descripcion": "xxx"
+  },
+  {
+    "id": 7,
+    "caract": "Teclados",
+    "marca": "Sony",
+    "nombre": "Teclados Sony MK05",
+    "precio": 22000,
+    "descripcion": "xxx"
+  },
+  {
+    "id": 8,
+    "caract": "Pantallas",
+    "marca": "LG",
+    "nombre": "Pantalla LG GE27",
+    "precio": 24000,
+    "descripcion": "xxx"
+  },
+  {
+    "id": 9,
+    "caract": "Consolas",
+    "marca": "Bose",
+    "nombre": "Consola Bose EE66",
+    "precio": 26000,
+    "descripcion": "xxx"
+  },
+  {
+    "id": 10,
+    "caract": "Micrófonos",
+    "marca": "Sony",
+    "nombre": "Micrófoco Sony DO11",
+    "precio": 28000,
+    "descripcion": "xxx"
+  },
+  {
+    "id": 11,
+    "nombre": "Microfono 1234 PRO",
+    "precio": "1500000",
+    "caract": "Microfono buenaso",
+    "descripcion": "Microfono buenaso re contra buenaso!!!"
+  }
+]
