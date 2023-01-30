@@ -33,11 +33,24 @@ const productsController = {
     },
 
     edicionProducto: (req, res) => {
-        res.render('edicion-de-producto')
+        let product = products.find(row => row.id == req.params.id)
+        if(product) return res.render("edicion-de-producto", {product: product});
+        else return res.send("Producto no encontrado");
     },
 
     editPost: (req, res) => {
-
+        products.forEach(row => {
+            if(row.id == req.params.id) {
+                row.nombre = req.body.nombre
+                row.caract = req.body.caract
+                row.marca = req.body.marca
+                row.precio = req.body.precio
+                row.descripcion = req.body.descripcion
+                row.imagen = req.body.imagen
+            }
+        })
+        fs.writeFileSync(productsJSON, JSON.stringify(products, null, 2))
+        return res.redirect('/listador');
     },
 
     deletePost: (req, res) => {

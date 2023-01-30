@@ -11,49 +11,53 @@
         <!-- título del formulario "Crear producto-->
 
         <section class="section-crear">
-            <form action="/" method="POST" class="form-crear">
+            <form action="products/edicion/<%= product.id %>?_method=put" method="POST" class="form-crear">
                 <div class="campo-crear">
                     <label for="nombre">Nombre del producto</label>
-                    <input class="nombre-producto" type="text" id="nombre" name="nombre" placeholder="Micrófono Blue">
+                    <input class="nombre-producto" type="text" id="nombre" name="nombre" value="<%= product.nombre %>">
                 </div>
                 <div class="campo-crear">
                     <label for="marca">Marca del producto</label>
-                    <select>
-                        <option value="" selected>Seleccione una marca</option>
-                        <option value="LG">LG</option>
-                        <option value="Sony">Sony</option>
-                        <option value="Sennheiser">Sennheiser</option>
-                        <option value="Bosse">Bosse</option>
+                    <select name="marca">
+                        <option <% if (product.marca == "LG") { %> <%= 'selected' %> <% } %> value="LG">LG</option>
+                        <option <% if (product.marca == "Sony") { %> <%= 'selected' %> <% } %> value="Sony">Sony</option>
+                        <option <% if (product.marca == "Sennheiser") { %> <%= 'selected' %> <% } %> value="Sennheiser">Sennheiser</option>
+                        <option <% if (product.marca == "Bose") { %> <%= 'selected' %> <% } %> value="Bosse">Bose</option>
                     </select>
                 </div>
                 <div class="campo-crear">
                     <label for="precio">Precio del producto</label>
-                    <input class="nombre-producto" type="number" id="precio" name="precio" placeholder="30000">
+                    <input class="nombre-producto" type="number" id="precio" name="precio" value="<%= product.precio %>">
                 </div>
                 <div class="campo-crear">
                     <label for="img">Subir imágenes del producto:</label>
-                    <input class="subir-imagenes" type="file" id="img" name="img" placeholder="Seleccionar imágenes">
+                    <input class="subir-imagenes" type="file" id="img" name="img">
                 </div>
                 <div class="campo-crear">
                     <label for="caract">Características principales</label>
-                    <textarea id="caract" placeholder="Recomendado para podcast, grabaciones, voces, instrumentos, computadoras, entrevistas, juegos, locuciones, conferencias." name="caract" ></textarea>
+                    <textarea id="caract" placeholder="<%= product.caract %>" name="caract" ></textarea>
                 </div>
                 <!-- Características principales es lo que va al costado de la imagen en la versión de escritorio y descripción detallada es lo que va abajo -->
                 <div class="campo-crear">
                     <label for="descripcion">Descripción detallada</label>
-                    <textarea id="descripcion" placeholder="La comunicación clara y poderosa es importante para todas las organizaciones. Los micrófonos de Blue te permiten capturar y transmitir con una calidad de sonido sorprendente. Blue combina audio de calidad profesional con la simplicidad plug-and-play para ofrecer un rendimiento que está a años luz de los micrófonos integrados para portátiles y cámaras." name="descripcion"></textarea>
+                    <textarea id="descripcion" placeholder="<%= product.descripcion %>" name="descripcion"></textarea>
                 </div>
                 <!-- botón "Crear producto" -->
           <div class="boton">
             <button type="submit" class="button-crear">
-              <a href="/">Guardar edición</a>
+              Guardar edición
             </button>
           </div>
             </form>
+            <form action="products/edicion/<%= product.id %>?_method=delete" method="POST">
+                <button type="submit" class="button-crear">
+                    Eliminar
+                </button>
+            </form>
         </section>
-        <section class="img-editar-producto">
+<!--         <section class="img-editar-producto">
             <img src="../../images/mic-desk.jpg" alt="">
-        </section>
+        </section> -->
     </main>
     <!-- Footer -->
     <%- include('partials/footer') %>

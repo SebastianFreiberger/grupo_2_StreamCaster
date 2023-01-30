@@ -17,11 +17,17 @@ const multerDiskStorage = multer.diskStorage({
 const uploadFile = multer({storage: multerDiskStorage})
 
 router.get('/listador', productsController.listador); // Ruta hacia el listado de produtos
+
 router.get('/detalle/:id', productsController.detalle); // Ruta hacia el detalle de produto
+
 router.get('/creacion', productsController.creacionProducto); // Ruta hacia el formulario de creación de produtos
+
 router.post('/creacion', uploadFile.single("imagen") , productsController.creacionPost); //Crea registro de un producto en el JSON
+
 router.get('/edicion/:id', productsController.edicionProducto); //Ruta hacia la edicion del producto
+
 router.put('/edicion/:id', productsController.editPost); //Edita datos del producto por id
+
 router.delete('/delete/:id', productsController.deletePost); //Elimina un producto por id
 
 module.exports = router;
