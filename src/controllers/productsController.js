@@ -50,12 +50,14 @@ const productsController = {
             }
         })
         fs.writeFileSync(productsJSON, JSON.stringify(products, null, 2))
-        return res.redirect('/listador');
+        return res.redirect('/products/listador');
     },
 
     deletePost: (req, res) => {
-
-    },
+        let productFiltrados = products.filter(product => product.id != req.params.id);
+        fs.writeFileSync(productsJSON, JSON.stringify(productFiltrados, null, 2))
+        return res.render("listadorProductos", {products: productFiltrados})
+    }
 }
 
 module.exports = productsController;

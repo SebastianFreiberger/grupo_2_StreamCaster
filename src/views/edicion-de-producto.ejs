@@ -11,7 +11,7 @@
         <!-- título del formulario "Crear producto-->
 
         <section class="section-crear">
-            <form action="products/edicion/<%= product.id %>?_method=put" method="POST" class="form-crear">
+            <form action="/products/edicion/<%= product.id %>?_method=put" method="POST" class="form-crear">
                 <div class="campo-crear">
                     <label for="nombre">Nombre del producto</label>
                     <input class="nombre-producto" type="text" id="nombre" name="nombre" value="<%= product.nombre %>">
@@ -49,7 +49,7 @@
             </button>
           </div>
             </form>
-            <form action="products/edicion/<%= product.id %>?_method=delete" method="POST">
+            <form action="/products/delete/<%= product.id %>?_method=delete" method="POST">
                 <button type="submit" class="button-crear">
                     Eliminar
                 </button>

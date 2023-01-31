@@ -1,11 +1,11 @@
 [
   {
     "id": 1,
-    "caract": "Micrófonos",
-    "marca": "Sony",
+    "caract": "",
+    "marca": "LG",
     "nombre": "Micrófono Sony F32",
-    "precio": 10000,
-    "descripcion": "xxx"
+    "precio": "109999",
+    "descripcion": ""
   },
   {
     "id": 2,
@@ -85,13 +85,5 @@
     "precio": "1500000",
     "caract": "Microfono buenaso",
     "descripcion": "Microfono buenaso re contra buenaso!!!"
-  },
-  {
-    "id": 12,
-    "nombre": "Auriculares",
-    "precio": "15000",
-    "caract": "Auris Pro se rompe todo",
-    "descripcion": "Auris Pro se rompe todo",
-    "imagen": "1674691942177.webp"
   }
 ]

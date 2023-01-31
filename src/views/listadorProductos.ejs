@@ -12,8 +12,7 @@
         <section class="filter-section">
             <article class="filtroListador">
                 <div>
-                    <p>Filtrar por<i class="fa-sharp fa-solid fa-caret-down"></i></p>
-                    <ul>                        
+                    <p>Filtrar por<i class="fa-sharp fa-solid fa-caret-down"></i></p>                       
                 </div>
             </article>
         </section>
@@ -22,6 +21,77 @@
         </div>
 
         <section class="section-producto">
+            <% for(let i = 0; i < products.length; i++) {%>
+                <a href="detalle">
+                    <article class="producto">
+                        <div class="img-producto">
+                            <img src="/images/<%= products[i].imagen %>" alt="">
+                        </div>
+                        <div class="descripcion-article">
+                            <div class="titulo-producto">
+                                <p><%= products[i].nombre %></p>
+                            </div>
+                            <a href="/products/edicion/<%= products[i].id %>" class="icon-edicion"><i class="fa-solid fa-pen"></i></a>
+                            <div class="valores-producto">
+                                <p><%= products[i].precio %></p>
+                            </div>
+                        </div>
+                    </article>
+                </a>
+            <% } %>
+            <!-- <a href="detalle">
+                <article class="producto">
+                    <div class="img-producto">
+                        <img src="/images/cam-logi.jpg" alt="">
+                    </div>
+                    <div class="descripcion-article">
+                        <div class="titulo-producto">
+                            <p>WebCam Logi Pro</p>
+                        </div>
+                        <a href="/products/edicion" class="icon-edicion"><i class="fa-solid fa-pen"></i></a>
+                        <div class="valores-producto">
+                            <p>$1234</p>
+                            <p>12 cuotas</p>
+                        </div>
+                    </div>
+                </article>
+            </a>
+            <a href="detalle">
+                <article class="producto">
+                    <div class="img-producto">
+                        <img src="/images/hp-yellow.jpg" alt="">
+                    </div>
+                    <div class="descripcion-article">
+                        <div class="titulo-producto">
+                            <p>Auriculares estudio</p>
+                        </div>
+                        <a href="/products/edicion" class="icon-edicion"><i class="fa-solid fa-pen"></i></a>
+                        <div class="valores-producto">
+                            <p>$21234</p>
+                            <p>12 cuotas</p>
+                        </div>
+                    </div>
+                </article>
+            </a>
+            <a href="detalle">
+                <article class="producto">
+                    <div class="img-producto">
+                        <img src="/images/ring-hero-frame-2.jpg" alt="">
+                    </div>
+                    <div class="descripcion-article">
+                        <div class="titulo-producto">
+                            <p>Halo Led</p>
+                        </div>
+                        <a href="/products/edicion" class="icon-edicion"><i class="fa-solid fa-pen"></i></a>
+                        <div class="valores-producto">
+                            <p>$2334</p>
+                            <p>6 cuotas sin interes</p>
+                        </div>
+                    </div>
+                </article>
+            </a>
+            <div class="separador">
+            </div>
             <a href="detalle">
                 <article class="producto">
                     <div class="img-producto">
@@ -159,77 +229,7 @@
                         </div>
                     </div>
                 </article>
-            </a>
-            <div class="separador">
-            </div>
-            <a href="detalle">
-                <article class="producto">
-                    <div class="img-producto">
-                        <img src="/images/cam-logi-small.jpg" alt="">
-                    </div>
-                    <div class="descripcion-article">
-                        <div class="titulo-producto">
-                            <p>WebCam Logi</p>
-                        </div>
-                        <a href="/products/edicion" class="icon-edicion"><i class="fa-solid fa-pen"></i></a>
-                        <div class="valores-producto">
-                            <p>$12340</p>
-                            <p>3 cuotas sin interes</p>
-                        </div>
-                    </div>
-                </article>
-            </a>
-            <a href="detalle">
-                <article class="producto">
-                    <div class="img-producto">
-                        <img src="/images/cam-logi.jpg" alt="">
-                    </div>
-                    <div class="descripcion-article">
-                        <div class="titulo-producto">
-                            <p>WebCam Logi Pro</p>
-                        </div>
-                        <a href="/products/edicion" class="icon-edicion"><i class="fa-solid fa-pen"></i></a>
-                        <div class="valores-producto">
-                            <p>$1234</p>
-                            <p>12 cuotas</p>
-                        </div>
-                    </div>
-                </article>
-            </a>
-            <a href="detalle">
-                <article class="producto">
-                    <div class="img-producto">
-                        <img src="/images/hp-yellow.jpg" alt="">
-                    </div>
-                    <div class="descripcion-article">
-                        <div class="titulo-producto">
-                            <p>Auriculares estudio</p>
-                        </div>
-                        <a href="/products/edicion" class="icon-edicion"><i class="fa-solid fa-pen"></i></a>
-                        <div class="valores-producto">
-                            <p>$21234</p>
-                            <p>12 cuotas</p>
-                        </div>
-                    </div>
-                </article>
-            </a>
-            <a href="detalle">
-                <article class="producto">
-                    <div class="img-producto">
-                        <img src="/images/ring-hero-frame-2.jpg" alt="">
-                    </div>
-                    <div class="descripcion-article">
-                        <div class="titulo-producto">
-                            <p>Halo Led</p>
-                        </div>
-                        <a href="/products/edicion" class="icon-edicion"><i class="fa-solid fa-pen"></i></a>
-                        <div class="valores-producto">
-                            <p>$2334</p>
-                            <p>6 cuotas sin interes</p>
-                        </div>
-                    </div>
-                </article>
-            </a>
+            </a> -->
         </section>
     </main>
 
