@@ -96,5 +96,13 @@
     "caract": "Microfono buenaso",
     "descripcion": "Microfono buenaso re contra buenaso!!!",
     "destacado": false
+  },
+  {
+    "id": 12,
+    "nombre": "TEST",
+    "precio": "1234",
+    "caract": "TEST TEST TEST",
+    "descripcion": "TEST TEST TEST TEST",
+    "destacado": false
   }
 ]
