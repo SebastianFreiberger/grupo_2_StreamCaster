@@ -23,69 +23,27 @@
         </div>
         <section class="section-producto-home">            
             <i class="fa-solid fa-angle-left arrow-carrusel"></i>
-            <a href="detalle">
-                <article class="producto-destacado-home">
-                    <div class="img-producto-destacado">
-                        <img src="images/cam-logi.jpg" alt="">
-                    </div>
-                    <div class="descripcion-article-home">
-                        <div class="titulo-producto">
-                            <p>WebCam Logi Pro</p>
-                            <div class="valoracion-star">
-                                <i class="fa-solid fa-star"></i>
-                                <i class="fa-solid fa-star"></i>
-                                <i class="fa-solid fa-star"></i>
-                            </div>
+            <% for(let i = 0; i < products.length; i++) {%>
+                <%if(products[i].destacado) { %>
+                    <a href="/products/detalle/<%= products[i].id %>">
+                    <article class="producto-destacado-home">
+                        <div class="img-producto-destacado">
+                            <img src="/images/<%= products[i].imagen %>" alt="">
                         </div>
-                        <div class="valores-producto">
-                            <p>$1234</p>
-                            <p>12 cuotas</p>
+                        <div class="descripcion-article-home">
+                            <div class="titulo-producto">
+                                <p><%= products[i].nombre %></p>
+                                <div class="valoracion-star">
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                </div>
+                            </div>                        
                         </div>
-                    </div>
-                </article>
-            </a>
-            <a href="detalle">
-                <article class="producto-destacado-home">
-                    <div class="img-producto-destacado">
-                        <img src="images/hp-yellow.jpg" alt="">
-                    </div>
-                    <div class="descripcion-article-home">
-                        <div class="titulo-producto">
-                            <p>Auriculares estudio</p>
-                            <div class="valoracion-star">
-                                <i class="fa-solid fa-star"></i>
-                                <i class="fa-regular fa-star"></i>
-                                <i class="fa-regular fa-star"></i>
-                            </div>
-                        </div>
-                        <div class="valores-producto">
-                            <p>$21234</p>
-                            <p>12 cuotas</p>
-                        </div>
-                    </div>
-                </article>
-            </a>
-            <a href="detalle">
-                <article class="producto-destacado-home">
-                    <div class="img-producto-destacado">
-                        <img src="images/ring-hero-frame-2.jpg" alt="">
-                    </div>
-                    <div class="descripcion-article-home">
-                        <div class="titulo-producto">
-                            <p>Halo Led</p>
-                            <div class="valoracion-star">
-                                <i class="fa-solid fa-star"></i>
-                                <i class="fa-solid fa-star"></i>
-                                <i class="fa-regular fa-star"></i>
-                            </div>
-                        </div>
-                        <div class="valores-producto">
-                            <p>$2334</p>
-                            <p>6 cuotas sin interes</p>
-                        </div>
-                    </div>
-                </article>
-            </a>
+                    </article>
+                </a>
+                <% } %>
+            <% } %>
             <i class="fa-solid fa-angle-right arrow-carrusel"></i>
         </section>
         <div class="titulo-seccion-home">
