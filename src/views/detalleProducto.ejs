@@ -12,16 +12,16 @@
 
     <main class="detalle">
         <section class="encabezadoProd">
-            <div class="nombreProducto">Micrófono Blue</div>
+            <div class="nombreProducto"><%= product.nombre %></div>
             <div class="calificacion"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star-half-stroke"></i><i class="fa-regular fa-star"></i></div>
             <div>Categoria: Micrófonos para podcast</div>
         </section>
         <section class="fotoybasic">
-            <picture><img src="/images/mic-blue.jpg" class="imgProd"></picture>
+            <picture><img src="/images/<%= product.imagen %>" class="imgProd"></picture>
             <div class="basic">
                 <article class="condiciones">
-                    <p class="precio">$30000</p>
-                    <p class="descuento">25%</p>
+                    <p class="precio"><%= product.precio %></p>
+                    <p class="descuento"><%= product.descuento %> %</p>
                 </article>
                 <article class="condiciones2">    
                     <p class="cuotas">Hasta 12 cuotas</p>
@@ -38,7 +38,8 @@
                 </article>
                 <article class="descripcion">
                     <h3>Caracteristicas técnicas</h3>
-                        <ul>    
+                        <p><%= product.caract %></p>
+<!--                         <ul>    
                             <li>Recomendado para podcast, grabaciones, voces, instrumentos, computadoras, entrevistas, juegos, locuciones, conferencias.</li>
                             <li>Formato: estudio y de mesa.</li>
                             <li>Dispositivos compatibles: pc.</li>
@@ -47,17 +48,18 @@
                             <li>Frecuencia mínima: 20Hz.</li>
                             <li>La mejor calidad para tus transmisiones.</li>
                             <li>Alta resolución.</li>
-                        </ul>    
+                        </ul>     -->
                 </article>
             </div>
         </section>
             <article class="parrafos">
                 <h3>Descripción</h3>
-                <p>La comunicación clara y poderosa es importante para todas las organizaciones. Los micrófonos de Blue te permiten capturar y transmitir con una calidad de sonido sorprendente. Blue combina audio de calidad profesional con la simplicidad plug-and-play para ofrecer un rendimiento que está a años luz de los micrófonos integrados para portátiles y cámaras.</p>
+                <p><%= product.descripcion %></p>
+<!--                 <p>La comunicación clara y poderosa es importante para todas las organizaciones. Los micrófonos de Blue te permiten capturar y transmitir con una calidad de sonido sorprendente. Blue combina audio de calidad profesional con la simplicidad plug-and-play para ofrecer un rendimiento que está a años luz de los micrófonos integrados para portátiles y cámaras.</p>
                 <h5>Un formato a tu medida</h5>
                 <p>Al ser condensador, posibilitará un resultado claro y fino. Es ideal para percusiones, guitarras, pianos, entre otros. Por su respuesta tan definida ante la voz, es el más elegido por los profesionales.</p>
                 <h5>Diseño eficaz</h5>
-                <p>Dejá de dar tantas vueltas e invertí en la versatilidad de este producto, ya que de acuerdo a tu necesidad, podrás intercambiar los patrones polares las veces que quieras. ¡Animate y empezá a disfrutar de la herramientas estándar del mercado!</p>
+                <p>Dejá de dar tantas vueltas e invertí en la versatilidad de este producto, ya que de acuerdo a tu necesidad, podrás intercambiar los patrones polares las veces que quieras. ¡Animate y empezá a disfrutar de la herramientas estándar del mercado!</p> -->
             </article>
             <article class="parrafos">
                 <h4>Formas de pago</h4>

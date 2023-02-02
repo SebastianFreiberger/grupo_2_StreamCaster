@@ -45,6 +45,7 @@ const productsController = {
                 row.caract = req.body.caract
                 row.marca = req.body.marca
                 row.precio = req.body.precio
+                row.precio = req.body.descuento
                 row.descripcion = req.body.descripcion
                 row.imagen = req.body.imagen
             }

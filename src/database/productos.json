@@ -4,7 +4,8 @@
     "caract": "",
     "marca": "LG",
     "nombre": "Micrófono Sony F32",
-    "precio": "109999",
+    "precio": 109999,
+    "descuento": 30,
     "descripcion": "",
     "destacado": true,
     "imagen": "mic-blue.jpg"
@@ -15,6 +16,7 @@
     "marca": "Bose",
     "nombre": "Auriculares Bose M65",
     "precio": 12000,
+    "descuento": 30,
     "descripcion": "xxx",
     "destacado": true,
     "imagen": "hp-yellow.jpg"
@@ -25,6 +27,7 @@
     "marca": "LG",
     "nombre": "Luces LG X34",
     "precio": 14000,
+    "descuento": 30,
     "descripcion": "xxx",
     "destacado": true,
     "imagen": "ring-light-10.jpg"
@@ -35,6 +38,7 @@
     "marca": "Samson",
     "nombre": "Auriculares Samson IT82",
     "precio": 18000,
+    "descuento": 30,
     "descripcion": "xxx",
     "destacado": false,
     "imagen": "hp-yellow.jpg"
@@ -45,6 +49,7 @@
     "marca": "LG",
     "nombre": "Teclado LG MT13",
     "precio": 16000,
+    "descuento": 30,
     "descripcion": "xxx",
     "destacado": false,
     "imagen": "tecladoapp.jpg"
@@ -55,6 +60,7 @@
     "marca": "Sennheiser",
     "nombre": "Auriculares Sennheiser LU11",
     "precio": 20000,
+    "descuento": 30,
     "descripcion": "xxx",
     "destacado": false,
     "imagen": "hp-yellow.jpg"
@@ -65,6 +71,7 @@
     "marca": "Sony",
     "nombre": "Teclados Sony MK05",
     "precio": 22000,
+    "descuento": 30,
     "descripcion": "xxx",
     "destacado": false,
     "imagen": "tecladoapp.jpg"
@@ -75,6 +82,7 @@
     "marca": "LG",
     "nombre": "Pantalla LG GE27",
     "precio": 24000,
+    "descuento": 30,
     "descripcion": "xxx",
     "destacado": false,
     "imagen": "hp-yellow.jpg"
@@ -85,6 +93,7 @@
     "marca": "Bose",
     "nombre": "Consola Bose EE66",
     "precio": 26000,
+    "descuento": 30,
     "descripcion": "xxx",
     "destacado": false,
     "imagen": "consola.jpg"
@@ -95,6 +104,7 @@
     "marca": "Sony",
     "nombre": "Micrófoco Sony DO11",
     "precio": 28000,
+    "descuento": 30,
     "descripcion": "xxx",
     "destacado": false,
     "imagen": "mic-desk.jpg"
@@ -102,7 +112,8 @@
   {
     "id": 11,
     "nombre": "Microfono 1234 PRO",
-    "precio": "1500000",
+    "precio": 1500000,
+    "descuento": 30,
     "caract": "Microfono buenaso",
     "descripcion": "Microfono buenaso re contra buenaso!!!",
     "destacado": false,
@@ -111,7 +122,8 @@
   {
     "id": 12,
     "nombre": "TEST",
-    "precio": "1234",
+    "precio": 1234,
+    "descuento": 30,
     "caract": "TEST TEST TEST",
     "descripcion": "TEST TEST TEST TEST",
     "destacado": false,
