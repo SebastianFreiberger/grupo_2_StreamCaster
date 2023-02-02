@@ -77,6 +77,10 @@ main section article div.img-producto-destacado {
     padding: 10px 0;
 }
 
+.precio-destacado {
+    color: #ffffff;
+}
+
 .main-content section.section-producto-home article div.titulo-producto {
     font-weight: 300;
     font-size: 17px;
