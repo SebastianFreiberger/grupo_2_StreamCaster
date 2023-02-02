@@ -1,0 +1,58 @@
+[
+    {
+        "id": 1,
+        "nombre": "Admin",
+        "email": "admin@streamcaster.com.ar",
+        "contrasena": "admin",
+        "tipo": "Administrador"
+    },
+    {
+        "id": 2,
+        "nombre": "Supervisor",
+        "email": "supervisor@streamcaster.com.ar",
+        "contrasena": "supervisor",
+        "tipo": "Supervisor"
+    },
+    {
+        "id": 3,
+        "nombre": "Sebastian Freiberger",
+        "email": "sebas@gmail.com",
+        "contrasena": "user",
+        "tipo": "Usuario"
+    },
+    {
+        "id": 4,
+        "nombre": "Hernan Ingrassia",
+        "email": "herni@gmail.com",
+        "contrasena": "user",
+        "tipo": "Usuario"
+    },
+    {
+        "id": 5,
+        "nombre": "Francisco Manzanares",
+        "email": "fran@gmail.com",
+        "contrasena": "user",
+        "tipo": "Usuario"
+    },
+    {
+        "id": 6,
+        "nombre": "Elias Batica",
+        "email": "elias@gmail.com",
+        "contrasena": "user",
+        "tipo": "Usuario"
+        },
+    {
+        "id": 7,
+        "nombre": "Agustin Vazquez",
+        "email": "agus@gmail.com",
+        "contrasena": "user",
+        "tipo": "Usuario"
+        },
+    {
+        "id": 8,
+        "nombre": "Matias Trombetta",
+        "email": "mati@gmail.com",
+        "contrasena": "user",
+        "tipo": "Usuario"
+    }
+  ]
