@@ -105,7 +105,6 @@ main section article div.descripcion-article div.valores-producto{
     font-size: 16px;
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
 }
 
 

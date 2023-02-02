@@ -6,7 +6,8 @@
     "nombre": "Micrófono Sony F32",
     "precio": "109999",
     "descripcion": "",
-    "destacado": true
+    "destacado": true,
+    "imagen": "mic-blue.jpg"
   },
   {
     "id": 2,
@@ -15,7 +16,8 @@
     "nombre": "Auriculares Bose M65",
     "precio": 12000,
     "descripcion": "xxx",
-    "destacado": true
+    "destacado": true,
+    "imagen": "hp-yellow.jpg"
   },
   {
     "id": 3,
@@ -24,7 +26,8 @@
     "nombre": "Luces LG X34",
     "precio": 14000,
     "descripcion": "xxx",
-    "destacado": true
+    "destacado": true,
+    "imagen": "ring-light-10.jpg"
   },
   {
     "id": 4,
@@ -33,7 +36,8 @@
     "nombre": "Auriculares Samson IT82",
     "precio": 18000,
     "descripcion": "xxx",
-    "destacado": false
+    "destacado": false,
+    "imagen": "hp-yellow.jpg"
   },
   {
     "id": 5,
@@ -42,7 +46,8 @@
     "nombre": "Teclado LG MT13",
     "precio": 16000,
     "descripcion": "xxx",
-    "destacado": false
+    "destacado": false,
+    "imagen": "tecladoapp.jpg"
   },
   {
     "id": 6,
@@ -51,7 +56,8 @@
     "nombre": "Auriculares Sennheiser LU11",
     "precio": 20000,
     "descripcion": "xxx",
-    "destacado": false
+    "destacado": false,
+    "imagen": "hp-yellow.jpg"
   },
   {
     "id": 7,
@@ -60,7 +66,8 @@
     "nombre": "Teclados Sony MK05",
     "precio": 22000,
     "descripcion": "xxx",
-    "destacado": false
+    "destacado": false,
+    "imagen": "tecladoapp.jpg"
   },
   {
     "id": 8,
@@ -69,7 +76,8 @@
     "nombre": "Pantalla LG GE27",
     "precio": 24000,
     "descripcion": "xxx",
-    "destacado": false
+    "destacado": false,
+    "imagen": "hp-yellow.jpg"
   },
   {
     "id": 9,
@@ -78,7 +86,8 @@
     "nombre": "Consola Bose EE66",
     "precio": 26000,
     "descripcion": "xxx",
-    "destacado": false
+    "destacado": false,
+    "imagen": "consola.jpg"
   },
   {
     "id": 10,
@@ -87,7 +96,8 @@
     "nombre": "Micrófoco Sony DO11",
     "precio": 28000,
     "descripcion": "xxx",
-    "destacado": false
+    "destacado": false,
+    "imagen": "mic-desk.jpg"
   },
   {
     "id": 11,
@@ -95,7 +105,8 @@
     "precio": "1500000",
     "caract": "Microfono buenaso",
     "descripcion": "Microfono buenaso re contra buenaso!!!",
-    "destacado": false
+    "destacado": false,
+    "imagen": "mic-metal.jpg"
   },
   {
     "id": 12,
@@ -103,6 +114,7 @@
     "precio": "1234",
     "caract": "TEST TEST TEST",
     "descripcion": "TEST TEST TEST TEST",
-    "destacado": false
+    "destacado": false,
+    "imagen": "ring-hero-frame-2.jpg"
   }
 ]
