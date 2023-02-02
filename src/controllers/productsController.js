@@ -12,7 +12,7 @@ const productsController = {
     creacionPost: (req, res) => {
         let id = products[products.length-1].id + 1
         let productNuevo = {id, ...req.body}
-        /* productNuevo.imagen = req.file.filename; */
+        productNuevo.imagen = req.file.filename;
         products.push(productNuevo)
         fs.writeFileSync(productsJSON, JSON.stringify(products, null, 2))
         return res.redirect('/products/listador')
