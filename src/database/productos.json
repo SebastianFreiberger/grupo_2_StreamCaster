@@ -35,13 +35,13 @@
   {
     "id": 4,
     "caract": "Auriculares",
-    "marca": "Samson",
+    "marca": "LG",
     "nombre": "Auriculares Samson IT82",
-    "precio": 18000,
+    "precio": "30",
     "descuento": 30,
     "descripcion": "Auriculares recomendados para streamings",
     "destacado": false,
-    "imagen": "hp-yellow.jpg"
+    "imagen": "1674691942177.webp"
   },
   {
     "id": 5,
@@ -52,7 +52,7 @@
     "descuento": 30,
     "descripcion": "Teclado ideal para programación",
     "destacado": false,
-    "imagen": "tecladoapp.jpg"
+    "imagen": "1675345485642.png"
   },
   {
     "id": 6,
