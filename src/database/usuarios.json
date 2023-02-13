@@ -1,58 +1,81 @@
 [
-    {
-        "id": 1,
-        "nombre": "Admin",
-        "email": "admin@streamcaster.com.ar",
-        "contrasena": "admin",
-        "tipo": "Administrador"
-    },
-    {
-        "id": 2,
-        "nombre": "Supervisor",
-        "email": "supervisor@streamcaster.com.ar",
-        "contrasena": "supervisor",
-        "tipo": "Supervisor"
-    },
-    {
-        "id": 3,
-        "nombre": "Sebastian Freiberger",
-        "email": "sebas@gmail.com",
-        "contrasena": "user",
-        "tipo": "Usuario"
-    },
-    {
-        "id": 4,
-        "nombre": "Hernan Ingrassia",
-        "email": "herni@gmail.com",
-        "contrasena": "user",
-        "tipo": "Usuario"
-    },
-    {
-        "id": 5,
-        "nombre": "Francisco Manzanares",
-        "email": "fran@gmail.com",
-        "contrasena": "user",
-        "tipo": "Usuario"
-    },
-    {
-        "id": 6,
-        "nombre": "Elias Batica",
-        "email": "elias@gmail.com",
-        "contrasena": "user",
-        "tipo": "Usuario"
-        },
-    {
-        "id": 7,
-        "nombre": "Agustin Vazquez",
-        "email": "agus@gmail.com",
-        "contrasena": "user",
-        "tipo": "Usuario"
-        },
-    {
-        "id": 8,
-        "nombre": "Matias Trombetta",
-        "email": "mati@gmail.com",
-        "contrasena": "user",
-        "tipo": "Usuario"
-    }
-  ]
+  {
+    "id": 1,
+    "nombre": "Admin",
+    "apellido": "Istrador",
+    "email": "admin@streamcaster.com.ar",
+    "contrasenia": "admin",
+    "tipo": "Administrador",
+    "avatar": ""
+  },
+  {
+    "id": 2,
+    "nombre": "Super",
+    "apellido": "Visor",
+    "email": "supervisor@streamcaster.com.ar",
+    "contrasenia": "supervisor",
+    "tipo": "Supervisor",
+    "avatar": ""
+  },
+  {
+    "id": 3,
+    "nombre": "Sebastian",
+    "apellido": "Freiberger",
+    "email": "sebas@gmail.com",
+    "contrasenia": "user",
+    "tipo": "Usuario",
+    "avatar": ""
+  },
+  {
+    "id": 4,
+    "nombre": "Hernan",
+    "apellido": "Ingrassia",
+    "email": "herni@gmail.com",
+    "contrasenia": "user",
+    "tipo": "Usuario",
+    "avatar": ""
+  },
+  {
+    "id": 5,
+    "nombre": "Francisco",
+    "apellido": "Manzanares",
+    "email": "fran@gmail.com",
+    "contrasenia": "user",
+    "tipo": "Usuario",
+    "avatar": ""
+  },
+  {
+    "id": 6,
+    "nombre": "Elias",
+    "apellido": "Batica",
+    "email": "elias@gmail.com",
+    "contrasenia": "user",
+    "tipo": "Usuario",
+    "avatar": ""
+  },
+  {
+    "id": 7,
+    "nombre": "Agustin",
+    "apellido": "Vazquez",
+    "email": "agus@gmail.com",
+    "contrasenia": "user",
+    "tipo": "Usuario",
+    "avatar": ""
+  },
+  {
+    "id": 8,
+    "nombre": "Matias",
+    "apellido": "Trombetta",
+    "email": "mati@gmail.com",
+    "contrasenia": "user",
+    "tipo": "Usuario",
+    "avatar": ""
+  },
+  {
+    "id": 9,
+    "nombre": "FRANCISCO JOSE",
+    "apellido": "MANZANARES",
+    "email": "fran.manzanares@gmail.com",
+    "contrasenia": "thrdg,jmgfd"
+  }
+]
