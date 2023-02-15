@@ -26,6 +26,10 @@ const userController = {
     // registroPut: () => { },
     // loginPost: () => { },
 
+    profile: (req, res) => {
+        res.render('userProfile')
+    },
+
 }
 
 module.exports = userController;

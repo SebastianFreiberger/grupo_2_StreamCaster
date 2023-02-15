@@ -18,6 +18,7 @@ const multerDiskStorage = multer.diskStorage({
 
 
 userRouter.get('/login', userController.login);
+userRouter.get('/profile', userController.profile);
 userRouter.get('/registro', userController.registro);
 userRouter.post('/registro', userController.registroPost);
 /* userRouter.put('/registro', userController.registroPut); */
