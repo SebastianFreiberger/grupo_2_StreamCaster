@@ -50,6 +50,10 @@ header{
 
 }
 
+.avatar-profile {
+    width: 50px;
+}
+
 .header-titulo{
     font-family: 'Open Sans', sans-serif;
     font-size: 40px;
