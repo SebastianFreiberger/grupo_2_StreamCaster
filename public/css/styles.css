@@ -184,7 +184,7 @@ header ul li a:hover{
 body{
     margin: 0;
     font-family: 'Oswald', sans-serif;
-    background-image: url("../images/v1016-b-08.jpg");
+    background-image: url("../images/products/v1016-b-08.jpg");
     display: flex;
     flex-direction: column;
     height: 100vh;
