@@ -30,7 +30,7 @@ const userController = {
     //POST LOGIN
     loginProcess: (req, res) => {
 		let userToLogin = userController.findByField('email', req.body.email);
-        	
+        // let isOkThePassword = bcryptjs.compareSync(req.body.password, userToLogin.password);
 		if(userToLogin){
             if (userToLogin.contrasenia == req.body.contrasenia) {
                 delete userToLogin.contrasenia;
