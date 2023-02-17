@@ -15,26 +15,28 @@
                     <h1>Iniciar sesion</h1>
                 </div>
                 <section class="section-loggin">
-                    <form action="/loggin" method="POST" class="form-loggin">
+                    <form action="/user/login" method="POST" class="form-loggin">
                         <div class="campo-loggin">
-                            <label for="usuario">Usuario</label>
-                            <input type="text" name="usuario" id="usuario" required>
+                            <label for="email">Email</label>
+                            <input type="text" name="email" id="email" required>
                         </div>
                         <div class="campo-loggin">
                             <label for="contrasenia">Contraseña</label>
-                            <input type="password" name="password" id="contrasenia" required>
+                            <input type="password" name="contrasenia" id="contrasenia" required>
                         </div>
+                        <% if (locals.errors && errors.email) { %>
+                            <div class="text-danger">
+                                <%= errors.email.msg %>
+                            </div>
+                        <% } %>
+
                         <label class="checkbox-recordar">
-                            <input type="checkbox" id="checkbox-loggin" class="checkbox-loggin" required>Recordar contraseña
+                            <input name="remember_user" type="checkbox" id="checkbox-loggin" class="checkbox-loggin">Mantener mi sesion iniciada
                         </label>          
                         <div class="boton">
                             <button type="submit" class="button-ingresar">
                                 Ingresar
                             </button>
-                        </div>
-                        <div class="links-recuperacion">
-                            <a href="#">Olvidaste tu usuario?</a>
-                            <a href="#">Olvidaste tu clave?</a>
                         </div>
                     </form>
                 </section>
