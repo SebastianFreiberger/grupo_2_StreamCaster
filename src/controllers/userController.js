@@ -76,7 +76,7 @@ const userController = {
     registroPost: (req, res) => {
         let id = usuarios[usuarios.length - 1].id + 1
         let userNuevo = { id, ...req.body }
-        // userNuevo.avatar = req.file.filename;
+        userNuevo.avatar = req.file.filename;
         usuarios.push(userNuevo)
         fs.writeFileSync(usuariosJSON, JSON.stringify(usuarios, null, 2))
         return res.redirect('/')

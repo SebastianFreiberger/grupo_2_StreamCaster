@@ -77,5 +77,53 @@
     "apellido": "MANZANARES",
     "email": "fran.manzanares@gmail.com",
     "contrasenia": "thrdg,jmgfd"
+  },
+  {
+    "id": 10,
+    "nombre": "Hernan",
+    "apellido": "Ingrassia",
+    "email": "hernaningrassia@gmail.com",
+    "contrasenia": "1234",
+    "avatar": "Foto HI.jpg"
+  },
+  {
+    "id": 11,
+    "nombre": "Lionel",
+    "apellido": "Messi",
+    "email": "campeon@gmail.com",
+    "contrasenia": "2023",
+    "avatar": "images.jpeg"
+  },
+  {
+    "id": 12,
+    "nombre": "Fideo",
+    "apellido": "Di Maria",
+    "email": "di@maria.com",
+    "contrasenia": "11",
+    "avatar": "16766588323656,jpg.jpg"
+  },
+  {
+    "id": 13,
+    "nombre": "angelito",
+    "apellido": "dimaria",
+    "email": "arg@gmail.com",
+    "contrasenia": "112023",
+    "avatar": "angelito.jpg"
+  },
+  {
+    "id": 14,
+    "nombre": "Juli",
+    "apellido": "Alvarez",
+    "email": "ja@gmail.com",
+    "contrasenia": "129",
+    "avatar": "3.jpeg"
+  },
+  {
+    "id": 15,
+    "nombre": "ALexix",
+    "apellido": "MacAllister",
+    "email": "am@gmail.com",
+    "contrasenia": "100908",
+    "avatar": "alexis.jpg"
   }
 ]

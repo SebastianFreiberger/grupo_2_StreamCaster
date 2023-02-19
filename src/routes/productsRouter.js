@@ -22,7 +22,7 @@ router.get('/detalle/:id', productsController.detalle); // Ruta hacia el detalle
 
 router.get('/creacion', productsController.creacionProducto); // Ruta hacia el formulario de creación de produtos
 
-router.post('/creacion', uploadFile.single("imagen") , productsController.creacionPost); //Crea registro de un producto en el JSON
+router.post('/creacion', uploadFile.single("imagen"), productsController.creacionPost); //Crea registro de un producto en el JSON
 
 router.get('/edicion/:id', productsController.edicionProducto); //Ruta hacia la edicion del producto
 
