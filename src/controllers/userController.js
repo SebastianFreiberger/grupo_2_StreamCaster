@@ -1,7 +1,7 @@
 const path = require('path');
 const fs = require('fs');
 const bcryptjs = require('bcryptjs');
-
+const { validationResult } = require ('express-validator')
 const usuariosJSON = path.join(__dirname, '../database/usuarios.json');
 const usuarios = JSON.parse(fs.readFileSync(usuariosJSON, 'utf-8'));
 
@@ -74,12 +74,19 @@ const userController = {
     },
 
     registroPost: (req, res) => {
+        const resultValidation= validationResult(req);
+        if(resultValidation.errors.length > 0){
+            return res.render ('registro', {
+                errors: resultValidation.mapped(),
+            })
+        }else{         
         let id = usuarios[usuarios.length - 1].id + 1
         let userNuevo = { id, ...req.body }
         userNuevo.avatar = req.file.filename;
         usuarios.push(userNuevo)
         fs.writeFileSync(usuariosJSON, JSON.stringify(usuarios, null, 2))
         return res.redirect('/')
+        }
     },
     // registroPut: () => { },
     // loginPost: () => { },

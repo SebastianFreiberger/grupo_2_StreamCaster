@@ -77,5 +77,21 @@
     "apellido": "MANZANARES",
     "email": "fran.manzanares@gmail.com",
     "contrasenia": "thrdg,jmgfd"
+  },
+  {
+    "id": 10,
+    "nombre": "Hernan",
+    "apellido": "anche",
+    "email": "ha@gmail.com",
+    "contrasenia": "1234",
+    "avatar": "1676865494327.jpg"
+  },
+  {
+    "id": 11,
+    "nombre": "magui",
+    "apellido": "ingra",
+    "email": "ma@gmail.com",
+    "contrasenia": "5623",
+    "avatar": "1676865565975.jpeg"
   }
 ]

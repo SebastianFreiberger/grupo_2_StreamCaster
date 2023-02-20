@@ -63,7 +63,10 @@ section.section-rgt form.form-rgt {
   text-decoration: none;
   color: #fff;
 } 
-
+.errorReg{
+  color: red;
+  font-size: 12;
+}
 .button-rgt{
   border-radius: 15px;
   border: none;

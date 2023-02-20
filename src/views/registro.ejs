@@ -14,28 +14,52 @@
     <p class="titulo-form-rgt">
       Creá tu cuenta de StreamCaster
     </p>
-  
     <section class="section-rgt">
       <form action="/user/registro" method="POST" class="form-rgt" enctype="multipart/form-data">
+        <% if(locals.error) { %>  
+          <% for (let oneError in errors) { %>
+             <p><%= errors[oneError].msg %> </p>
+          <%}%>
+        <%}%> 
         <!-- campo "Nombre" -->
         <div class="campo-rgt">
           <label for="nombre">Nombre</label>
-                    <input type="text" name="nombre" id="nombre" required />
+            <input type="text" name="nombre" id="nombre" />
+            <% if (locals.errors && errors.nombre){ %>
+              <div class="errorReg">
+                <%= errors.nombre.msg%>
+              </div>
+            <%}%>
         </div>
         <!-- campo "Apellido" -->
         <div class="campo-rgt">
           <label for="apellido">Apellido</label>       
-          <input type="text" name="apellido" id="apellido" required />
+          <input type="text" name="apellido" id="apellido"  />
+          <% if (locals.errors && errors.apellido){ %>
+            <div class="errorReg">
+              <%= errors.apellido.msg%>
+            </div>
+          <%}%>
         </div>
         <!-- campo "Email" -->
         <div class="campo-rgt">
           <label for="email">Email</label>          
-          <input type="email" name="email" id="email" required />
+          <input type="email" name="email" id="email" />
+          <% if (locals.errors && errors.email){ %>
+            <div class="errorReg">
+              <%= errors.email.msg%>
+            </div>
+          <%}%>
         </div>
         <!-- campo "Contraseña" -->
         <div class="campo-rgt">
           <label for="contraseña">Contraseña</label>          
-          <input type="password" name="contrasenia" id="contrasenia" required />
+          <input type="password" name="contrasenia" id="contrasenia" />
+          <% if (locals.errors && errors.contrasenia){ %>
+            <div class="errorReg">
+              <%= errors.contrasenia.msg%>
+            </div>
+          <%}%>
         </div>
         <!-- campo "Imagen" -->
         <div class="campo-rgt">
