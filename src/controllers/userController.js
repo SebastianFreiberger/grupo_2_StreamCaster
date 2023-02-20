@@ -80,7 +80,7 @@ const userController = {
                 errors: resultValidation.mapped(),
                 oldData: req.body
             })
-        }else{         
+        }else{
         let id = usuarios[usuarios.length - 1].id + 1
         let userNuevo = { id, ...req.body }
         userNuevo.avatar = req.file.filename;

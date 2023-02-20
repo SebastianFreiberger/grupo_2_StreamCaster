@@ -70,7 +70,12 @@
         <div class="campo-rgt">
           <label for="img">Imagen del usuario:</label>
           <input class="subir-imagenes" type="file" id="img" name="avatar" placeholder="Seleccionar image">
-      </div>        
+          <% if (locals.errors && errors.avatar){ %>
+            <div class="errorReg">
+              <%= errors.avatar.msg%>
+            </div>
+          <%}%>
+        </div>        
         <!-- cuadrito de verificacion "Acepto términos y condiciones" -->
         <div class="terminos-form">
           <label>
