@@ -35,3 +35,11 @@ Armado en equipo del CRUD, solo falta el DELETE
 30/01
 Finalización en equipo del DELETE. Solo falta revisar el CRUD
 Incorporar el JSON de usuarios
+
+20-2
+Registro de usuarios:
+1. Guarda la información en el JSON (ya funcionaba, se sumó la posibilidad de adjuntar imagen de acuerdo a requisito del SPRINT)
+2. Todos los campos tienen validación. 
+    Nombre, apellido y contraseña: solo que no esté vacío el campo
+    Email: que no esté vacío y que sea un email válido
+    Imagen: Originalmente pensaba que sea optativo este campo. Sin embargo quedó obligatorio ya que si cargaba un nuevo usuario sin imagen, me tiraba un error por filename. Si alguno lo puede ver genial. Quedo con dos validaciones: que no este vacio y que sea una extensión permitida
