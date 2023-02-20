@@ -67,6 +67,10 @@ section.section-rgt form.form-rgt {
   color: red;
   font-size: 12;
 }
+.is-invalid{
+  background-color: grey;
+}
+
 .button-rgt{
   border-radius: 15px;
   border: none;

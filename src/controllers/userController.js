@@ -78,6 +78,7 @@ const userController = {
         if(resultValidation.errors.length > 0){
             return res.render ('registro', {
                 errors: resultValidation.mapped(),
+                oldData: req.body
             })
         }else{         
         let id = usuarios[usuarios.length - 1].id + 1

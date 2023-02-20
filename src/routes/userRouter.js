@@ -20,7 +20,9 @@ const uploadFile = multer({storage: multerDiskStorage})
 const validations = [
     body('nombre').notEmpty().withMessage('Tienes que escribir un nombre'),
     body('apellido').notEmpty().withMessage('Tienes que escribir un apellido'),
-    body('email').notEmpty().withMessage('Tienes que escribir un email válido'),
+    body('email')
+        .notEmpty().withMessage('Tienes que escribir un correo electrónico').bail()
+        .isEmail().withMessage('Tienes que escribir un correo válido'),
     body('contrasenia').notEmpty().withMessage('Tienes que escribir una contraseña')
 ]
 
