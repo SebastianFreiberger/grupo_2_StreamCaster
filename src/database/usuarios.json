@@ -77,5 +77,13 @@
     "apellido": "MANZANARES",
     "email": "fran.manzanares@gmail.com",
     "contrasenia": "thrdg,jmgfd"
+  },
+  {
+    "id": 10,
+    "nombre": "lionel",
+    "apellido": "messi",
+    "email": "lio@messi.god",
+    "contrasenia": "$2a$10$LDOgO98a3TU5Q0pdRCf2UecbFvWjgzKAgXytNryI5hIlWiM243fPy",
+    "avatar": "1676996775790.jpg"
   }
 ]
