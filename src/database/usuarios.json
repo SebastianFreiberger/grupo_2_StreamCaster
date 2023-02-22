@@ -80,10 +80,20 @@
   },
   {
     "id": 10,
-    "nombre": "lionel",
-    "apellido": "messi",
+    "nombre": "Lionel",
+    "apellido": "Messi",
     "email": "lio@messi.god",
     "contrasenia": "$2a$10$LDOgO98a3TU5Q0pdRCf2UecbFvWjgzKAgXytNryI5hIlWiM243fPy",
+    "tipo": "Administrador",
     "avatar": "1676996775790.jpg"
+  },
+  {
+    "id": 11,
+    "nombre": "Angel",
+    "apellido": "Di María",
+    "email": "fideo@dimaria.god",
+    "contrasenia": "$2a$10$cIOLSUr7FJGEL5y8ufDrluYRcHAu0wWu5eJnja45M5STc6XmsM5Vu",
+    "tipo": "Administrador",
+    "avatar": "1677099376574.jpg"
   }
 ]
