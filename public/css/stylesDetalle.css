@@ -2,10 +2,6 @@
 
 /* Header */
 
-.navbar-usuario-registro-detalle ul{
-    width: 320px;
-
-}
 /* Footer */
 
 /* MAIN */
@@ -56,7 +52,7 @@ main.detalle{
     width: 100%;
     border-radius: 7px;
 }
-ul{
+ul.pagos{
     margin-left: 5%;
 }
 .pagos{
