@@ -36,6 +36,13 @@ Armado en equipo del CRUD, solo falta el DELETE
 Finalización en equipo del DELETE. Solo falta revisar el CRUD
 Incorporar el JSON de usuarios
 
+17-2
+Login de usuarios:
+1. Toma la información en el JSON del usuario que va a logearse y checkeamos si el mail del usuario existe y si la contraseña es la correcta, en caso de que las credenciales sean las correctas permite logear y mantener la sesion iniciada, de lo contrario, avisa que las credenciales o la contraseña son incorrectas.
+2. Una vez logeado, el usuario es redirigido a su perfil mostrando su nombre y foto elegida, asi como tambien las opciones de registro y login desaparecen, dejando solo en vista la opcion de perfil(profile)
+3. Agregamos boton de cerrar sesion para la destruccion de la cookie que mantiene la sesion iniciada.
+
+
 20-2
 Registro de usuarios:
 1. Guarda la información en el JSON (ya funcionaba, se sumó la posibilidad de adjuntar imagen de acuerdo a requisito del SPRINT)
