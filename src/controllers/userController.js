@@ -100,8 +100,6 @@ const userController = {
                 id, ...req.body,
                 contrasenia: bcryptjs.hashSync(req.body.contrasenia, 10),
             };
-
-
             userNuevo.avatar = req.file.filename;
             usuarios.push(userNuevo)
             fs.writeFileSync(usuariosJSON, JSON.stringify(usuarios, null, 2))
