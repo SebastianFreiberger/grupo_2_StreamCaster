@@ -31,7 +31,9 @@
                             <div class="titulo-producto">
                                 <p><%= products[i].nombre %></p>
                                 <p>$ <%= products[i].precio %></p>
+                                <% if (locals.isLogged && userLogged.tipo == "Administrador") { %>
                                 <a href="/products/edicion/<%= products[i].id %>" class="icon-edicion"><i class="fa-solid fa-pen"></i></a>
+                                <% } %>
                             </div>
                             <!-- <div class="valores-producto">
                             </div> -->
