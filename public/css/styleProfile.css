@@ -1,3 +1,5 @@
+/* MOBILE */
+
 main.main-profile{
     background-color: aliceblue;
     color: #323232;
@@ -6,3 +8,64 @@ main.main-profile{
     border-radius: 15px;
     box-shadow: #3b3b3b 1px 0 10px 5px;
     }
+
+main div.title-user-profile{
+    text-align: center;
+}
+
+main .section-profile{
+    display: flex;
+    flex-direction: column;
+    margin: 15px;
+    justify-content: space-around;
+}
+
+ul.ul-info-user li {
+    list-style: none;
+}
+
+picture.section-imgdetail-profile {
+    margin-top: 10px;
+    text-align: center;
+}
+
+.imgdetail-profile {
+    width: 40vw;
+}
+
+/* TABLET */
+
+@media (min-width: 480px){
+
+    picture.section-imgdetail-profile {
+        margin-top: 10px;
+        text-align: center;
+    }
+
+    .imgdetail-profile {
+        margin-left: 5px;
+        width: 30vw;
+        max-width: 550px;
+    }
+
+}
+
+/* DESKTOP */
+
+@media (min-width: 1200px){
+    main.main-profile{
+        width: 30vw;        
+    }
+    
+    main .section-profile{
+        display: flex;
+        flex-direction: row;
+    }
+
+    .imgdetail-profile {
+        width: 10vw;
+        margin-left: 5px;
+        max-width: 550px;
+    }
+
+}

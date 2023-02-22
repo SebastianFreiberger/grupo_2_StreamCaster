@@ -50,8 +50,20 @@ header{
 
 }
 
+div.header-userprofile {
+    display: flex;
+    align-items: center;
+}
+
+div.header-userprofile img {
+    margin-right: 10px;
+    box-shadow: #af8cfe 0px 0px 5px 3px;
+}
+
 .avatar-profile {
     width: 50px;
+    height: 50px;
+    border-radius: 50%;
 }
 
 .header-titulo{

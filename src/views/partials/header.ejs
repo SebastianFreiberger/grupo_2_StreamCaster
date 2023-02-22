@@ -18,9 +18,11 @@
                     <% if (locals.isLogged) { %>
                     <li>                       
                         <a href="/user/profile" class="navbar-item">
-                            <img class="avatar-profile" src="/images/users/<%= userLogged.avatar %>" alt="">                        
-                            <i class="fa-solid fa-arrow-right-to-bracket"></i>
-                            <%= locals.userLogged.nombre %>
+                            <div class="header-userprofile">
+                                <img class="avatar-profile" src="/images/users/<%= userLogged.avatar %>" alt="">                        
+                                <i class="fa-solid fa-arrow-right-to-bracket"></i>
+                                <%= locals.userLogged.nombre %>
+                            </div>
                         </a>
                     </li>
                     <% } else { %>

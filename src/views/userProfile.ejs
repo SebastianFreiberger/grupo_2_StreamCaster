@@ -11,13 +11,24 @@
     <%- include('partials/header') %> 
 
     <main class="main-profile">
-        <section>
-            <div><%=  %></div>            
-            <div>Hola <%= userLogged.nombre %></div>
+        <div class="title-user-profile">
+            <h1>Hola <%= userLogged.nombre %></h1>
+        </div>
+        <section class="section-profile">            
+            <div class="info-user">
+            <h1>Tus datos</h1>
+                <ul class="ul-info-user">
+                    <li>Nombre: "<%= userLogged.nombre %>"</li>
+                    <li>Apellido: "<%= userLogged.apellido %>"</li>
+                    <li>Email: <%= userLogged.email %></li>
+                </ul>                
+            </div>
+            
+                <picture class="section-imgdetail-profile">
+                    <img src="/images/users/<%= userLogged.avatar %>" class="imgdetail-profile">
+                </picture>
+            
         </section>
-        <section class="fotoybasic">
-            <picture><img src="/images/users/<%= userLogged.avatar %>" class="imgProd"></picture>
-        </section>            
     </main>
 
     <!-- Footer -->
