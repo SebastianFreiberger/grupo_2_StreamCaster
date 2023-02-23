@@ -113,6 +113,12 @@ const userController = {
         res.render('userProfile')
     },
 
+    logout: (req, res) => {
+		res.clearCookie('userEmail');
+		req.session.destroy();
+		return res.redirect('/');
+	}
+
 }
 
 module.exports = userController;

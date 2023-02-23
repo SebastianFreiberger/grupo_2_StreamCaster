@@ -45,6 +45,8 @@ userRouter.post('/login', userController.loginProcess);
 userRouter.get('/profile', userController.profile);
 userRouter.get('/registro', userController.registro);
 userRouter.post('/registro',uploadFile.single("avatar"), validations, userController.registroPost);
+userRouter.get('/logout', userController.logout);
 /* userRouter.put('/registro', userController.registroPut); */
+
 
 module.exports = userRouter;
