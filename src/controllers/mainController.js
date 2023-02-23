@@ -8,6 +8,10 @@ const controller = {
         return res.render('home', {products: products});
     },
 
+    errorNotFound: (req, res) => {
+        return res.render('error404');
+    },
+
     carrito: (req, res) => {
         res.render('carrito')
     },
