@@ -4,6 +4,9 @@ const productsController = require('../controllers/productsController');
 const multer = require('multer');
 const path = require('path');
 
+const guestMiddleware = require('../middlewares/guestMiddleware');
+const authMiddleware = require('../middlewares/authMiddleware');
+
 const multerDiskStorage = multer.diskStorage({
     destination: (req, file, cb) => {
         cb(null, path.join(__dirname, "../../public/images/products"));
@@ -20,9 +23,9 @@ router.get('/listador', productsController.listador); // Ruta hacia el listado d
 
 router.get('/detalle/:id', productsController.detalle); // Ruta hacia el detalle de produto
 
-router.get('/creacion', productsController.creacionProducto); // Ruta hacia el formulario de creación de produtos
+router.get('/creacion', authMiddleware, productsController.creacionProducto); // Ruta hacia el formulario de creación de produtos
 
-router.post('/creacion', uploadFile.single("imagen"), productsController.creacionPost); //Crea registro de un producto en el JSON
+router.post('/creacion', authMiddleware, uploadFile.single("imagen"), productsController.creacionPost); //Crea registro de un producto en el JSON
 
 router.get('/edicion/:id', productsController.edicionProducto); //Ruta hacia la edicion del producto
 

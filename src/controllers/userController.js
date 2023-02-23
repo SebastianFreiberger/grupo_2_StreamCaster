@@ -30,8 +30,8 @@ const userController = {
     //POST LOGIN
     loginProcess: (req, res) => {
         let userToLogin = userController.findByField('email', req.body.email);
-        let isOkThePassword = bcryptjs.compareSync(req.body.contrasenia, userToLogin.contrasenia);
         if (userToLogin) {
+            let isOkThePassword = bcryptjs.compareSync(req.body.contrasenia, userToLogin.contrasenia);
             // if (userToLogin.contrasenia == req.body.contrasenia) {
             if (isOkThePassword) {
                 delete userToLogin.contrasenia;
@@ -57,18 +57,14 @@ const userController = {
                 }
             }
         });
-        //res.send("credencial invalida");
-
-        // delete userToLogin.contrasenia;
-        //req.session.userLogged = userToLogin;
-
-        /*if(req.body.remember_user) {
-            res.cookie('userEmail', req.body.email, { maxAge: (1000 * 60) * 60 })
-        }*/
-
-
     },
 
+    logout: (req, res) => {
+		res.clearCookie('userEmail');
+		req.session.destroy();
+		return res.redirect('/');
+	},
+    
     // GET    
     registro: (req, res) => {
         res.render('registro')
@@ -109,16 +105,11 @@ const userController = {
     // registroPut: () => { },
     // loginPost: () => { },
 
-    profile: (req, res) => {
-        res.render('userProfile')
-    },
-
-    logout: (req, res) => {
-		res.clearCookie('userEmail');
-		req.session.destroy();
-		return res.redirect('/');
-	}
-
+	profile: (req, res) => {
+		return res.render('userProfile', {
+			user: req.session.userLogged
+		});
+	},
 }
 
 module.exports = userController;
