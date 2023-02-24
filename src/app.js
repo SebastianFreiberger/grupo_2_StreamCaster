@@ -21,6 +21,7 @@ app.use(express.static('public'));
 app.use(cookies());
 app.use(userLoggedMiddleware);
 
+
 app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
 app.use(methodOverride('_method'));
@@ -32,5 +33,9 @@ app.set('view engine', 'ejs');
 app.use('/', mainRouter);
 app.use('/user', userRouter);
 app.use('/products', productsRouter);
+
+app.get('*', function(req, res){
+	res.render('error404');
+  });
 
 app.listen(3000, ()=>console.log("Servidor en puerto 3000 corriendo"));
