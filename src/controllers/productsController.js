@@ -1,5 +1,6 @@
 const path = require('path');
 const fs = require('fs');
+const {validationResult} = require('express-validator');
 const productsJSON = path.join(__dirname,'../database/productos.json');
 const products = JSON.parse(fs.readFileSync(productsJSON, 'utf-8'));
 
@@ -10,6 +11,12 @@ const productsController = {
     },
 
     creacionPost: (req, res) => {
+        const productoValido = validationResult(req)
+        console.log(productoValido);
+        if(productoValido.errors.length > 0){
+            return res.render('creacion-de-producto', {errores: productoValido.mapped(), dataValida: req.body})
+        }
+
         let id = products[products.length-1].id + 1
         let productNuevo = {id, ...req.body}
         productNuevo.imagen = req.file.filename;

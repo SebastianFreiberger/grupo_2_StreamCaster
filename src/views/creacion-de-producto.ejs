@@ -15,7 +15,10 @@
             <form action="/products/creacion" method="POST" class="form-crear" enctype="multipart/form-data">
                 <div class="campo-crear">
                     <label for="nombre">Nombre del producto</label>
-                    <input class="nombre-producto" type="text" id="nombre" name="nombre" placeholder="Coloque aquí el nombre del producto">
+                    <input class="nombre-producto" type="text" id="nombre" name="nombre" placeholder="Coloque aquí el nombre del producto" value="<%= locals.dataValida ? dataValida.nombre: null %>">
+                    <% if(locals.errores && errores.nombre) { %>
+                        <p><%= errores.nombre.msg %></p>
+                    <% } %>
                 </div>
                 <div class="campo-crear">
                     <label for="marca">Marca del producto</label>
