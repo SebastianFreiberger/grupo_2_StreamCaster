@@ -3,45 +3,44 @@ module.exports = function(sequelize, dataTypes){
 
     let cols = {
         id: {
-            type: DataTypes.INTEGER,
-            primaryKey = true,
+            type: dataTypes.INTEGER,
+            primaryKey: true,
             autoIncremental: true,
         },
         nombre:  {
-            type: DataTypes.STRING,
+            type: dataTypes.STRING,
         },
         descripcion:  {
-            type: DataTypes.STRING,
+            type: dataTypes.STRING,
         },
         precio:  {
-            type: DataTypes.INTEGER,
+            type: dataTypes.INTEGER,
         },
         descuento:  {
-            type: DataTypes.INTEGER,
+            type: dataTypes.INTEGER,
         },
         destacado:  {
-            type: DataTypes.STRING,
+            type: dataTypes.STRING,
         },
         imagen:  {
-            type: DataTypes.STRING,
+            type: dataTypes.STRING,
         },
         id_marca: {
-            type: DataTypes.STRING,
+            type: dataTypes.STRING,
         },
         pesoKg: {
-            type: DataTypes.INTEGER,
+            type: dataTypes.INTEGER,
         },
     }
 
     let config = {
-        tableName = "productos",
+        tableName: "productos",
         timestamps: false
     }
 
     let Producto = sequelize.define(alias, cols, config);
 
+    return Producto;
     }
 
 
-    return Producto;
-}

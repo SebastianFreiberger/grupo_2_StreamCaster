@@ -5,7 +5,7 @@ const { validationResult } = require('express-validator')
 const usuariosJSON = path.join(__dirname, '../database/usuarios.json');
 const usuarios = JSON.parse(fs.readFileSync(usuariosJSON, 'utf-8'));
 
-
+let db = require("../../database/models");
 
 const userController = {
     // GET    
@@ -60,15 +60,19 @@ const userController = {
     },
 
     logout: (req, res) => {
-		res.clearCookie('userEmail');
-		req.session.destroy();
-		return res.redirect('/');
-	},
-    
+        res.clearCookie('userEmail');
+        req.session.destroy();
+        return res.redirect('/');
+    },
+
     // GET    
     registro: (req, res) => {
         res.render('registro')
     },
+
+    // POST
+
+
 
     registroPost: (req, res) => {
         const resultValidation = validationResult(req);
@@ -79,8 +83,8 @@ const userController = {
             })
         }
         else {
-            let userInDB = userController.findByField('email', req.body.email);
-            if (userInDB) {
+            db.Usuarios.findOne({ where: { email: req.body.email } }).then((resultado) => {
+
                 return res.render('registro', {
                     errors: {
                         email: {
@@ -89,27 +93,40 @@ const userController = {
                     },
                     oldData: req.body
                 });
-            };
+            });
 
-            let id = usuarios[usuarios.length - 1].id + 1;
-            let userNuevo = {
-                id, ...req.body,
+            db.Usuarios.create({
+                nombre: req.body.nombre,
+                apellido: req.body.apellido,
+                email: req.body.email,
                 contrasenia: bcryptjs.hashSync(req.body.contrasenia, 10),
-            };
-            userNuevo.avatar = req.file.filename;
-            usuarios.push(userNuevo)
-            fs.writeFileSync(usuariosJSON, JSON.stringify(usuarios, null, 2))
+                createdAt: req.body.createdAt,
+                updatedAt: req.body.updatedAt,
+                id_rol: "1"
+            })
+
+            // let id = usuarios[usuarios.length - 1].id + 1;
+            // let userNuevo = {
+            //     id, ...req.body,
+            //     contrasenia: bcryptjs.hashSync(req.body.contrasenia, 10),
+            // };
+            // userNuevo.avatar = req.file.filename;
+            // usuarios.push(userNuevo)
+
+
+
+            // fs.writeFileSync(usuariosJSON, JSON.stringify(usuarios, null, 2))
             return res.redirect('/')
         }
     },
     // registroPut: () => { },
     // loginPost: () => { },
 
-	profile: (req, res) => {
-		return res.render('userProfile', {
-			user: req.session.userLogged
-		});
-	},
+    profile: (req, res) => {
+        return res.render('userProfile', {
+            user: req.session.userLogged
+        });
+    },
 }
 
 module.exports = userController;
