@@ -48,5 +48,5 @@ module.exports = function (sequelize, dataTypes) {
     }
 
 
-return Usuarios;
+return Facturas;
 }

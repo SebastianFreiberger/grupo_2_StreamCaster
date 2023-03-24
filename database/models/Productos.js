@@ -40,7 +40,7 @@ module.exports = function (sequelize, dataTypes) {
 
     let Productos = sequelize.define(alias, cols, config);
 
-    Facturas.associate = function (models) {
+    Productos.associate = function (models) {
 
         Productos.belongsToMany(models.Facturas, {
             as: "facturas",

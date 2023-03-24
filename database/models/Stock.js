@@ -38,5 +38,5 @@ module.exports = function (sequelize, dataTypes) {
     }
 
 
-    return Marcas;
+    return Stock;
 }
