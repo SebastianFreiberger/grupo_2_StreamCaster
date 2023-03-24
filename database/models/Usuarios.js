@@ -39,8 +39,18 @@ module.exports = function(sequelize, dataTypes){
         timestamps: false
     }
 
-    let Usuario = sequelize.define(alias, cols, config);
- 
+    let Usuarios = sequelize.define(alias, cols, config);
 
-    return Usuario;
+    Usuarios.associate = function(models){
+        Usuarios.belongsTo(models.Roles, {
+            as: "roles",
+            foreignKey: "id_rol"
+        });
+        Usuarios.hasMany(models.Facturas, {
+            as: "facturas",
+            foreignKey: "id_usuario"
+        });
+    }
+ 
+    return Usuarios;
 }
