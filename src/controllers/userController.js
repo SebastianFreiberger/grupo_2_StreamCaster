@@ -76,34 +76,28 @@ const userController = {
 
     registroPost: (req, res) => {
         const resultValidation = validationResult(req);
+        let emailExistente = db.Usuarios.findOne({ where: { email: req.body.email } });
+
         if (resultValidation.errors.length > 0) {
             return res.render('registro', {
                 errors: resultValidation.mapped(),
                 oldData: req.body
             })
         }
-        else {
-            db.Usuarios.findOne({ where: { email: req.body.email } }).then((resultado) => {
+        
+        else if (emailExistente){
+            emailExistente.then((resultado) => {
 
                 return res.render('registro', {
                     errors: {
                         email: {
                             msg: 'Este email ya está registrado'
-                        }
-                    },
+                        },
                     oldData: req.body
+                    },
+   
                 });
             });
-
-            db.Usuarios.create({
-                nombre: req.body.nombre,
-                apellido: req.body.apellido,
-                email: req.body.email,
-                contrasenia: bcryptjs.hashSync(req.body.contrasenia, 10),
-                createdAt: req.body.createdAt,
-                updatedAt: req.body.updatedAt,
-                id_rol: "1"
-            })
 
             // let id = usuarios[usuarios.length - 1].id + 1;
             // let userNuevo = {
@@ -112,11 +106,20 @@ const userController = {
             // };
             // userNuevo.avatar = req.file.filename;
             // usuarios.push(userNuevo)
-
-
-
             // fs.writeFileSync(usuariosJSON, JSON.stringify(usuarios, null, 2))
-            return res.redirect('/')
+            
+        }
+        else {
+            db.Usuarios.create({
+                nombre: req.body.nombre,
+                apellido: req.body.apellido,
+                email: req.body.email,
+                contrasenia: bcryptjs.hashSync(req.body.contrasenia, 10),
+                createdAt: req.body.createdAt,
+                updatedAt: req.body.updatedAt,
+                id_rol: 1
+            })
+        return res.redirect('/')
         }
     },
     // registroPut: () => { },

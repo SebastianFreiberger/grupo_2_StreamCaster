@@ -29,7 +29,7 @@ module.exports = function(sequelize, dataTypes){
             type: dataTypes.DATE
         },
         id_rol: {
-            type: dataTypes.STRING
+            type: dataTypes.INTEGER
         },
 
     }
@@ -48,7 +48,7 @@ module.exports = function(sequelize, dataTypes){
         });
         Usuarios.hasMany(models.Facturas, {
             as: "facturas",
-            foreignKey: "id_usuario"
+            foreignKey: "usuarios_ibfk_1" // id_usuario
         });
     }
  
