@@ -36,6 +36,8 @@ Armado en equipo del CRUD, solo falta el DELETE
 Finalización en equipo del DELETE. Solo falta revisar el CRUD
 Incorporar el JSON de usuarios
 
+SPRINT 5
+https://trello.com/b/9IImGN54/sprint-5
 17-2
 Login de usuarios:
 1. Toma la información en el JSON del usuario que va a logearse y checkeamos si el mail del usuario existe y si la contraseña es la correcta, en caso de que las credenciales sean las correctas permite logear y mantener la sesion iniciada, de lo contrario, avisa que las credenciales o la contraseña son incorrectas.
@@ -50,3 +52,22 @@ Registro de usuarios:
     Nombre, apellido y contraseña: solo que no esté vacío el campo
     Email: que no esté vacío y que sea un email válido
     Imagen: Originalmente pensaba que sea optativo este campo. Sin embargo quedó obligatorio ya que si cargaba un nuevo usuario sin imagen, me tiraba un error por filename. Si alguno lo puede ver genial. Quedo con dos validaciones: que no este vacio y que sea una extensión permitida
+
+    
+SPRINT 6
+https://trello.com/b/VNecPDpB/sprint-6
+27-02
+1. Compartimos del DER de nuestro proyecto para su revisón.
+2. Se genera el SPRINT 6 en el Trello
+
+02-03
+Aprobación del SQL para empezar a implementar los modelos en el proyecto.
+
+13-03
+Generación de modelos de Usuaarios y Productos
+
+20-03
+Modificacion del Controller y Routers para Usuarios y sus validaciones
+
+27-03
+Modificacion del Controller y Routers para Productos y sus validaciones
