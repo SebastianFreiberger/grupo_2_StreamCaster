@@ -23,6 +23,7 @@ const uploadFile = multer({storage: multerDiskStorage}) */
 
 router.get('/listador', productsController.listador); // Ruta hacia el listado de produtos
 
+
 router.get('/detalle/:id', productsController.detalle); // Ruta hacia el detalle de produto
 
 router.get('/creacion', authMiddleware, productsController.creacionProducto); // Ruta hacia el formulario de creación de produtos

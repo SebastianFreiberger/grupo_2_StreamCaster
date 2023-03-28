@@ -6,9 +6,9 @@ module.exports = [
         .isLength({min: 5, max: 30})
         .withMessage('El campo deber tener entre 5 y 30 caracteres'),
     // marca
-    body('marca')
-    .notEmpty()
-    .withMessage('Debe seleccionar 1 opcion'),
+    // body('marca')
+    // .notEmpty()
+    // .withMessage('Debe seleccionar 1 opcion'),
     // precio
     body('precio')
         .isFloat({min:0.01, max:999999.99})

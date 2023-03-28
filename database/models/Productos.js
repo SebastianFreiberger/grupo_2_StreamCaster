@@ -22,11 +22,11 @@ module.exports = function (sequelize, dataTypes) {
         destacado: {
             type: dataTypes.STRING,
         },
-        imagen: {
+        /*imagen: {
             type: dataTypes.STRING,
-        },
+        },*/
         id_marca: {
-            type: dataTypes.STRING,
+            type: dataTypes.INTEGER,
         },
         pesoKg: {
             type: dataTypes.INTEGER,

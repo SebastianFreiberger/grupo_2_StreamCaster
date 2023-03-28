@@ -21,19 +21,41 @@
                     <% } %>
                 </div>
                 <div class="campo-crear">
-                    <label for="marca">Marca del producto</label>
-                    <select>
-                        <option value="" selected>Seleccione una marca</option>
+                    <label for="marcas">Marca del producto</label>
+                    <select name="marcas">
+                        <% for (let i = 0; i < marcas.length; i++) { %>
+                            <option value="<%=marcas[i].id%>">
+                                <%=marcas[i].nombre%>
+                            </option>
+                            <% } %>
+
+                        
+                        
+                        
+                        
+                        <!-- <option value="" selected>Seleccione una marca</option>
                         <option value="LG" name ="marca">LG</option>
-                        <option value="Sony" name ="marca">Sony</option>
+                        <option value="1" name ="marca">Sony</option>
                         <option value="Sennheiser" name ="marca">Sennheiser</option>
-                        <option value="Bosse" name ="marca">Bosse</option>
+                        <option value="Bosse" name ="marca">Bosse</option> -->
                     </select>
                 </div>
+
+                <div class="campo-crear">
+                    <label for="pesoKg">Peso del producto</label>
+                    <input class="nombre-producto" type="number" id="pesoKg" name="pesoKg" placeholder="2">
+                </div>               
+
                 <div class="campo-crear">
                     <label for="precio">Precio del producto</label>
                     <input class="nombre-producto" type="number" id="precio" name="precio" placeholder="30000">
                 </div>               
+
+
+
+
+
+
                 <div class="campo-crear">
                     <label for="precio">Descuento del producto</label>
                     <input class="nombre-producto" type="number" id="descuento" name="descuento" placeholder="30">

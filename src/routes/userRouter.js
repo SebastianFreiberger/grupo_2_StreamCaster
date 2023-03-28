@@ -48,7 +48,7 @@ userRouter.get('/login', userController.login);
 userRouter.post('/login', guestMiddleware,userController.loginProcess);
 userRouter.get('/profile/', authMiddleware,userController.profile);
 userRouter.get('/registro', userController.registro);
-userRouter.post('/registro',uploadFile.single("avatar"), validations, userController.registroPost);
+userRouter.post('/registro', uploadFile.single("avatar"), validations, userController.registroPost);
 userRouter.get('/logout', userController.logout);
 /* userRouter.put('/registro', userController.registroPut); */
 
