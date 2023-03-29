@@ -107,12 +107,12 @@ const userController = {
             // fs.writeFileSync(usuariosJSON, JSON.stringify(usuarios, null, 2))
             
         }
-        else {
+        else {            
             db.Usuarios.create({
                 nombre: req.body.nombre,
                 apellido: req.body.apellido,
                 email: req.body.email,
-                contrasenia: bcryptjs.hashSync(req.body.contrasenia, 10),
+                contrasenia: bcryptjs.hashSync(req.body.contrasenia, 10),                
                 avatar: req.file.filename,
                 createdAt: req.body.createdAt,
                 updatedAt: req.body.updatedAt,
