@@ -14,6 +14,7 @@ const userController = {
     },
 
     getData: function () {
+        //return db.Usuarios.findOne({ where: { email: req.body.email } })
         return JSON.parse(fs.readFileSync(usuariosJSON, 'utf-8'));
     },
 
@@ -28,8 +29,9 @@ const userController = {
     },
 
     //POST LOGIN
-    loginProcess: (req, res) => {
-        let userToLogin = userController.findByField('email', req.body.email);
+    loginProcess: async (req, res) => {
+        let userToLogin = await db.Usuarios.findOne({ where: { email: req.body.email } })//userController.findByField('email', req.body.email);
+        
         if (userToLogin) {
             let isOkThePassword = bcryptjs.compareSync(req.body.contrasenia, userToLogin.contrasenia);
             // if (userToLogin.contrasenia == req.body.contrasenia) {
@@ -74,10 +76,10 @@ const userController = {
 
 
 
-    registroPost: (req, res) => {
-        const resultValidation = validationResult(req);
-        let emailExistente = db.Usuarios.findOne({ where: { email: req.body.email } });
-
+    registroPost: async (req, res) => {
+        const resultValidation = validationResult(req);        
+        let emailExistente = await db.Usuarios.findOne({ where: { email: req.body.email } });
+        
         if (resultValidation.errors.length > 0) {
             return res.render('registro', {
                 errors: resultValidation.mapped(),
@@ -86,17 +88,13 @@ const userController = {
         }
         
         else if (emailExistente){
-            emailExistente.then((resultado) => {
-
-                return res.render('registro', {
-                    errors: {
-                        email: {
-                            msg: 'Este email ya está registrado'
-                        },
-                    oldData: req.body
+            return res.render('registro', {
+                errors: {
+                    email: {
+                        msg: 'Este email ya está registrado'
                     },
-   
-                });
+                },
+                oldData: req.body
             });
 
             // let id = usuarios[usuarios.length - 1].id + 1;
@@ -115,11 +113,12 @@ const userController = {
                 apellido: req.body.apellido,
                 email: req.body.email,
                 contrasenia: bcryptjs.hashSync(req.body.contrasenia, 10),
+                avatar: req.file.filename,
                 createdAt: req.body.createdAt,
                 updatedAt: req.body.updatedAt,
                 id_rol: 1
             })
-        return res.redirect('/')
+        return res.redirect('login')
         }
     },
     // registroPut: () => { },

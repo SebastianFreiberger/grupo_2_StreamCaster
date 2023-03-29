@@ -19,9 +19,9 @@ module.exports = function(sequelize, dataTypes){
         contrasenia: {
             type: dataTypes.STRING
         },
-        // avatar: {
-        //     type: dataTypes.STRING
-        // },
+        avatar: {
+            type: dataTypes.STRING
+        },
         create_at: {
             type: dataTypes.DATE
         },
