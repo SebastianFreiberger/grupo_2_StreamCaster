@@ -16,21 +16,44 @@ const productsController = {
 
     },
 
-    creacionPost: (req, res) => {
+    creacionPost: async (req, res) => {
         const productoValido = validationResult(req)
-        
+        let productoExistente = await db.Productos.findOne({ where: { nombre: req.body.nombre } });
+
         if (productoValido.errors.length > 0) {
-            return res.render('creacion-de-producto', {
+             db.Marcas.findAll()
+         .then (function(marcas){
+            return res.render('creacion-de-producto', {marcas: marcas},
+            {
                 errores: productoValido.mapped(),
-                dataValida: req.body
+                // oldData: req.body
             })
+        })
         }
+
+        else if (productoExistente){
+            db.Marcas.findAll()
+        .then (function(marcas){
+            return res.render('creacion-de-producto', {marcas: marcas},
+            {
+                errors: {
+                    nombre: {
+                        msg: 'Este producto ya existe'
+                    },
+                },
+                // oldData: req.body
+            })
+        });
+        }
+
+
 
         // let id = products[products.length-1].id + 1
         // let productNuevo = {id, ...req.body}
         // productNuevo.imagen = req.file.filename;
         // products.push(productNuevo)
         // fs.writeFileSync(productsJSON, JSON.stringify(products, null, 2))
+        
         else {
             db.Productos.create({
                 nombre: req.body.nombre,
@@ -38,6 +61,7 @@ const productsController = {
                 precio: req.body.precio,
                 descuento: req.body.descuento,
                 destacado: false,
+                imagen: req.file.filename,
                 id_marca: req.body.marcas,
                 pesoKg: req.body.pesoKg
 

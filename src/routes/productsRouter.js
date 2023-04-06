@@ -9,7 +9,7 @@ const authMiddleware = require('../middlewares/authMiddleware');
 const productValidator = require('../middlewares/productValidator');
 const multerValidator = require('../middlewares/multerMiddleware');
 
-/* const multerDiskStorage = multer.diskStorage({
+const multerDiskStorage = multer.diskStorage({
     destination: (req, file, cb) => {
         cb(null, path.join(__dirname, "../../public/images/products"));
     },
@@ -19,7 +19,7 @@ const multerValidator = require('../middlewares/multerMiddleware');
     }
 })
 
-const uploadFile = multer({storage: multerDiskStorage}) */
+const uploadFile = multer({storage: multerDiskStorage})
 
 router.get('/listador', productsController.listador); // Ruta hacia el listado de produtos
 

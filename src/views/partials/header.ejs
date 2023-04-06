@@ -91,7 +91,7 @@
             >
           </li>
 
-          <% if (locals.isLogged && userLogged.tipo == "Administrador") { %>
+          <% if (locals.isLogged && userLogged.id_rol == 2) { %>
           <li>
             <a href="/products/creacion"
               ><i class="fa-solid fa-pencil"></i>Crear producto</a

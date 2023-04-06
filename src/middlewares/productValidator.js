@@ -26,19 +26,31 @@ module.exports = [
         .isLength({min: 10, max: 350})
         .withMessage('El campo deber tener entre 25 y 350 caracteres'),
     //imagen
-    body('imagen')
-        .custom((value, {req}) => {
-            const file = req.file
-            console.log(file);
-            const extencionError = "La imagen tiene que tener formato .jpg, .jpeg, .png, .gif y tamaño máximo 10 mb"
-            if(!file) {
-                throw new Error(extencionError)
-            } else if (file.size > (1024 * 1024 * 10)) {
-                fs.unlink(file.path, (er) => {
-                    console.log(er);
-                })
-                throw new Error(extencionError)
+    body('imagen').custom((value, {req}) => {
+            let file = req.file;
+            // console.log(file);
+            let acceptedExtensions = ['.jpg','.png','.gif','.jpeg'];
+            if(!file){
+                throw new Error ('Tenés que subir una imagen');
+            }else{
+                let fileExtension = path.extname(file.originalname);
+                if(!acceptedExtensions.includes(fileExtension)){
+                    throw new Error ('Las extensiones permitidas son .jpg, .png y .gif')
+                }
             }
             return true;
+
+            
+            
+            // const extencionError = "La imagen tiene que tener formato .jpg, .jpeg, .png, .gif y tamaño máximo 10 mb"
+            // if(!file) {
+            //     throw new Error(extencionError)
+            // } else if (file.size > (1024 * 1024 * 10)) {
+            //     fs.unlink(file.path, (er) => {
+            //         console.log(er);
+            //     })
+            //     throw new Error(extencionError)
+            // }
+            // return true;
         })
 ];
