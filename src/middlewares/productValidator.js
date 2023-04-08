@@ -1,12 +1,14 @@
 const fs = require('fs');
 const {body} = require('express-validator');
+const path = require('path');
+
 
 module.exports = [
     body('nombre')
         .isLength({min: 5, max: 30})
         .withMessage('El campo deber tener entre 5 y 30 caracteres'),
     // marca
-    body('marca')
+    body('marcas')
     .notEmpty()
     .withMessage('Debe seleccionar 1 opcion'),
     // precio
@@ -31,9 +33,12 @@ module.exports = [
             // console.log(file);
             let acceptedExtensions = ['.jpg','.png','.gif','.jpeg'];
             if(!file){
+                console.log("estoy en el if");
                 throw new Error ('Tenés que subir una imagen');
             }else{
                 let fileExtension = path.extname(file.originalname);
+                console.log("estoy en el else");
+
                 if(!acceptedExtensions.includes(fileExtension)){
                     throw new Error ('Las extensiones permitidas son .jpg, .png y .gif')
                 }

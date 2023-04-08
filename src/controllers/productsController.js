@@ -5,56 +5,39 @@ const productsJSON = path.join(__dirname, '../database/productos.json');
 const products = JSON.parse(fs.readFileSync(productsJSON, 'utf-8'));
 
 let db = require("../../database/models");
+const { log } = require('console');
 
 
 const productsController = {
     creacionProducto: (req, res) => {
         db.Marcas.findAll()
-        .then (function(marcas){
-            res.render('creacion-de-producto', {marcas: marcas})
-        })
+            .then(function (marcas) {
+                res.render('creacion-de-producto', { marcas: marcas })
+            })
 
     },
 
-    creacionPost: async (req, res) => {
-        const productoValido = validationResult(req)
-        let productoExistente = await db.Productos.findOne({ where: { nombre: req.body.nombre } });
-
+    creacionPost: (req, res) => {
+        console.log("entré al controlador");
+        const productoValido = validationResult(req);
+        console.log(productoValido);
         if (productoValido.errors.length > 0) {
-             db.Marcas.findAll()
-         .then (function(marcas){
-            return res.render('creacion-de-producto', {marcas: marcas},
-            {
-                errores: productoValido.mapped(),
-                // oldData: req.body
-            })
-        })
-        }
-
-        else if (productoExistente){
+            console.log("estoy en el if de errors");
             db.Marcas.findAll()
-        .then (function(marcas){
-            return res.render('creacion-de-producto', {marcas: marcas},
-            {
-                errors: {
-                    nombre: {
-                        msg: 'Este producto ya existe'
-                    },
-                },
-                // oldData: req.body
+            .then(function (marcas) {
+                console.log("encontré las marcas");
+                return res.render('creacion-de-producto',
+                    {
+                        marcas: marcas,
+                        errores: productoValido.mapped(),
+                        oldData: req.body
+                    })
             })
-        });
         }
 
-
-
-        // let id = products[products.length-1].id + 1
-        // let productNuevo = {id, ...req.body}
-        // productNuevo.imagen = req.file.filename;
-        // products.push(productNuevo)
-        // fs.writeFileSync(productsJSON, JSON.stringify(products, null, 2))
-        
         else {
+            console.log("else de creacion");
+
             db.Productos.create({
                 nombre: req.body.nombre,
                 descripcion: req.body.descripcion,
@@ -66,7 +49,7 @@ const productsController = {
                 pesoKg: req.body.pesoKg
 
             })
-            return res.redirect('/products/listador')
+            .then ( () => {return res.redirect('/products/listador')})
         }
     },
 
@@ -74,11 +57,11 @@ const productsController = {
         return res.render('listadorProductos', { products: products });
     },
 
-    
-        
-        
- 
-    
+
+
+
+
+
 
     detalle: (req, res) => {
         /* res.render('detalleProducto') */
