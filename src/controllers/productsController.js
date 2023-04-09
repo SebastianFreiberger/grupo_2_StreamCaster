@@ -57,12 +57,6 @@ const productsController = {
         return res.render('listadorProductos', { products: products });
     },
 
-
-
-
-
-
-
     detalle: (req, res) => {
         /* res.render('detalleProducto') */
         let product = products.find(row => row.id == req.params.id);
