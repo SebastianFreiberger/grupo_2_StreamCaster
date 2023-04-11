@@ -10,6 +10,9 @@ module.exports = function (sequelize, dataTypes) {
         nombre: {
             type: dataTypes.STRING,
         },
+        caract: {
+            type: dataTypes.STRING,
+        },
         descripcion: {
             type: dataTypes.STRING,
         },

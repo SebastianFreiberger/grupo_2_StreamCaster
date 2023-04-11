@@ -1,11 +1,12 @@
 const path = require('path');
 const fs = require('fs');
 const { validationResult } = require('express-validator');
-const productsJSON = path.join(__dirname, '../database/productos.json');
-const products = JSON.parse(fs.readFileSync(productsJSON, 'utf-8'));
+// const productsJSON = path.join(__dirname, '../database/productos.json');
+// const products = JSON.parse(fs.readFileSync(productsJSON, 'utf-8'));
 
 let db = require("../../database/models");
 const { log } = require('console');
+const marcas = db.Marcas.findAll()
 
 
 const productsController = {
@@ -24,15 +25,15 @@ const productsController = {
         if (productoValido.errors.length > 0) {
             console.log("estoy en el if de errors");
             db.Marcas.findAll()
-            .then(function (marcas) {
-                console.log("encontré las marcas");
-                return res.render('creacion-de-producto',
-                    {
-                        marcas: marcas,
-                        errores: productoValido.mapped(),
-                        oldData: req.body
-                    })
-            })
+                .then(function (marcas) {
+                    console.log("encontré las marcas");
+                    return res.render('creacion-de-producto',
+                        {
+                            marcas: marcas,
+                            errores: productoValido.mapped(),
+                            oldData: req.body
+                        })
+                })
         }
 
         else {
@@ -49,12 +50,15 @@ const productsController = {
                 pesoKg: req.body.pesoKg
 
             })
-            .then ( () => {return res.redirect('/products/listador')})
+                .then(() => { return res.redirect('/products/listador') })
         }
     },
 
     listador: (req, res) => {
-        return res.render('listadorProductos', { products: products });
+        db.Productos.findAll()
+            .then(function (products) {
+                return res.render('listadorProductos', { products: products });
+            })
     },
 
 
@@ -74,23 +78,35 @@ const productsController = {
     },
 
     edicionProducto: (req, res) => {
-        let product = products.find(row => row.id == req.params.id)
-        if (product) return res.render("edicion-de-producto", { product: product });
-        else return res.send("Producto no encontrado");
-    },
+        db.Productos.findByPk(req.params.id, {
+            include: [{association: "marcas"}]
+        })
+        db.Marcas.findAll()    
+
+            .then(function (product, marcas) {
+                res.render("edicion-de-producto", { 
+                    product: product, 
+                    marcas: marcas, 
+                     
+                });
+                console.log(marcas)
+                
+            });
+            
+        },
 
     editPost: (req, res) => {
         products.forEach(row => {
-            if (row.id == req.params.id) {
-                row.nombre = req.body.nombre
-                row.caract = req.body.caract
-                row.marca = req.body.marca
-                row.precio = req.body.precio
-                row.precio = req.body.descuento
-                row.descripcion = req.body.descripcion
-                row.imagen = req.body.imagen
-            }
-        })
+                if (row.id == req.params.id) {
+                    row.nombre = req.body.nombre
+                    row.caract = req.body.caract
+                    row.marca = req.body.marca
+                    row.precio = req.body.precio
+                    row.precio = req.body.descuento
+                    row.descripcion = req.body.descripcion
+                    row.imagen = req.body.imagen
+                }
+            })
         fs.writeFileSync(productsJSON, JSON.stringify(products, null, 2))
         return res.redirect('/products/listador');
     },
