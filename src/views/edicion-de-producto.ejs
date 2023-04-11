@@ -17,23 +17,12 @@
                     <input class="nombre-producto" type="text" id="nombre" name="nombre" value="<%= product.nombre %>">
                 </div>
                 <div class="campo-crear">
-                    <label for="marca">Marca del producto</label>
-                    <select name="marca">
-
-                        <% for (let i = 0; i < marcas.length; i++) { %>
-                            <option 
-                                <% if (product.marcas.nombre == marcas[i].nombre) {%> <%='selected' %>}
-                                 value="<%= marcas[i].id %>"  
-                                >
-                                <%= marcas[i].nombre %>
-                                
+                    <label for="marcas">Marca del producto</label>
+                    <select name="marcas">
+                        <option value="product.marcas.nombre">
+                        <%=product.marcas.nombre%>
                             </option>
-                            <% } %>
-                            <!--                         
-                        <option <% if (product.marca == "LG") { %> <%= 'selected' %> <% } %> value="LG">LG</option>
-                        <option <% if (product.marca == "Sony") { %> <%= 'selected' %> <% } %> value="Sony">Sony</option>
-                        <option <% if (product.marca == "Sennheiser") { %> <%= 'selected' %> <% } %> value="Sennheiser">Sennheiser</option>
-                        <option <% if (product.marca == "Bose") { %> <%= 'selected' %> <% } %> value="Bosse">Bose</option> -->
+                            
                     </select>
                 </div>
                 <div class="campo-crear">

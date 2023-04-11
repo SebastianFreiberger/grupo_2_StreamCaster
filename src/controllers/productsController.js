@@ -6,7 +6,7 @@ const { validationResult } = require('express-validator');
 
 let db = require("../../database/models");
 const { log } = require('console');
-const marcas = db.Marcas.findAll()
+// const marcas = db.Marcas.findAll()
 
 
 const productsController = {
@@ -73,34 +73,33 @@ const productsController = {
 
     edicionProducto: (req, res) => {
         db.Productos.findByPk(req.params.id, {
-            include: [{association: "marcas"}]
+            include: [{ association: "marcas" }]
         })
-        db.Marcas.findAll()    
+        
 
-            .then(function (product, marcas) {
-                res.render("edicion-de-producto", { 
-                    product: product, 
-                    marcas: marcas, 
-                     
+        
+            .then(function (product) {
+                res.render("edicion-de-producto", {
+                    product: product
+
                 });
-                console.log(marcas)
-                
+
             });
-            
-        },
+
+    },
 
     editPost: (req, res) => {
         products.forEach(row => {
-                if (row.id == req.params.id) {
-                    row.nombre = req.body.nombre
-                    row.caract = req.body.caract
-                    row.marca = req.body.marca
-                    row.precio = req.body.precio
-                    row.precio = req.body.descuento
-                    row.descripcion = req.body.descripcion
-                    row.imagen = req.body.imagen
-                }
-            })
+            if (row.id == req.params.id) {
+                row.nombre = req.body.nombre
+                row.caract = req.body.caract
+                row.marca = req.body.marca
+                row.precio = req.body.precio
+                row.precio = req.body.descuento
+                row.descripcion = req.body.descripcion
+                row.imagen = req.body.imagen
+            }
+        })
         fs.writeFileSync(productsJSON, JSON.stringify(products, null, 2))
         return res.redirect('/products/listador');
     },
