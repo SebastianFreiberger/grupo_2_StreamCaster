@@ -51,9 +51,12 @@ header{
 
 }
 
+.navbar-item{
+    display: flex;
+}
+
 div.header-userprofile {
     display: flex;
-    align-items: center;
 }
 
 div.header-userprofile img {
