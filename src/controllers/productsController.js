@@ -41,6 +41,7 @@ const productsController = {
 
             db.Productos.create({
                 nombre: req.body.nombre,
+                caract: req.body.caract,
                 descripcion: req.body.descripcion,
                 precio: req.body.precio,
                 descuento: req.body.descuento,
@@ -74,13 +75,9 @@ const productsController = {
     edicionProducto: async (req, res) => {
         let productoExistente = await db.Productos.findByPk(req.params.id, {
             include: [{association: "marcas"}]
-        })
-        //console.log(productoExistente);
+        })        
         let marcas = await db.Marcas.findAll()
-        //console.log(marcas);
-
-            if(productoExistente && marcas) {
-                //res.send("hay una marca y un producto")
+            if(productoExistente && marcas) {                
                 res.render("edicion-de-producto", { 
                     product: productoExistente, 
                     marcas: marcas,                      
