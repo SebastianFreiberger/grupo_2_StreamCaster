@@ -71,22 +71,21 @@ const productsController = {
         }
     },
 
-    edicionProducto: (req, res) => {
-        db.Productos.findByPk(req.params.id, {
+    edicionProducto: async (req, res) => {
+        let productoExistente = await db.Productos.findByPk(req.params.id, {
             include: [{association: "marcas"}]
         })
-        db.Marcas.findAll()    
+        //console.log(productoExistente);
+        let marcas = await db.Marcas.findAll()
+        //console.log(marcas);
 
-            .then(function (product, marcas) {
+            if(productoExistente && marcas) {
+                //res.send("hay una marca y un producto")
                 res.render("edicion-de-producto", { 
-                    product: product, 
-                    marcas: marcas, 
-                     
-                });
-                console.log(marcas)
-                
-            });
-            
+                    product: productoExistente, 
+                    marcas: marcas,                      
+                });                
+            };
         },
 
     editPost: (req, res) => {
