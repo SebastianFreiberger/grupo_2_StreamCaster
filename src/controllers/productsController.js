@@ -6,6 +6,7 @@ const { validationResult } = require('express-validator');
 
 let db = require("../../database/models");
 const { log } = require('console');
+const { where } = require('sequelize');
 // const marcas = db.Marcas.findAll()
 
 
@@ -21,17 +22,18 @@ const productsController = {
     creacionPost: (req, res) => {
         console.log("entré al controlador");
         const productoValido = validationResult(req);
-        console.log(productoValido);
+        //console.log(productoValido);
         if (productoValido.errors.length > 0) {
             console.log("estoy en el if de errors");
             db.Marcas.findAll()
                 .then(function (marcas) {
                     console.log("encontré las marcas");
+                    console.log(req.body);
                     return res.render('creacion-de-producto',
                         {
                             marcas: marcas,
                             errores: productoValido.mapped(),
-                            oldData: req.body
+                            dataValida: req.body
                         })
                 })
         }
@@ -49,7 +51,6 @@ const productsController = {
                 imagen: req.file.filename,
                 id_marca: req.body.marcas,
                 pesoKg: req.body.pesoKg
-
             })
                 .then(() => { return res.redirect('/products/listador') })
         }
@@ -75,30 +76,54 @@ const productsController = {
     edicionProducto: async (req, res) => {
         let productoExistente = await db.Productos.findByPk(req.params.id, {
             include: [{association: "marcas"}]
-        })        
+        })
+        console.log(productoExistente);        
         let marcas = await db.Marcas.findAll()
             if(productoExistente && marcas) {                
                 res.render("edicion-de-producto", { 
                     product: productoExistente, 
-                    marcas: marcas,                      
+                    marcas: marcas,
+                    oldData: req.body                      
                 });                
             };
         },
 
-    editPost: (req, res) => {
-        products.forEach(row => {
-            if (row.id == req.params.id) {
-                row.nombre = req.body.nombre
-                row.caract = req.body.caract
-                row.marca = req.body.marca
-                row.precio = req.body.precio
-                row.precio = req.body.descuento
-                row.descripcion = req.body.descripcion
-                row.imagen = req.body.imagen
-            }
+    editPost: async (req, res) => {
+        const productoValido = validationResult(req); 
+        let productoExistente = await db.Productos.findByPk(req.params.id, {
+            include: [{association: "marcas"}]
         })
-        fs.writeFileSync(productsJSON, JSON.stringify(products, null, 2))
-        return res.redirect('/products/listador');
+        if (productoValido.errors.length > 0) {            
+            db.Marcas.findAll()
+                .then(function (marcas) {
+                    //console.log(productoValido.errors);
+                    return res.render('edicion-de-producto',                    
+                        {
+                            product: productoExistente,
+                            marcas: marcas,
+                            errores: productoValido.mapped(),
+                            oldData: req.body
+                        })
+                })                
+            } else {                    
+                db.Productos.update({
+                    nombre: req.body.nombre,
+                    caract: req.body.caract,
+                    descripcion: req.body.descripcion,
+                    precio: req.body.precio,
+                    descuento: req.body.descuento,
+                    destacado: false,
+                    imagen: req.file.filename,
+                    id_marca: req.body.marcas,
+                    pesoKg: req.body.pesoKg            
+                    }, {where: {id: req.params.id}})                    
+                    .then(() => { 
+                        return res.redirect('/products/listador')
+                    }
+                )
+            }
+       /*  fs.writeFileSync(productsJSON, JSON.stringify(products, null, 2))
+        return res.redirect('/products/listador'); */
     },
 
     deletePost: (req, res) => {

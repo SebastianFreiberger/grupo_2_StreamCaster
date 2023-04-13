@@ -11,6 +11,10 @@ module.exports = [
     body('marcas')
     .notEmpty()
     .withMessage('Debe seleccionar 1 opcion'),
+    // peso
+    body('pesoKg')
+    .isFloat({min:0.01, max:999999.99})
+        .withMessage('El peso debe estar entre 0.01 y 999999.99'),
     // precio
     body('precio')
         .isFloat({min:0.01, max:999999.99})

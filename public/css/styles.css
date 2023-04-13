@@ -212,6 +212,12 @@ body{
 }
 /* fin body */
 
+/* errors */
+.errorsMsg{
+    color: #bb0000;
+}
+/* fin errors */
+
 /* footer */
 footer {
     /* position: relative;

@@ -17,16 +17,24 @@
                     <input class="nombre-producto" type="text" id="nombre" name="nombre" value="<%= product.nombre %>">
                 </div>
                 <div class="campo-crear">
-                    <label for="marcas">Marca del producto</label>                    
-                    <select name="marca" id="">
-                        <% for (let i = 0; i < marcas.length; i++) { %>                            
+                    <label for="marcas">Marca del producto</label>                                        
+                    <select name="marcas" id="marcas">
+                        <% for (let i = 0; i < marcas.length; i++) { %>                                                        
+                            
                             <option <% if(product.marcas.nombre == marcas[i].nombre){ %>
                                 <%= 'selected' %>
                             <% } %>                            
                              value="<%=marcas[i].id%>"><%= marcas[i].nombre %></option>
-                            <% } %>                           
+                            <% } %> 
                     </select>                    
                 </div>
+                <div class="campo-crear">
+                    <label for="pesoKg">Peso del producto</label>
+                    <input class="nombre-producto" type="number" id="pesoKg" name="pesoKg" placeholder="2" value="<%= locals.oldData ? oldData.pesoKg: null %>">
+                    <% if(locals.errores && errores.pesoKg) { %>
+                        <p class="errorsMsg"><%= errores.pesoKg.msg %></p>
+                    <% } %>
+                </div>  
                 <div class="campo-crear">
                     <label for="precio">Precio del producto</label>
                     <input class="nombre-producto" type="number" id="precio" name="precio" value="<%= product.precio %>">
@@ -37,7 +45,10 @@
                 </div>
                 <div class="campo-crear">
                     <label for="img">Subir imágenes del producto:</label>
-                    <input class="subir-imagenes" type="file" id="img" name="img">
+                    <input class="subir-imagenes" type="file" id="img" name="imagen" placeholder="Seleccionar imágenes" value="<%= locals.oldData ? oldData.imagen: null %>">
+                    <% if(locals.errores && errores.imagen) { %>
+                        <p class="errorsMsg"><%= errores.imagen.msg %></p>
+                    <% } %>
                 </div>
                 <div class="campo-crear">
                     <label for="caract">Características principales</label>
@@ -60,10 +71,7 @@
                     Eliminar
                 </button>
             </form>
-        </section>
-        <section class="img-editar-producto">
-            <img src="../../images/<%= product.imagen %>" alt="">
-        </section>
+        </section>        
     </main>
     <!-- Footer -->
     <%- include('partials/footer') %>

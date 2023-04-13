@@ -17,61 +17,64 @@
                     <label for="nombre">Nombre del producto</label>
                     <input class="nombre-producto" type="text" id="nombre" name="nombre" placeholder="Coloque aquí el nombre del producto" value="<%= locals.dataValida ? dataValida.nombre: null %>">
                     <% if(locals.errores && errores.nombre) { %>
-                        <p><%= errores.nombre.msg %></p>
+                        <p class="errorsMsg"><%= errores.nombre.msg %></p>
                     <% } %>
                 </div>
                 <div class="campo-crear">
                     <label for="marcas">Marca del producto</label>
                     <select name="marcas">
-                        <% for (let i = 0; i < marcas.length; i++) { %>
+                        <option value="" selected disabled>Elija una marca</option>
+                        <% for (let i = 0; i < marcas.length; i++) { %>                        
                             <option value="<%=marcas[i].id%>">
                                 <%=marcas[i].nombre%>
                             </option>
-                            <% } %>
-
-                        
-                        
-                        
-                        
-                        <!-- <option value="" selected>Seleccione una marca</option>
-                        <option value="LG" name ="marca">LG</option>
-                        <option value="1" name ="marca">Sony</option>
-                        <option value="Sennheiser" name ="marca">Sennheiser</option>
-                        <option value="Bosse" name ="marca">Bosse</option> -->
+                        <% } %>
                     </select>
                 </div>
 
                 <div class="campo-crear">
                     <label for="pesoKg">Peso del producto</label>
-                    <input class="nombre-producto" type="number" id="pesoKg" name="pesoKg" placeholder="2">
+                    <input class="nombre-producto" type="number" id="pesoKg" name="pesoKg" placeholder="2" value="<%= locals.dataValida ? dataValida.pesoKg: null %>">
+                    <% if(locals.errores && errores.pesoKg) { %>
+                        <p class="errorsMsg"><%= errores.pesoKg.msg %></p>
+                    <% } %>
                 </div>               
 
                 <div class="campo-crear">
                     <label for="precio">Precio del producto</label>
-                    <input class="nombre-producto" type="number" id="precio" name="precio" placeholder="30000">
-                </div>               
-
-
-
-
-
-
+                    <input class="nombre-producto" type="number" id="precio" name="precio" placeholder="30000" value="<%= locals.dataValida ? dataValida.precio: null %>">
+                    <% if(locals.errores && errores.precio) { %>
+                        <p class="errorsMsg"><%= errores.precio.msg %></p>
+                    <% } %>
+                </div>
                 <div class="campo-crear">
                     <label for="precio">Descuento del producto</label>
-                    <input class="nombre-producto" type="number" id="descuento" name="descuento" placeholder="30">
+                    <input class="nombre-producto" type="number" id="descuento" name="descuento" placeholder="30" value="<%= locals.dataValida ? dataValida.descuento: null %>">
+                    <% if(locals.errores && errores.descuento) { %>
+                        <p class="errorsMsg"><%= errores.descuento.msg %></p>
+                    <% } %>
                 </div>                 
                 <div class="campo-crear">
                     <label for="img">Subir imágenes del producto:</label>
-                    <input class="subir-imagenes" type="file" id="img" name="imagen" placeholder="Seleccionar imágenes">
+                    <input class="subir-imagenes" type="file" id="img" name="imagen" placeholder="Seleccionar imágenes" value="<%= locals.dataValida ? dataValida.imagen: null %>">
+                    <% if(locals.errores && errores.imagen) { %>
+                        <p class="errorsMsg"><%= errores.imagen.msg %></p>
+                    <% } %>
                 </div>
                 <div class="campo-crear">
                     <label for="caract">Características principales</label>
-                    <textarea id="caract" placeholder="Escribí las características" name="caract"></textarea>
+                    <textarea id="caract" placeholder="Escribí las características" name="caract" value="<%= locals.dataValida ? dataValida.caract: null %>"></textarea>
+                    <% if(locals.errores && errores.caract) { %>
+                        <p class="errorsMsg"><%= errores.caract.msg %></p>
+                    <% } %>
                 </div>
                 <!-- Características principales es lo que va al costado de la imagen en la versión de escritorio y descripción detallada es lo que va abajo -->
                 <div class="campo-crear">
                     <label for="descripcion">Descripción detallada</label>
-                    <textarea id="descripcion" placeholder="Describí el producto" name="descripcion"></textarea>
+                    <textarea id="descripcion" placeholder="Describí el producto" name="descripcion" value="<%= locals.dataValida ? dataValida.descripcion: null %>"></textarea>
+                    <% if(locals.errores && errores.descripcion) { %>
+                        <p class="errorsMsg"><%= errores.descripcion.msg %></p>
+                    <% } %>
                 </div>
                 <!-- botón "Crear producto" -->
                 <div class="boton">
@@ -80,9 +83,6 @@
                     </button>
                 </div>
             </form>
-        </section>
-        <section class="img-editar-producto">
-            <img src="../../images/logo.jpg" alt="">
         </section>
     </main>
     <!-- Footer -->
