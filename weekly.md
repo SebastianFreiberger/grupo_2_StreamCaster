@@ -71,3 +71,14 @@ Modificacion del Controller y Routers para Usuarios y sus validaciones
 
 27-03
 Modificacion del Controller y Routers para Productos y sus validaciones
+
+SPRINT 7
+https://trello.com/b/XeqoSi71/sprint-7
+03/04
+Terminaciones de SPRINT actual
+Pendientes del SPRINT anterior
+
+10/04
+Aun resolviendo pendientes del SPRINT anterior
+Listado de productos operativo
+Edición de productos operativo
