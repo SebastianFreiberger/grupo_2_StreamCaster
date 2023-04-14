@@ -126,11 +126,34 @@ const productsController = {
         return res.redirect('/products/listador'); */
     },
 
-    deletePost: (req, res) => {
-        let productFiltrados = products.filter(product => product.id != req.params.id);
-        fs.writeFileSync(productsJSON, JSON.stringify(productFiltrados, null, 2))
-        return res.render("listadorProductos", { products: productFiltrados })
+    // deletePost: (req, res) => {
+    //     let productFiltrados = products.filter(product => product.id != req.params.id);
+    //     fs.writeFileSync(productsJSON, JSON.stringify(productFiltrados, null, 2))
+    //     return res.render("listadorProductos", { products: productFiltrados })
+    // }
+
+    deleteGet: async (req, res) => {
+        try {
+            let productoExistente = await db.Productos.findByPk(req.params.id)
+            res.render("listadorProductos", { products: productFiltrados })
+        }
+        catch (e) {
+            console.log(e)
+        }
+    },
+
+    deletePost: async (req, res) => {
+        try{
+            let productoExistente = await db.Productos.destroy({where: {id:req.params.id}})
+            res.send(productoExistente)
+        }
+        catch (e) {
+            console.log(e)
+        }      
+        
     }
+
+
 }
 
 module.exports = productsController;

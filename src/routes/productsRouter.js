@@ -23,6 +23,8 @@ router.get('/edicion/:id', productsController.edicionProducto); //Ruta hacia la 
 
 router.put('/edicion/:id', multerValidator.single("imagen"), productValidator, productsController.editPost); //Edita datos del producto por id
 
-router.delete('/delete/:id', productsController.deletePost); //Elimina un producto por id
+router.get('/delete/:id', productsController.deleteGet); //Elimina un producto por id
+
+router.post('/delete/:id', productsController.deletePost); //Elimina un producto por id
 
 module.exports = router;
