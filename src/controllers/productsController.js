@@ -20,15 +20,11 @@ const productsController = {
     },
 
     creacionPost: (req, res) => {
-        console.log("entré al controlador");
         const productoValido = validationResult(req);
-        //console.log(productoValido);
+        const imagenValida = validationResult(req);
         if (productoValido.errors.length > 0) {
-            console.log("estoy en el if de errors");
             db.Marcas.findAll()
                 .then(function (marcas) {
-                    console.log("encontré las marcas");
-                    console.log(req.body);
                     return res.render('creacion-de-producto',
                         {
                             marcas: marcas,
@@ -36,10 +32,25 @@ const productsController = {
                             dataValida: req.body
                         })
                 })
+                console.log("me quedé en el if de creacionPost");
+        }
+
+        else if (imagenValida.errors.length > 0) {
+            db.Marcas.findAll()
+                .then(function (marcas) {
+                    return res.render('creacion-de-producto',
+                        {
+                            marcas: marcas,
+                            errores: imagenValida.mapped(),
+                            dataValida: req.body
+                        })
+                })
+                console.log("me quedé en el else if de creacionPost");
+
         }
 
         else {
-            console.log("else de creacion");
+            console.log("llegué al create");
 
             db.Productos.create({
                 nombre: req.body.nombre,

@@ -6,11 +6,11 @@ const path = require('path');
 module.exports = [
     body('nombre')
         .isLength({min: 5, max: 30})
-        .withMessage('El campo deber tener entre 5 y 30 caracteres'),
+        .withMessage('El nombre deber tener entre 5 y 30 caracteres'),
     // marca
     body('marcas')
     .notEmpty()
-    .withMessage('Debe seleccionar 1 opcion'),
+    .withMessage('Debe seleccionar una marca'),
     // peso
     body('pesoKg')
     .isFloat({min:0.01, max:999999.99})
@@ -26,23 +26,20 @@ module.exports = [
     // caract
     body('caract')
         .isLength({min: 10, max: 250})
-        .withMessage('El campo deber tener entre 25 y 250 caracteres'),
+        .withMessage('Las características deben tener entre 25 y 250 caracteres'),
     // descripcion
     body('descripcion')
         .isLength({min: 10, max: 350})
-        .withMessage('El campo deber tener entre 25 y 350 caracteres'),
-    //imagen
+        .withMessage('La descripción debe tener entre 25 y 350 caracteres'),
+        
+    /*//imagen PASAMOS ESTA VALIDACION A UN NUEVO FILE PARA USARLO SOLO EN LA CREACION
     body('imagen').custom((value, {req}) => {
             let file = req.file;
-            // console.log(file);
             let acceptedExtensions = ['.jpg','.png','.gif','.jpeg'];
             if(!file){
-                console.log("estoy en el if");
                 throw new Error ('Tenés que subir una imagen');
             }else{
                 let fileExtension = path.extname(file.originalname);
-                console.log("estoy en el else");
-
                 if(!acceptedExtensions.includes(fileExtension)){
                     throw new Error ('Las extensiones permitidas son .jpg, .png y .gif')
                 }
@@ -61,5 +58,5 @@ module.exports = [
             //     throw new Error(extencionError)
             // }
             // return true;
-        })
+        })*/
 ];
