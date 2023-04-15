@@ -9,7 +9,6 @@ const { log } = require('console');
 const { where } = require('sequelize');
 // const marcas = db.Marcas.findAll()
 
-
 const productsController = {
     creacionProducto: (req, res) => {
         db.Marcas.findAll()
@@ -74,21 +73,21 @@ const productsController = {
             })
     },
 
-    detalle: (req, res) => {
-        /* res.render('detalleProducto') */
-        let product = products.find(row => row.id == req.params.id);
-        if (product) {
-            return res.render('detalleProducto', { product: product });
+    detalle: async (req, res) => {
+        let detalleProducto = await db.Productos.findByPk(req.params.id,{
+            include:[{association: "marcas"}]
+        })        
+        if (detalleProducto) {
+            return res.render('detalleProducto', { product: detalleProducto });
         } else {
             return res.send("Producto no encontrado");
         }
-    },
+    },    
 
     edicionProducto: async (req, res) => {
         let productoExistente = await db.Productos.findByPk(req.params.id, {
             include: [{association: "marcas"}]
-        })
-        console.log(productoExistente);        
+        })              
         let marcas = await db.Marcas.findAll()
             if(productoExistente && marcas) {                
                 res.render("edicion-de-producto", { 
@@ -124,7 +123,7 @@ const productsController = {
                     precio: req.body.precio,
                     descuento: req.body.descuento,
                     destacado: false,
-                    imagen: req.file.filename,
+                    //imagen: req.file.filename,
                     id_marca: req.body.marcas,
                     pesoKg: req.body.pesoKg            
                     }, {where: {id: req.params.id}})                    
@@ -133,38 +132,67 @@ const productsController = {
                     }
                 )
             }
+        },
        /*  fs.writeFileSync(productsJSON, JSON.stringify(products, null, 2))
         return res.redirect('/products/listador'); */
-    },
 
     // deletePost: (req, res) => {
     //     let productFiltrados = products.filter(product => product.id != req.params.id);
     //     fs.writeFileSync(productsJSON, JSON.stringify(productFiltrados, null, 2))
     //     return res.render("listadorProductos", { products: productFiltrados })
     // }
+    
 
     deleteGet: async (req, res) => {
         try {
             let productoExistente = await db.Productos.findByPk(req.params.id)
-            res.render("listadorProductos", { products: productFiltrados })
+            res.render("listadorProductos", { products: productoExistente })
         }
         catch (e) {
             console.log(e)
         }
     },
 
-    deletePost: async (req, res) => {
-        try{
-            let productoExistente = await db.Productos.destroy({where: {id:req.params.id}})
-            res.send(productoExistente)
-        }
-        catch (e) {
-            console.log(e)
-        }      
-        
+    deletePost: (req, res) => {
+        db.Productos.destroy({
+            where: {
+                id: req.params.id
+            }
+        })
+        res.redirect('/products/listador');
     }
+    
+    //edicionProducto CON PROMISE.ALL
+/*     edicionProducto: async (req, res) => {
+        let productoExistente = await db.Productos.findByPk(req.params.id);                      
+        let marcas = await db.Marcas.findAll();
+        Promise.all([productoExistente, marcas])
+            .then(function([productoExistente, marcas]){
+                res.render("edicion-de-producto", {product: productoExistente, marcas: marcas});        
+        })
+    }, */
 
-
+    //edicionPost CON PROMISE.ALL
+    /* editPost: (req, res) => {                  
+        db.Productos.update({
+            nombre: req.body.nombre,
+            caract: req.body.caract,
+            descripcion: req.body.descripcion,
+            precio: req.body.precio,
+            descuento: req.body.descuento,
+            destacado: false,
+            //imagen: req.file.filename,
+            id_marca: req.body.marcas,
+            pesoKg: req.body.pesoKg            
+            },{
+                where: {
+                    id: req.params.id
+                }
+            });
+            res.redirect("/products/detalle/" + req.params.id) */
+       /*  fs.writeFileSync(productsJSON, JSON.stringify(products, null, 2))
+        return res.redirect('/products/listador'); 
+    },*/
 }
 
 module.exports = productsController;

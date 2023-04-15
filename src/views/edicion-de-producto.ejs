@@ -19,9 +19,8 @@
                 <div class="campo-crear">
                     <label for="marcas">Marca del producto</label>                                        
                     <select name="marcas" id="marcas">
-                        <% for (let i = 0; i < marcas.length; i++) { %>                                                        
-                            
-                            <option <% if(product.marcas.nombre == marcas[i].nombre){ %>
+                        <% for (let i = 0; i < marcas.length; i++) { %>                            
+                            <option <% if(marcas.nombre == marcas[i].nombre){ %>
                                 <%= 'selected' %>
                             <% } %>                            
                              value="<%=marcas[i].id%>"><%= marcas[i].nombre %></option>
@@ -30,7 +29,7 @@
                 </div>
                 <div class="campo-crear">
                     <label for="pesoKg">Peso del producto</label>
-                    <input class="nombre-producto" type="number" id="pesoKg" name="pesoKg" placeholder="2" value="<%= locals.oldData ? oldData.pesoKg: null %>">
+                    <input class="nombre-producto" type="number" id="pesoKg" name="pesoKg" value="<%= product.pesoKg %>">
                     <% if(locals.errores && errores.pesoKg) { %>
                         <p class="errorsMsg"><%= errores.pesoKg.msg %></p>
                     <% } %>
@@ -43,13 +42,13 @@
                     <label for="precio">Descuento del producto</label>
                     <input class="nombre-producto" type="number" id="precio" name="descuento" value="<%= product.descuento%>">
                 </div>
-                <div class="campo-crear">
+                <!-- <div class="campo-crear">
                     <label for="img">Subir imágenes del producto:</label>
                     <input class="subir-imagenes" type="file" id="img" name="imagen" placeholder="Seleccionar imágenes" value="<%= locals.oldData ? oldData.imagen: null %>">
                     <% if(locals.errores && errores.imagen) { %>
                         <p class="errorsMsg"><%= errores.imagen.msg %></p>
                     <% } %>
-                </div>
+                </div> -->
                 <div class="campo-crear">
                     <label for="caract">Características principales</label>
                     <textarea id="caract" name="caract" ><%= product.caract %></textarea>
@@ -66,7 +65,7 @@
             </button>
           </div>
             </form>
-            <form action="/products/delete/<%= product.id %>?_method=delete" method="POST">
+            <form action="/products/delete/<%= product.id %>" method="POST">
                 <button type="submit" class="button-crear">
                     Eliminar
                 </button>

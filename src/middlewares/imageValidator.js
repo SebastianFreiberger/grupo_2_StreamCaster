@@ -7,6 +7,7 @@ module.exports = [
     body('imagen').custom((value, { req }) => {
         let file = req.file;
         let acceptedExtensions = ['.jpg', '.png', '.gif', '.jpeg'];
+        //console.log(acceptedExtensions);
         if (!file) {
             throw new Error('Tenés que subir una imagen');
         } else {
