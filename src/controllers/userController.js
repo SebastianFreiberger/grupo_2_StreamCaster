@@ -6,6 +6,7 @@ const usuariosJSON = path.join(__dirname, '../database/usuarios.json');
 const usuarios = JSON.parse(fs.readFileSync(usuariosJSON, 'utf-8'));
 
 let db = require("../../database/models");
+const { log } = require('console');
 
 const userController = {
     // GET    
@@ -129,6 +130,35 @@ const userController = {
             user: req.session.userLogged
         });
     },
+
+    userEdit: async (req, res) =>{
+        let userLogged = await db.Usuarios.findByPk(req.session.userLogged.id);
+        return res.render ('userEdit',{
+            userLogged : userLogged
+            })
+      
+    },
+    userUpdate: async (req, res) =>{
+        const resultValidation = validationResult(req)
+        let userLogged = await db.Usuarios.findByPk(req.session.userLogged.id)
+        if (resultValidation.errors.length > 0) {
+            return res.render('userEdit', {
+                userLogged : userLogged,
+                errors: resultValidation.mapped(),
+                oldData: req.body
+            })}
+            else {            
+                db.Usuarios.update({
+                    nombre: req.body.nombre,
+                    apellido: req.body.apellido,
+                    email: req.body.email,
+                    contrasenia: bcryptjs.hashSync(req.body.contrasenia, 10),                
+                    
+                })
+                return res.render ('userProfile', {
+                    user: req.session.userLogged
+        })}   
+    }
 }
 
 module.exports = userController;

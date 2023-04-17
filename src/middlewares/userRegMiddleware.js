@@ -8,6 +8,7 @@ const validations = [
         .notEmpty().withMessage('Tenés que escribir un correo electrónico').bail()
         .isEmail().withMessage('Tenés que escribir un correo válido'),
     body('contrasenia').notEmpty().withMessage('Tienes que escribir una contraseña'),
+/* fue a avatarValidator
     body('avatar').custom((value, { req })=>{
         let file = req.file;
         let acceptedExtensions = ['.jpg','.png','.gif','.jpeg'];
@@ -20,7 +21,7 @@ const validations = [
             }
         }
         return true;
-    })
+    }) */
 ]
 
 module.exports = validations

@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!-- Head -->
+<%- include('partials/head') %> 
+
+<body>
+    <!-- Header -->
+    <%- include('partials/header') %> 
+  
+  <main class="main-rgt">
+  
+    <!-- título del formulario "Creá tu cuenta de StreamCaster" -->
+    <p class="titulo-form-rgt">
+      Modificá los datos de tu cuenta de StreamCaster
+    </p>
+    <section class="section-rgt">
+      <form action="/user/edicion/<%= userLogged.id %>?_method=put" method="POST" class="form-rgt" enctype="multipart/form-data">
+
+        <!-- campo "Nombre" -->
+        <div class="campo-rgt">
+          <label for="nombre">Nombre</label>
+            <input type="text" name="nombre" id="nombre" value="<%= userLogged.nombre %>"
+            />
+            <% if (locals.errors && errors.nombre){ %>
+              <div class="errorReg">
+                <%= errors.nombre.msg%>
+              </div>
+            <%}%>
+          </div>
+        <!-- campo "Apellido" -->
+        <div class="campo-rgt">
+          <label for="apellido">Apellido</label>       
+          <input type="text" name="apellido" id="apellido"  
+          value="<%= userLogged.apellido %>"
+          />
+          <% if (locals.errors && errors.apellido){ %>
+            <div class="errorReg">
+              <%= errors.apellido.msg%>
+            </div>
+          <%}%>
+
+        </div>
+        <!-- campo "Email" -->
+        <div class="campo-rgt">
+          <label for="email">Email</label>          
+          <input type="text" name="email" id="email" 
+          value="<%= userLogged.email %>"
+          />
+          <% if (locals.errors && errors.email){ %>
+            <div class="errorReg">
+              <%= errors.email.msg%>
+            </div>
+          <%}%>
+
+        </div>
+                <!-- campo "Contraseña" -->
+                <div class="campo-rgt">
+                  <label for="contraseña">Contraseña</label>          
+                  <input type="password" name="contrasenia" id="contrasenia" />
+                  <% if (locals.errors && errors.contrasenia){ %>
+                    <div class="errorReg">
+                      <%= errors.contrasenia.msg%>
+                    </div>
+                  <%}%>
+                </div>
+        <!-- campo "Imagen" -->
+
+        <!-- cuadrito de verificacion "Acepto términos y condiciones" -->
+        <div class="terminos-form">
+          <label>
+            <input type="checkbox" id="checkbox-rgt" class="checkbox-rgt" required> Acepto términos y condiciones
+          </label>          
+          <!-- enlace "Ver términos y condiciones" -->
+          <div class="campo-rgt"><a href="">
+            Ver términos y condiciones</a>
+          </div>          
+          <!-- botón "Confirmar cambios" -->
+          <div class="boton">
+            <button type="submit" class="button-rgt">
+              Confirmá los cambios
+            </button>
+        </div>
+      </form>
+    </section>
+  </main>
+
+    <!-- Footer -->
+    <%- include('partials/footer') %>
+
+</body>
+
+</html>
