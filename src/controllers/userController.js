@@ -7,6 +7,7 @@ const usuarios = JSON.parse(fs.readFileSync(usuariosJSON, 'utf-8'));
 
 let db = require("../../database/models");
 const { log } = require('console');
+const { where } = require('sequelize');
 
 const userController = {
     // GET    
@@ -138,26 +139,35 @@ const userController = {
             })
       
     },
+    /* userUpdateGet: async (req, res) => {
+        let userLogged = await db.Usuarios.findByPk(req.session.userLogged.id)
+        Promise.all([userLogged]).then(function(userLogged){
+            console.log(userLogged);
+            res.render('userEdit', {userLogged: userLogged})
+        })
+    }, */
+
     userUpdate: async (req, res) =>{
         const resultValidation = validationResult(req)
-        let userLogged = await db.Usuarios.findByPk(req.session.userLogged.id)
-        if (resultValidation.errors.length > 0) {
+        let userLogged = await db.Usuarios.findByPk(req.session.userLogged.id)        
+        if (resultValidation.errors.length > 0) {            
             return res.render('userEdit', {
                 userLogged : userLogged,
                 errors: resultValidation.mapped(),
                 oldData: req.body
-            })}
-            else {            
+            })
+        } else {            
                 db.Usuarios.update({
                     nombre: req.body.nombre,
                     apellido: req.body.apellido,
                     email: req.body.email,
-                    contrasenia: bcryptjs.hashSync(req.body.contrasenia, 10),                
-                    
-                })
-                return res.render ('userProfile', {
-                    user: req.session.userLogged
-        })}   
+                    contrasenia: bcryptjs.hashSync(req.body.contrasenia, 10),                    
+                }, {where: {id: req.params.id}})                    
+                .then(() => {                     
+                    res.redirect('/user/profile')
+                }
+            )
+        }   
     }
 }
 

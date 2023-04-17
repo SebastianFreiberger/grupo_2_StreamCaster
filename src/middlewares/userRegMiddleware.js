@@ -1,12 +1,19 @@
 const { body } = require('express-validator');
 const path = require('path');
 
-const validations = [
-    body('nombre').notEmpty().withMessage('Tenés que escribir un nombre'),
-    body('apellido').notEmpty().withMessage('Tenés que escribir un apellido'),
+module.exports = [
+    body('nombre')
+        .notEmpty()
+        .withMessage('Tenés que escribir un nombre'),
+
+    body('apellido')
+        .notEmpty()
+        .withMessage('Tenés que escribir un apellido'),
+
     body('email')
         .notEmpty().withMessage('Tenés que escribir un correo electrónico').bail()
         .isEmail().withMessage('Tenés que escribir un correo válido'),
+        
     body('contrasenia').notEmpty().withMessage('Tienes que escribir una contraseña'),
 /* fue a avatarValidator
     body('avatar').custom((value, { req })=>{
@@ -23,5 +30,3 @@ const validations = [
         return true;
     }) */
 ]
-
-module.exports = validations

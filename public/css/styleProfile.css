@@ -32,6 +32,19 @@ picture.section-imgdetail-profile {
 .imgdetail-profile {
     width: 40vw;
 }
+.icon-edicion{
+    text-decoration: none;
+}
+
+.icon-edicion i{
+    margin-left: 10px;
+    font-size: 15px;
+}
+
+.userEdit{
+    float: right;
+    margin: 8px;
+}
 
 /* TABLET */
 

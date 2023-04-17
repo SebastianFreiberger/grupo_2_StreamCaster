@@ -21,14 +21,15 @@
                     <li>Nombre: "<%= userLogged.nombre %>"</li>
                     <li>Apellido: "<%= userLogged.apellido %>"</li>
                     <li>Email: <%= userLogged.email %></li>
-                </ul>                
-            </div>
-            
-                <picture class="section-imgdetail-profile">
-                    <img src="/images/users/<%= userLogged.avatar %>" class="imgdetail-profile">
-                </picture>
-                <a href="/user/edicion/<%= userLogged.id %>" class="icon-edicion"><i class="fa-solid fa-pen"></i></a>
+                </ul>
+            </div>                
+            <picture class="section-imgdetail-profile">
+                <img src="/images/users/<%= userLogged.avatar %>" class="imgdetail-profile">
+            </picture>
         </section>
+        <div class="userEdit">
+            <a href="/user/edicion/<%= userLogged.id %>" class="icon-edicion">Editar Perfil<i class="fa-solid fa-pen"></i></a>                
+        </div>
     </main>
 
     <!-- Footer -->

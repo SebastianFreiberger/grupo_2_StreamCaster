@@ -15,7 +15,7 @@
       Modificá los datos de tu cuenta de StreamCaster
     </p>
     <section class="section-rgt">
-      <form action="/user/edicion/<%= userLogged.id %>?_method=put" method="POST" class="form-rgt" enctype="multipart/form-data">
+      <form action="/user/edicion/<%= userLogged.id %>?_method=put" method="POST" class="form-rgt">
 
         <!-- campo "Nombre" -->
         <div class="campo-rgt">
@@ -67,14 +67,7 @@
         <!-- campo "Imagen" -->
 
         <!-- cuadrito de verificacion "Acepto términos y condiciones" -->
-        <div class="terminos-form">
-          <label>
-            <input type="checkbox" id="checkbox-rgt" class="checkbox-rgt" required> Acepto términos y condiciones
-          </label>          
-          <!-- enlace "Ver términos y condiciones" -->
-          <div class="campo-rgt"><a href="">
-            Ver términos y condiciones</a>
-          </div>          
+        <div class="terminos-form">                 
           <!-- botón "Confirmar cambios" -->
           <div class="boton">
             <button type="submit" class="button-rgt">

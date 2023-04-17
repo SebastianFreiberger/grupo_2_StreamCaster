@@ -15,6 +15,9 @@
                 <div class="campo-crear">
                     <label for="nombre">Nombre del producto</label>
                     <input class="nombre-producto" type="text" id="nombre" name="nombre" value="<%= product.nombre %>">
+                    <% if(locals.errores && errores.nombre) { %>
+                        <p class="errorsMsg"><%= errores.nombre.msg %></p>
+                    <% } %>
                 </div>
                 <div class="campo-crear">
                     <label for="marcas">Marca del producto</label>                                        
@@ -37,10 +40,16 @@
                 <div class="campo-crear">
                     <label for="precio">Precio del producto</label>
                     <input class="nombre-producto" type="number" id="precio" name="precio" value="<%= product.precio %>">
+                    <% if(locals.errores && errores.precio) { %>
+                        <p class="errorsMsg"><%= errores.precio.msg %></p>
+                    <% } %>
                 </div>
                 <div class="campo-crear">
                     <label for="precio">Descuento del producto</label>
                     <input class="nombre-producto" type="number" id="precio" name="descuento" value="<%= product.descuento%>">
+                    <% if(locals.errores && errores.descuento) { %>
+                        <p class="errorsMsg"><%= errores.descuento.msg %></p>
+                    <% } %>
                 </div>
                 <!-- <div class="campo-crear">
                     <label for="img">Subir imágenes del producto:</label>
@@ -52,11 +61,17 @@
                 <div class="campo-crear">
                     <label for="caract">Características principales</label>
                     <textarea id="caract" name="caract" ><%= product.caract %></textarea>
+                    <% if(locals.errores && errores.caract) { %>
+                        <p class="errorsMsg"><%= errores.caract.msg %></p>
+                    <% } %>
                 </div>
                 <!-- Características principales es lo que va al costado de la imagen en la versión de escritorio y descripción detallada es lo que va abajo -->
                 <div class="campo-crear">
                     <label for="descripcion">Descripción detallada</label>
                     <textarea id="descripcion" name="descripcion"><%= product.descripcion %></textarea>
+                    <% if(locals.errores && errores.descripcion) { %>
+                        <p class="errorsMsg"><%= errores.descripcion.msg %></p>
+                    <% } %>
                 </div>
                 <!-- botón "Crear producto" -->
           <div class="boton">

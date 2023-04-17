@@ -2,7 +2,6 @@ const express = require('express');
 const userRouter = express.Router();
 const userController = require('../controllers/userController');
 
-const validations = require('../middlewares/userRegMiddleware');
 const guestMiddleware = require('../middlewares/guestMiddleware');
 const authMiddleware = require('../middlewares/authMiddleware');
 
@@ -10,6 +9,7 @@ const { body } = require('express-validator');
 const multer = require('multer');
 const path = require('path');
 const avatarValidator = require('../middlewares/avatarValidator');
+const validations = require('../middlewares/userRegMiddleware');
 /* const multerValidator = require('../middlewares/multerMiddleware'); */
 
 const multerDiskStorage = multer.diskStorage({
