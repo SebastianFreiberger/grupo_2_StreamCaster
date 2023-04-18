@@ -22,7 +22,7 @@ module.exports = [
     // descuento
     body('descuento')
         .isInt({min:0, max:100})
-        .withMessage('El descuento debe estar entre 0 y 100'),
+        .withMessage('El descuento es un %, debe estar entre 0 y 100'),
     // caract
     body('caract')
         .isLength({min: 10, max: 250})
