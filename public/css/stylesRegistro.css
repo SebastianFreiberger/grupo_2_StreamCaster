@@ -63,10 +63,16 @@ section.section-rgt form.form-rgt {
   text-decoration: none;
   color: #fff;
 } 
-.errorReg{
+.errorReg {
   color: red;
   font-size: 12;
 }
+
+body main section ul li.err-li {
+  color: red;
+  font-size: 12;
+}
+
 .is-invalid{
   background-color: grey;
 }
