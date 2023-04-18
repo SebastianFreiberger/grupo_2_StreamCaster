@@ -1,17 +1,26 @@
+<!DOCTYPE html>
 <html lang="en">
+
 <!-- Head -->
 <%- include('partials/head') %> 
 <body class="body-crear">
     <!-- Header -->
     <%- include('partials/header') %>
 
+    <!-- título del formulario "Crear producto-->
     <h1 class="titulo-form-crear">
         Crear producto
     </h1>
     
     <main class="main-crear">
-        <!-- título del formulario "Crear producto-->
-        <section class="section-crear">
+    <!-- array de errores -->
+    <section class="errores">
+        <ul>
+        ...
+        </ul>
+       </section>
+    <!-- campos de relleno -->
+    <section class="section-crear">
             <form action="/products/creacion" method="POST" class="form-crear" enctype="multipart/form-data">
                 <div class="campo-crear">
                     <label for="nombre">Nombre del producto</label>
