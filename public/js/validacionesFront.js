@@ -4,6 +4,8 @@ window.addEventListener("load", function () {
 
     let formulario = document.querySelector("form.form-rgt");
     formulario.addEventListener("submit", function (evento) {
+        evento.preventDefault();
+
 
         let errores = [];
         // para nombre
@@ -47,18 +49,20 @@ window.addEventListener("load", function () {
         } else if (!allowedExtensions.exec(campoImg.value) ) {
             errores.push("La imagen debe tener formato jpg, jpeg, png o gif")
         }
-
         
-        
+        //para resetear el array de errores en cada submit
+        let ulErrores = document.querySelector("section.errores ul");
+        ulErrores.innerHTML = ""
 
         if (errores.length > 0) {
-            evento.preventDefault();
-            let ulErrores = document.querySelector("section.errores ul");
             for (let i = 0; i < errores.length; i++) {
-                ulErrores.innerHTML += "<li class=err-li>" + errores[i] + "</li>"
+                ulErrores.innerHTML += `<li class=err-li>${errores[i]}</li>`
 
             }
 
+        }
+        else {
+            formulario.submit();
         }
 
     });
