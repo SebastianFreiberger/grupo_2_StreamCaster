@@ -4,7 +4,7 @@ const { validationResult } = require('express-validator');
 // const productsJSON = path.join(__dirname, '../database/productos.json');
 // const products = JSON.parse(fs.readFileSync(productsJSON, 'utf-8'));
 
-let db = require("../../database/models");
+let db = require("../database/models");
 const { log } = require('console');
 const { where } = require('sequelize');
 // const marcas = db.Marcas.findAll()

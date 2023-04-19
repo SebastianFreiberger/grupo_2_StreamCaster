@@ -2,10 +2,10 @@ const path = require('path');
 const fs = require('fs');
 const bcryptjs = require('bcryptjs');
 const { validationResult } = require('express-validator')
-const usuariosJSON = path.join(__dirname, '../database/usuarios.json');
+const usuariosJSON = path.join(__dirname, '../databaseJSON/usuarios.json');
 const usuarios = JSON.parse(fs.readFileSync(usuariosJSON, 'utf-8'));
 
-let db = require("../../database/models");
+let db = require("../database/models");
 const { log } = require('console');
 const { where } = require('sequelize');
 
