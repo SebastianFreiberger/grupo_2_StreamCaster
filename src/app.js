@@ -8,6 +8,10 @@ const session = require('express-session');
 const mainRouter = require('./routes/mainRouter');
 const userRouter = require('./routes/userRouter');
 const productsRouter = require('./routes/productsRouter');
+const userApiRouter = require('./routes/userApi');
+const productsApiRouter = require('./routes/productsApiRouter');
+
+
 const userLoggedMiddleware = require('./middlewares/userLoggedMiddleware');
 
 app.use(session({
@@ -34,8 +38,13 @@ app.use('/', mainRouter);
 app.use('/user', userRouter);
 app.use('/products', productsRouter);
 
+/* USE DE APIS */
+app.use('/api/usuarios', userApiRouter);
+app.use('/api/productos', productsApiRouter);
+
 app.get('*', function(req, res){
 	res.render('error404');
   });
 
 app.listen(3000, ()=>console.log("Servidor en puerto 3000 corriendo"));
+
