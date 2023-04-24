@@ -30,15 +30,16 @@ module.exports = {
         //TODAS LAS PETICIONES LAS HACEMOS ADENTRO DEL TRY Y EL CATCH
         try {
             response.status = 200 //CONFIGURAMOS EL STATUS
-            const listado = await db.Productos.findAll({include: [{association:'marcas'}]}); //NOS DEVUELVE TODO EL LISTADO DE PRODUCTOS
-            const categorias = await db.Categorias.findAll({include: [{association:'productos'}]}); //NOS DEVUELVE TODO EL LISTADO DE CATEGORIAS
+            const listado = await db.Productos.findAll({include: [{association:'marcas'}]}); //NOS DEVUELVE TODO EL LISTADO DE PRODUCTOS            
+            const categorias = await db.Categorias.findAll({include: [{association:'productos'}]}); //NOS DEVUELVE TODO EL LISTADO DE CATEGORIAS        
             response.count = listado.length //CUENTA LA CANTIDAD DE PRODUCTOS Q HAY
+            //console.log(response.count);
             response.countByCategory = {}
             categorias.forEach(categoria => {
-                response.countByCategory[categoria.megarubro] = categoria.productos.length;
+                response.countByCategory[categoria.megarubro] = categoria.productos.length;                
             });
 
-
+            
             response.productos = listado.map((producto) => {
                 return {
                     id: producto.id,
@@ -46,8 +47,8 @@ module.exports = {
                     descripcion: producto.descripcion,
                     detail: '/api/productos/' + producto.id, //ESTA ES LA URL PARA OBTENER EL DETALLE DEL PRODUCTO
                 }                
-            })
-            return res.json(response.users);
+            })            
+            return res.json(response);
 
         } catch (error) {
             response.status = 403 //CONFIGURAMOS EL STATUS

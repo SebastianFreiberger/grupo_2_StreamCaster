@@ -7,7 +7,7 @@ module.exports = function (sequelize, dataTypes) {
             primaryKey: true,
             autoIncremental: true
         },
-        megaRubro: {
+        megarubro: {
             type: dataTypes.STRING
         },
         detalle: {

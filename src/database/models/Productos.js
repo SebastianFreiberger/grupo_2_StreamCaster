@@ -52,13 +52,13 @@ module.exports = function (sequelize, dataTypes) {
     //         otherKey: "id_factura",
     //         timestamps: false
     //     });
-    //     Productos.belongsToMany(models.Categorias, {
-    //         as: "categorias",
-    //         through: "cat_prod",
-    //         foreignKey: "productos_ibfk_1",
-    //         otherKey: "id_categoria",
-    //         timestamps: false
-    //     });
+        Productos.belongsToMany(models.Categorias, {
+            as: "categorias",
+            through: "cat_prod",
+            foreignKey: "id_producto",
+            otherKey: "id_categoria",
+            timestamps: false
+        });
     //     Productos.belongsToMany(models.PublicoObjetivo, {
     //         as: "PublicoObjetivo",
     //         through: "prod_publico",
