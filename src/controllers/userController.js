@@ -147,6 +147,8 @@ const userController = {
 
     userUpdate: async (req, res) =>{
         const resultValidation = validationResult(req)
+        console.log(req.body);
+        console.log(resultValidation);
         let userLogged = await db.Usuarios.findByPk(req.session.userLogged.id)        
         if (resultValidation.errors.length > 0) {            
             return res.render('userEdit', {
@@ -158,10 +160,12 @@ const userController = {
                 db.Usuarios.update({
                     nombre: req.body.nombre,
                     apellido: req.body.apellido,
-                    email: req.body.email,
-                    contrasenia: bcryptjs.hashSync(req.body.contrasenia, 10),                    
+                    /* email: req.body.email,
+                    contrasenia: bcryptjs.hashSync(req.body.contrasenia, 10),          */           
                 }, {where: {id: req.params.id}})                    
-                .then(() => {                     
+                .then(() => {                    
+                    req.session.userLogged.nombre =  req.body.nombre
+                    req.session.userLogged.apellido =  req.body.apellido
                     res.redirect('/user/profile')
                 }
             )

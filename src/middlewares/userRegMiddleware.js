@@ -15,6 +15,9 @@ module.exports = [
         .isEmail().withMessage('Tenés que escribir un correo válido'),
         
     body('contrasenia').notEmpty().withMessage('Tienes que escribir una contraseña'),
+
+
+    
 /* fue a avatarValidator
     body('avatar').custom((value, { req })=>{
         let file = req.file;

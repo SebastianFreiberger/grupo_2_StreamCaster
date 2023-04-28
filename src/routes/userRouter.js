@@ -10,6 +10,7 @@ const multer = require('multer');
 const path = require('path');
 const avatarValidator = require('../middlewares/avatarValidator');
 const validations = require('../middlewares/userRegMiddleware');
+const validationsEdit = require('../middlewares/userEditMiddleware');
 /* const multerValidator = require('../middlewares/multerMiddleware'); */
 
 const multerDiskStorage = multer.diskStorage({
@@ -52,8 +53,8 @@ userRouter.get('/profile/', authMiddleware,userController.profile);
 userRouter.get('/registro', userController.registro);
 userRouter.post('/registro', uploadFile.single("avatar"), validations, avatarValidator, userController.registroPost);
 userRouter.get('/logout', userController.logout);
-userRouter.get('/edicion/:id', userController.userEdit);
-userRouter.put('/edicion/:id', /* multerValidator.single("imagen") ,*/ validations, userController.userUpdate)
+userRouter.get('/edicion/:id',authMiddleware, userController.userEdit);
+userRouter.put('/edicion/:id', /* multerValidator.single("imagen") ,*/ validationsEdit, userController.userUpdate)
 /* userRouter.put('/registro', userController.registroPut); */
 
 

@@ -29,17 +29,17 @@ window.addEventListener("load", function () {
         let campoEmail  = document.querySelector("#email");
         var validRegex = /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/;
         
-        if (campoEmail.value == "") {
+        /* if (campoEmail.value == "") {
             errores.push("El e-mail  no puede estar vacío");
          } else if (!(campoEmail.value.match(validRegex))){
             errores.push("El e-mail no tiene un formato válido")
-        }
+        } */
         
         // para contraseña
-        let campoPass  = document.querySelector("#contrasenia");
+        /* let campoPass  = document.querySelector("#contrasenia");
         if (campoPass.value == "") {
             errores.push("La contraseña no puede estar vacía");
-        }
+        } */
         
         //para resetear el array de errores en cada submit
         let ulErrores = document.querySelector("section.errores ul");

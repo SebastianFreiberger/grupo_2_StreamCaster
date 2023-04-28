@@ -50,7 +50,7 @@
 
         </div>
         <!-- campo "Email" -->
-        <div class="campo-rgt">
+        <!-- <div class="campo-rgt">
           <label for="email">Email</label>          
           <input type="text" name="email" id="email" 
           value="<%= userLogged.email %>"
@@ -62,16 +62,16 @@
           <%}%>
 
         </div>
-                <!-- campo "Contraseña" -->
-                <div class="campo-rgt">
-                  <label for="contraseña">Contraseña</label>          
-                  <input type="password" name="contrasenia" id="contrasenia" />
-                  <% if (locals.errors && errors.contrasenia){ %>
-                    <div class="errorReg">
-                      <%= errors.contrasenia.msg%>
-                    </div>
-                  <%}%>
-                </div>
+                
+        <div class="campo-rgt">
+          <label for="contraseña">Contraseña</label>          
+          <input type="password" name="contrasenia" id="contrasenia" />
+          <% if (locals.errors && errors.contrasenia){ %>
+            <div class="errorReg">
+              <%= errors.contrasenia.msg%>
+            </div>
+          <%}%>
+        </div> -->
         <!-- campo "Imagen" -->
 
         <!-- cuadrito de verificacion "Acepto términos y condiciones" -->
