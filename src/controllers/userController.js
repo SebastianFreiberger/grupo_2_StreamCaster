@@ -6,8 +6,6 @@ const usuariosJSON = path.join(__dirname, '../databaseJSON/usuarios.json');
 const usuarios = JSON.parse(fs.readFileSync(usuariosJSON, 'utf-8'));
 
 let db = require("../database/models");
-const { log } = require('console');
-const { where } = require('sequelize');
 
 const userController = {
     // GET    
