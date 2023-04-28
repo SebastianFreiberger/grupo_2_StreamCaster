@@ -54,6 +54,9 @@ main.main-loggin section.section-loggin form.form-loggin label.checkbox-recordar
     margin: 15px 0;
 }
 
+.text-danger{
+    color: #d50000;
+}
 /* .section-loggin .form-loggin .button-ingresar {
     padding: 8px;
     margin: auto;
