@@ -8,7 +8,8 @@ const controller = {
     home: (req, res) => {
         db.Productos.findAll()
         .then(function (products) {
-            return res.render('home', { products: products });
+            let productsDestacados = products.filter(products => products.destacado == 1)
+            return res.render('home', { products: productsDestacados });
         })        
     },
 

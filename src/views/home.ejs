@@ -18,13 +18,15 @@
                 </div>                
             </div>
         </section>
+        <%if(products.length > 0) { %>
         <div class="titulo-seccion-home">
             <h2>Destacados del mes</h2>
         </div>
+        <% } %>
         <section class="section-producto-home">            
             <i class="fa-solid fa-angle-left arrow-carrusel"></i>
-            <% for(let i = 0; i < products.length; i++) {%>                
-                <%if(products[i].destacado) { %>
+            <% for(let i = 0; i < 3; i++) {%>
+                <%if(products[i]) { %>
                     <a href="/products/detalle/<%= products[i].id %>">
                     <article class="producto-destacado-home">
                         <div class="img-producto-destacado">
