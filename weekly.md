@@ -82,3 +82,7 @@ Pendientes del SPRINT anterior
 Aun resolviendo pendientes del SPRINT anterior
 Listado de productos operativo
 Edición de productos operativo
+
+SPRINT 8
+https://trello.com/b/Ton9BKt5/sprint-8
+
