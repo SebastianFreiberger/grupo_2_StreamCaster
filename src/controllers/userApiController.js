@@ -39,6 +39,7 @@ module.exports = {
                 return {
                     id: usuario.id,
                     nombre: usuario.nombre,
+                    apellido: usuario.apellido,
                     email: usuario.email,
                     detail: '/api/usuarios/' + usuario.id, //ESTA ES LA URL PARA OBTENER EL DETALLE
                 }                
